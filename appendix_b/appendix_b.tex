@@ -1,0 +1,8 @@
+\chapter{References at the end of Chapters}
+\label{app:references_end_chapters}
+
+\graphicspath{{appendix_b/figures/}} % path to the figures folder of this chapter
+
+Some people like to have the references at the end of chapters, instead of at the end of the thesis. However, compiling the document becomes a little less convenient and I do not see the benefit of doing this. Anyway, in case you want to do that then you need to edit the \texttt{dissertation.cls} file by uncommenting the \texttt{chapterbib} package and including \texttt{sectionbib} in the \texttt{natbib} package. Then, you have to include the special command \texttt{\textbackslash references\{references\}} at the end of \textbf{each} chapter (for example, at the end of \texttt{chapter\_1.tex}). Note that the references are included in the file \texttt{references.bib}.
+
+Also note that if you want to have references at the end of chapters you need to run a command like \texttt{bibtex chapter\_1/chapter\_1} for each chapter. For convenience, a ``Makefile'' is also available (although you need to edit it), so you can run this file and compile the entire document such that references are put at the end of each chapter. Again, my recommendation is to just ignore this completely, and use the standard format of references at the end of the thesis. 

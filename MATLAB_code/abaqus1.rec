@@ -1,0 +1,66 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=1.2)
+mdb.models['Model-1'].sketches['__profile__'].EllipseByCenterPerimeter(
+    axisPoint1=(0.42, 0.1), axisPoint2=(0.2, 0.21), center=(0.2, 0.1))
+mdb.models['Model-1'].ConstrainedSketch(name='Fibre_Sketch_Prov', objectToCopy=
+    mdb.models['Model-1'].sketches['__profile__'])
+mdb.models['Model-1'].sketches.changeKey(fromName='__profile__', toName=
+    'Fibre_Sketch_Prov')
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=1.2)
+mdb.models['Model-1'].sketches['__profile__'].rectangle(point1=(0.0, 0.0), 
+    point2=(0.4, 0.2))
+mdb.models['Model-1'].sketches['__profile__'].rectangle(point1=(-0.44, -0.22), 
+    point2=(0.84, 0.42))
+mdb.models['Model-1'].sketches.changeKey(fromName='__profile__', toName=
+    'Fibre_Sketch_Trim')
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=1.2)
+mdb.models['Model-1'].sketches['__profile__'].sketchOptions.setValues(
+    gridOrigin=(0.0, 0.0))
+mdb.models['Model-1'].sketches['__profile__'].retrieveSketch(sketch=
+    mdb.models['Model-1'].sketches['Fibre_Sketch_Prov'])
+mdb.models['Model-1'].Part(dimensionality=THREE_D, name='Fibre_Part_Prov', 
+    type=DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['Fibre_Part_Prov'].BaseSolidExtrude(depth=0.4, 
+    sketch=mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+del mdb.models['Model-1'].sketches['Fibre_Sketch_Prov']
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=1.2)
+mdb.models['Model-1'].sketches['__profile__'].sketchOptions.setValues(
+    gridOrigin=(0.0, 0.0))
+mdb.models['Model-1'].sketches['__profile__'].retrieveSketch(sketch=
+    mdb.models['Model-1'].sketches['Fibre_Sketch_Trim'])
+mdb.models['Model-1'].Part(dimensionality=THREE_D, name='Fibre_Part_Trim', 
+    type=DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['Fibre_Part_Trim'].BaseSolidExtrude(depth=0.4, 
+    sketch=mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+del mdb.models['Model-1'].sketches['Fibre_Sketch_Trim']
+mdb.models['Model-1'].rootAssembly.DatumCsysByDefault(CARTESIAN)
+mdb.models['Model-1'].rootAssembly.Instance(dependent=OFF, name=
+    'Fibre_Instance_Prov', part=mdb.models['Model-1'].parts['Fibre_Part_Prov'])
+mdb.models['Model-1'].rootAssembly.Instance(dependent=OFF, name=
+    'Fibre_Instance_Trim', part=mdb.models['Model-1'].parts['Fibre_Part_Trim'])
+mdb.models['Model-1'].rootAssembly.InstanceFromBooleanCut(cuttingInstances=(
+    mdb.models['Model-1'].rootAssembly.instances['Fibre_Instance_Trim'], ), 
+    instanceToBeCut=
+    mdb.models['Model-1'].rootAssembly.instances['Fibre_Instance_Prov'], name=
+    'Fibre_Final_Part', originalInstances=DELETE)
+mdb.models['Model-1'].rootAssembly.makeIndependent(instances=(
+    mdb.models['Model-1'].rootAssembly.instances['Fibre_Final_Part-1'], ))
+mdb.models['Model-1'].rootAssembly.features.changeKey(fromName=
+    'Fibre_Final_Part-1', toName='Fibre_Final_Instance')
+del mdb.models['Model-1'].parts['Fibre_Part_Prov']
+del mdb.models['Model-1'].parts['Fibre_Part_Trim']

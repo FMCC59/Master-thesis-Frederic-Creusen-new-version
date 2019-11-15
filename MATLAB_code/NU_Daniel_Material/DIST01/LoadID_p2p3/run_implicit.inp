@@ -1,0 +1,48 @@
+** ***************************************************************************
+**   Created by A.R. Melro and M.A. Bessa on 20-Mar-2019 13:36:57
+**
+** INPUT file for IMPLICIT analysis
+**
+** ***************************************************************************
+**
+** Include file with RVE mesh:
+*INCLUDE, INPUT=../mesh.inp
+** Amplitude for the load curve:
+*Amplitude, name=AMP-1, DEFINITION=SMOOTH STEP
+0.,   0.,     1.0,      1.0
+** Include file with ALL material properties:
+*INCLUDE, INPUT=../matprops_e.inp
+** Include file with node sets:
+*INCLUDE, INPUT=../spnsets.inp
+** Include file defining constraints for Periodic Boundary Conditions:
+*INCLUDE, INPUT=../pbcs.inp
+**
+** IMPLICIT Load Step 1 --------------------------------------
+*STEP, INC=1000000, UNSYMM=YES
+*DYNAMIC, HAFTOL=1E-3
+ 0.0001,1,1E-15,0.0001
+** FOR PERIODIC BOUNDARY CONDITIONS
+** Note: Node     93190 is "dummy1", i.e. Epsilon_1i
+** Note: Node     93191 is "dummy2", i.e. Epsilon_2j
+** Note: Node     93192 is "dummy3", i.e. Epsilon_3k
+*BOUNDARY,OP=NEW
+** Note: Epsilon_22 = 0.03
+     93191, 2, 2, 0.03
+** Note: Epsilon_33 = 0.03
+     93192, 3, 3, 0.03
+*OUTPUT, FIELD, TIME INTERVAL=0.01
+*ELEMENT OUTPUT
+ S, E, IVOL, EVOL
+*ELEMENT OUTPUT, ELSET=MATRIX
+ SDV
+*ELEMENT OUTPUT, ELSET=FIBRE
+ SDV
+ SDEG
+*NODE OUTPUT
+ U
+*OUTPUT, HISTORY, TIME INTERVAL=0.01
+*ENERGY OUTPUT
+ ALLIE, ALLAE, ALLCD, ALLWK, ALLKE, ALLPD, ALLSE, ETOTAL
+*CONTROLS,PARAMETERS=FIELD,FIELD=DISPLACEMENT
+ 0.10, 1., , , 0.10
+*END STEP

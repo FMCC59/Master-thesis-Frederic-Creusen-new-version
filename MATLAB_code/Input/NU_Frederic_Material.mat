@@ -1,0 +1,75 @@
+******************************************************************
+**              Material Properties of FDM ABS                  **
+**                                                              **
+**             = Ultimaker material and machine =               **
+**                                                              **
+******************************************************************
+*
+* IMPORTANT NOTE
+*    The MATLAB code reads line by line, so do not delete or create
+*    lines in this file. Just change the properties.
+*-----------------------------------------------------------------
+*
+* Fibre Diameter - 2*R
+0.4 *should be changed to an elips with 0.4x0.2
+* Volume Fibre - Vol_fibre_req
+0.785 * R²*pi/((2*R)²)
+* Young's Moduli - E11, E22
+225000
+15000
+* Poisson Coefficient - v12
+0.2
+* Shear Moduli - G12, G23
+15000
+7000
+* Coefficient of Thermal Expansion - alpha11, alpha22
+4.9E-6
+4.9E-6
+* Energy Release Rate - Gc (DOESN'T MATTER... NO DAMAGE!)
+90E6
+* Tensile and Compressive Strengths - Xt, Xc (DOESN'T MATTER... NO DAMAGE!)
+2150E6
+1450E6
+* Density - Dens
+1.8E-6
+*
+******************************************************************
+**                 Material Properties of Matrix                **
+**                                                              **
+**                      = EPOXY 3501-6 =                        **
+**                                                              **
+******************************************************************
+*
+* Young's Modulus - E
+4070
+* Poisson Coefficient - v
+0.34
+* Coefficient of Thermal Expansion - alpha
+58E-6
+* Initial temperature (also the stress free temperature, where there is no thermal expansion) - T0
+120
+* Plastic Poisson Coefficient - niup
+0.3
+* Energy Release Rate - GcT  (DOESN'T MATTER... NO DAMAGE!)
+0.09E6
+* Tensile and Compressive Strengths - Xt, Xc (DOESN'T MATTER... NO DAMAGE!)
+93E6
+124E6
+* Density - Dens
+1.26E-6
+* Reference temperature for plasticity laws - Tref
+80.0
+* Reference equivalent plastic strain - EPRref
+1E-4
+* Parameter for strain-rate dependency in compression - ALPHA_C
+0.035
+* Parameter for strain-rate dependency in tension - ALPHA_T
+0.035
+* Parameter for strain-rate dependency in shear - ALPHA_S
+0.0
+* Parameter for strain-rate dependency in compression - BETA_C
+0.42
+* Parameter for strain-rate dependency in compression - BETA_T
+0.42
+* Parameter for strain-rate dependency in compression - BETA_S
+0.0
