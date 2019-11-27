@@ -1,20 +1,17 @@
-\chapter*{Summary}
-\addcontentsline{toc}{chapter}{Summary}
-\setheader{Summary}
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\setheader{Abstract}
 
 % Here you write the Summary (abstract) of your thesis in English.
 
-This document intends to establish a baseline for everyone in our research group. Hopefully, it will facilitate cooperation between all of us. As a computational group, we like Linux, Github and \LaTeX. Therefore, this document provides a brief introduction to these basic tools.
+Fused Filament Fabrication (FFF) of polymer products have experienced a significant rise in engineering applications in the past decades. Since the production process differs from conventionally made plastics, the mechanical properties are largely altered. The FFF products exhibit orthotropic behaviour in the three principle directions due the composite like lamina build-up. The effect is largely influenced by three properties; the degree of wetting and healing between deposited filament roads, the generated periodic porosity in the mesostructure and the entanglement density of the used polymer. The increase in quality of FFF systems have optimized some of these aspects, but commonly porosity of around 3\% is still present in FFF products.
 
-\chapter*{Samenvatting}
-\addcontentsline{toc}{chapter}{Samenvatting}
-\setheader{Samenvatting}
+This work aimed to identify the porosity of ABS FFF products trough optical microscopy and investigation of the FFF process. Combining the effort of the analysis of the mesotructure and the implemented process strategy, a periodic geometrical definition of the mesostructure was made. 
+Subsequently, based on this geometry, a Representative Volume Element (RVE) dependant on the line width and line height process parameters is proposed. This geometry was implemented in a Finite Element Analysis to extract the tensile elastic and non-linear response in the three principle directions, a method that was originally based on long fibre composites. Since the mechanical behaviour of thermoplastics is complex in comparison to metals, experimental yield and failure criteria are introduced in a user defined material model (VUMAT) where manual constitutive equations are implemented in the a user subroutine. This VUMAT is combined with an explicit analysis using Abaqus software. 
 
-{\selectlanguage{dutch}
+The results are compared and validated with empirical tensile tests of FFF ABS products, obtained using two different methods, the ISO 527 and the ASTM D3039 standard. The stress strain curves from the ASTM D3039 test procedure show significant overlap with the results from the optimized RVE analysis. The UTS of the 1 and 2 directions are predicted with a deviation of 5\%. The difference in the 3 direction is explained trough the sub-optimal healing between the subsequent layers. This accounts for roughly 10\% of the drop in UTS in comparison with bulk ABS.  This implies that porosity is the dominant phenomenon affecting the tensile behaviour of FFF parts. 
 
-% Here you write the Summary in Dutch (apparently this is required!).
+This model has the potential to determine the mechanical properties of fully healed FFF products accurately with different layer orientations and line/width ratios. Additionally, cohesive elements could be added in the future to simulate sub-optimal healing between filament roads.    
 
-Samenvatting in het Nederlands\ldots
 
-}
 

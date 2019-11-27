@@ -3,7 +3,7 @@
 \graphicspath{{chapter_6_Elasticmodelling/figures/chapter_6.tex}}% path to the figures folder of this chapter
 
 \section{Introduction}
-This chapter discusses the different elastic modelling approaches and will present the results. Multiple times references will be made to equations and theory presented in literature review. The properties used in this analysis are based on the ABS blend specified in the the Ultimaker spec sheet \cite{UltimakerUltimakerSheet}.
+This chapter discusses the different elastic modelling approaches and will present the results. Multiple times references will be made to equations and theory presented in literature review. The properties used in this analysis are based on the ABS blend specified in the the Ultimaker spec sheet \cite{Ultimaker2018TechnicalABS}.
 
 
 %\section{%Methods and procedures}
@@ -34,7 +34,7 @@ To apply periodic boundary conditions on the faces of the RVE, the seed of nodes
     \caption{The new designed RVE}
     \label{fig:partition}
 \end{figure}
-The results from the homogenization model seemed to be insensitive for mesh size, the results did not alter significantly for an element size smaller than 0.05mm (1/8 of an RVE side). The results also did not seem to alter with multiple RVE's used in the simulation. Since the homogenization simulations are not computationally intensive, a fine mesh with a global size of 0.01mm was chosen, which is comparable with the mesh used in the non-linear simulations as is shown in figure \ref{fig:mesh}
+The results from the homogenization model seemed to be insensitive for mesh size, the results did not alter significantly for an element size smaller than 0.05mm (1/8 of an RVE side). The results also did not seem to alter with multiple RVE's used in the simulation. Since the homogenization simulations are not computationally intensive, a fine mesh with a global size of 0.01mm was chosen as is shown in figure \ref{fig:mesh}
 
 %Element Mesh here
 \begin{figure}[H]
@@ -55,17 +55,20 @@ In figure \ref{fig:Elasticproperties}  and table \ref{tab:Elasticproperties} the
     \caption{Elastic properties comparison}
     \label{fig:Elasticproperties}
 \end{figure}
-
-\begin{tabular}{ |p{2.2cm}||p{2.2cm}|p{2.2cm}|p{2.2cm}|p{2.2cm}|}
+\begin{table}
+\caption{Elastic properties of different methods in the 3 principle directions}
+\end{table}
+\begin{tabular}{ p{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}}
  \hline
 direction & $E$ Voigt [MPa] & $E$ RVE [MPa]& $E$ ISO [MPa]& $E$ ASTM [MPa] \\ 
 \hline
 1 (YX[0]) & 1984 & 1972 & 2019 & 1811 \\
 2 (XY[0]) & 1643 & 1909 & 1974 & 1616 \\
-3 (ZY[0]) & 1233 & 1469 & 1793 & 1606 \\
+3 (ZY[0]) & 1233 & 1469 & 1793 & 1563 \\
  \hline
 \end{tabular}
      \label{tab:Elasticproperties}
+     \end{table}
 
 \section{Discussion}
 The results in the previous section show the two models as a function of the line ratio including the from the experimental testing. In chapter 5 it is discussed what the effect is of the sample shape are on the properties. The ISO samples will probably over-estimate the elastic properties in the 2 and 3 direction due to extra wall layers that are implemented, this is in line with the observations of the models and the ASTM sample. The results from the ASTM sample should in theory give the most realistic elastic response representative for the product material. However, since the large surface roughness and inconstant sample cross section, it can be difficult to exactly measure the cross sectional area. Additionally, since there is no perfect healing, material might rupture on a microscopical level in the domain where the elastic modulus is calculated, decreasing the E modulus prematurely.  Surprisingly, the 1 and 2 emperically tested directions significantly underperform compared with the results from the models. This might be due to inaccuracies in the measurements. Since the surface is very rough, the measured surface might be larger than the actual surface, generating low eleasticity for the empirical results. Interesting enough the 3 direction in both empirical methods show a better performance compared with the models. This can probably be explained due to the large cavity area that is assumed in the 3 direction. This area would in reality be smaller, and would have blunted corners. 
