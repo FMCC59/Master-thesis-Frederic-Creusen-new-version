@@ -1,0 +1,106 @@
+\documentclass{dissertation}
+% Example to include print option: \documentclass[print]{dissertation}
+
+%\graphicspath{{./figures/}}    % set the directory of the fig files
+
+% Extra usepackages not included in TUD's template that are useful:
+\usepackage{changes} % To allow track changes and comments
+\usepackage{bbold}   % colored text for reviewing process
+\usepackage{array} % more table commands (multicolumn for example)
+
+\usepackage{subcaption} % improves captions of tables
+\usepackage{tabularx} % enhances the way we deal with tables (useful sometimes)
+\usepackage[parfill]{parskip} % Transform paragraph style from indent to blank space
+\usepackage{siunitx} % if you want shortcuts to use SI units 
+\usepackage{enumitem} % control environments: enu­mer­ate, item­ize and de­scrip­tion
+%\usepackage{subfigure} % useful to enhance the way latex deals with figures
+%\usepackage{subfig} % old package of subfigure (I prefer subfigure)
+\usepackage{float} % enhances positioning of figures
+\usepackage{wrapfig} % allow to include a figure in the middle of text
+\usepackage{algpseudocode} % to write pseudocode
+\usepackage[chapter]{algorithm} % to write algorithms
+%\usepackage{framed} % to create a frame around a text
+\usepackage[textwidth=20mm,textsize=footnotesize]{todonotes} % to create comments (useful to your advisor!)
+\setlength{\marginparwidth}{20mm} % This was necessary to correctly place the todonotes
+
+\newtheorem{theorem}{Theorem} 
+\newtheorem{lemma}[theorem]{Lemma} 
+\newtheorem{remark}[theorem]{Remark}
+
+%\onehalfspacing % Adjust line spacing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Sometimes the numbering of the sections disappears (depending on the version of the "titlesec" package you have installed on your computer). If that is the case, uncomment the following 6 lines:
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%% Specify the title and author of the thesis. This information will be used on
+%% the title page (in title/title.tex) and in the metadata of the final PDF.
+\title[a Representative Volume Element approach]{Micromechanical analysis of Fused Filament Fabricated products}  
+\author{Frederic}{Creusen} % \author{first name}{last name}
+
+%% Use Roman numerals for the page numbers of the title pages and table of
+%% contents.
+\frontmatter
+
+\include{title/title}
+
+%% The (optional) dedication can be used to thank someone or display a
+%% significant quotation.
+%dedication{\epigraph{A bit of creativity transforms minimum innovation into maximum results.\\
+%			Imagine what a lot of creativity can do.}{M.A.B.}}
+
+\include{summary/summary}
+%\include{acks/acks} % this is optional
+%\include{preface/preface} % this is optional (and unnecessary?)
+
+\tableofcontents
+
+%% Use Arabic numerals for the page numbers of the chapters.
+\mainmatter
+
+%% Turn on thumb indices.
+\thumbtrue
+
+\include{chapter_1/chapter_1}
+\include{chapter_2/chapter_2}
+\include{chapter_3/chapter_3}
+\include{chapter_4_RVE_Definition/chapter_4}
+<<<<<<< HEAD
+%\include{chapter_3/chapter_3}
+%\include{chapter_5_Experimentaltesting/Chapter_5_Results}
+%\include{chapter_6_Elasticmodelling/chapter_6}
+%\include{chapter_7_non-elasticmodelling/chapter_7_non-elasticmodelling} % add more chapters if you need
+=======
+\include{chapter_5_Experimentaltesting/Chapter_5_Results}
+\include{chapter_6_Elasticmodelling/chapter_6}
+\include{chapter_7_non-elasticmodelling/chapter_7_non-elasticmodelling} 
+\include{chapter_8/Conclusion} 
+% add more chapters if you need
+>>>>>>> e529cd4dc8433365205f11d075203472220c74a1
+%\include{discussion/discussion} % this is optional (but not for the Bessa group!)
+\include{conclusion/conclusion}
+%\include{epilogue/epilogue}  % this is optional (and unnecessary?)
+
+\references{references.bib}
+
+%% Use letters for the chapter numbers of the appendices.
+\appendix
+
+%\include{appendix_a/appendix_a}
+%\include{appendix_b/appendix_b}
+
+%% Turn off thumb indices for unnumbered chapters.
+\thumbfalse
+
+%\include{cv/cv} % This is probably optional for MS thesis
+%\include{publications/publications} % This is optional for MS thesis
+
+\end{document}
+
