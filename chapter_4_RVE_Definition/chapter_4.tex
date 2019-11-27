@@ -42,7 +42,7 @@ The method that is used for the cutting of cross-sectional parts has therefore b
 The used production parameters and hardware are defined in table \ref{tab:parameters}. As is discussed in chapter 2,  high speed has a negative effect on the mechanical properties, therefore an appropriately low speed was used to produce the samples.
 
 \begin{table}[h]
-	\allign
+%	\allign
 	\caption{Parameters for cross sectional analysis}
 	\label{tab:parameters}
 	\begin{tabular}{ll}
@@ -287,9 +287,12 @@ A_{RVE}=l_h*l_w
 
 Now that the form of the RVE is defined by the $l_h$ and $l_w$ parameters, we can define a relation of the void surface according to: 
 \begin{equation}
-A_v = ((l_h/2)-(e_w-l_w)/2)^2*(l_h/2)-(asin((l_h/2)-(e_w-l_w)/(l_h))/(2*\pi)*(l_h/2)^2*\pi 
-\\ & &
--\sqrt{(l_h^2-((l_h/2)-(e_w-l_w)/2)^2 )}*(l_h/2)-(e_w-l_w)/2 )*2
+\small
+\begin{array}{l}
+A_v = & ((l_h/2)-(e_w-l_w)/2)^2*(l_h/2)-(asin((l_h/2)-(e_w-l_w)/(l_h))/(2*\pi)*(l_h/2)^2*\pi 
+\\
+& -\sqrt{(l_h^2-((l_h/2)-(e_w-l_w)/2)^2 )}*(l_h/2)-(e_w-l_w)/2 )*2
+\end{array}
 \end{equation}
 And the surface fraction of the RVE can be found with
 \begin{equation}

@@ -901,7 +901,7 @@ Plane stress is achieved by defining $\sigma_{33}$=0 $\sigma_{23}$=0 $\sigma_{13
 \end{vmatrix}
 =
 \begin{vmatrix}
-\frac{1}{E_1} & \frac{-v_1_2}{E_1} & 0\\
+\frac{1}{E_1} & \frac{-v_{12}}{E_1} & 0\\
 \frac{-v_{12}}{E_1} & \frac{1}{E_2} & 0 \\
 0 & 0 & \frac{1}{G_{12}}\\
 \end{vmatrix}
@@ -923,9 +923,9 @@ The stresses and the stiffness matrix $|Q|$ can be acquired by inverting equatio
 \end{vmatrix}
 =
 \begin{vmatrix}
-\frac{E_1}{1-v_1_2v_2_1} & \frac{-v_1_2E_2}{1-v_1_2v_1_2} & 0\\
-\frac{-v_1_2E_2}{1-v_1_2v_1_2} & \frac{E_1}{1-v_1_2v_2_1} & 0 \\
-0 & 0 & G_1_2\\
+\frac{E_1}{1-v_{12} v_{21}} & \frac{-v_{12}E_2}{1-v_{12}v_{12}} & 0\\
+\frac{-v_{12}E_2}{1-v_{12}v_{12}} & \frac{E_1}{1-v_{12}v_{21}} & 0 \\
+0 & 0 & G_{12}\\
 \end{vmatrix}
 \
 \begin{vmatrix}
@@ -944,7 +944,7 @@ The mechanics of materials approach is based on simplifying assumptions of eithe
 The rule of mixture (ROM) is a commonly used principle in the application of composites, when two different materials are combined in a solid, the ROM can combine the different material properties to predict the new solid characteristics. When loading a composite ply in the 1 direction (along the fibre axis), the elastic properties can be predicted with the parallel or Voigt model\cite{Ishai2006EngineeringMaterials} \cite{Mabessatudelftnl2018MS43025Theory}
 
 \begin{equation} \label{eqn:Voigt}
-E_1=V_f*E_{1f}+(1-V_f)*E_1_m
+E_1=V_f*E_{1f}+(1-V_f)*E_{1m}
 \end{equation}
 
 Where $E_1$ is the elastic modulus of the ply in direction 1, $V_f$ is the fibre volume and $V_m$ is the matrix volume. Following this formula, and considering the ABS roads as $V_f$ and the porosity as $V_m$, one could predict the elastic properties in the 1 direction by obtaining the void density in the 1 plane.
@@ -996,12 +996,18 @@ An RVE homgogenization approach in combination with the Finite Element Method (i
 
 \begin{equation}\label{Somireddy2}
 \bar{\epsilon}_{ij}=\frac{1}{V_{RVE}}\int_V \epsilon_{ij}dV=\epsilon_{ij}^0
-\end{equation}In order to determine the stiffness tensor, where afterwards the 9 elastic constants can be retrieved by inverting the stiffness tensor to the compliance tensor, an analysis for each column should be carried out. Therefore, trough the average volume stress from the elements in the RVE for the 6 different loading conditions the stiffness tensor can be found
+\end{equation}
+
+In order to determine the stiffness tensor, where afterwards the 9 elastic constants can be retrieved by inverting the stiffness tensor to the compliance tensor, an analysis for each column should be carried out. Therefore, trough the average volume stress from the elements in the RVE for the 6 different loading conditions the stiffness tensor can be found
 
 \begin{equation}\label{eqn:homogenization}
-C_{ijkl}=\bar{\sigma}_{ij}=\frac{1}{V_{RVE}}\int_V \sigma_{ij}dV  \\ & &
+C_{ijkl}=\bar{\sigma}_{ij}=\frac{1}{V_{RVE}}\int_V \sigma_{ij}dV \\ 
 \bar{\epsilon}_{kl}^0=1
-\end{equation}Rodriguez \cite{Rodriguez2003MechanicalModeling} implements a method known as the the asymptotic theory of homogenization. He assumed in his FEM model a mesostructure based on empirically obtained micrographs. This method allowed hem to predict the Youngs moduli in the 1 and 2 direction with a overestimation of approximately 5 percent.  The reader is referred to his paper for further details.
+\end{equation}
+
+\todo{What's up with this equation?}
+
+Rodriguez \cite{Rodriguez2003MechanicalModeling} implements a method known as the the asymptotic theory of homogenization. He assumed in his FEM model a mesostructure based on empirically obtained micrographs. This method allowed hem to predict the Youngs moduli in the 1 and 2 direction with a overestimation of approximately 5 percent.  The reader is referred to his paper for further details.
 
 Apart from Rodriguez, Sheth \cite{Sheth2017NumericalOrientation} has investigated the homogenization method implemented in a damage prediction software, BSAM to predict the elastic properties of the RVE.
 
