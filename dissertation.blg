@@ -1,0 +1,118 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: dissertation.aux
+A level-1 auxiliary file: title/title.aux
+A level-1 auxiliary file: summary/summary.aux
+A level-1 auxiliary file: chapter_1/chapter_1.aux
+A level-1 auxiliary file: chapter_2/chapter_2.aux
+A level-1 auxiliary file: chapter_3/chapter_3.aux
+A level-1 auxiliary file: chapter_4_RVE_Definition/chapter_4.aux
+A level-1 auxiliary file: chapter_5_Experimentaltesting/Chapter_5_Results.aux
+A level-1 auxiliary file: chapter_6_Elasticmodelling/chapter_6.aux
+A level-1 auxiliary file: chapter_7_non-elasticmodelling/chapter_7_non-elasticmodelling.aux
+A level-1 auxiliary file: conclusion/conclusion.aux
+The style file: dissertation.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: references.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+Control: key (0) 
+Control: author (72) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (0) allowed
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+Warning--missing institution in WohlersAssociates2017WohlersIndustry
+Warning--missing journal in Bastiaans2015DeDefensie
+Warning--missing institution in NATOPerspectivesOperations
+Warning--empty year in NATOPerspectivesOperations
+Warning--missing institution in Joyce20143DDefense
+Warning--missing journal in Turner2014AModeling
+Warning--missing journal in TNO2017ProcesbegeleidingLearned
+Warning--empty year in XstreamDigimat_AM
+Warning--missing journal in WoolStrenghtInterfaces
+Warning--empty year in WoolStrenghtInterfaces
+Warning--missing school in Veen2019EnhancingTemperature
+Warning--empty year in 3DHubsIntroductionPrinting
+Warning--empty year in all3dpAll3dp
+Warning--empty year in Simplefy3DPrintGuide
+Warning--empty year in GaryHodgsonSlic3rMath
+Warning--missing institution in HossainImprovingParameters
+Warning--empty year in HossainImprovingParameters
+Warning--empty year in UltimakerSpeed
+Warning--missing publisher in Van_der_Vegt2001FromPlastics
+Warning--missing publisher in Halary2011PolymerMaterials
+Warning--empty year in PtolinePolymersCrystalline
+Warning--missing journal in Afd2016NEN-EN-ISO527-2
+Warning--missing journal in Christensen2013TheFailure
+Warning--missing journal in BoisA:
+Warning--empty year in BoisA:
+Warning--missing publisher in Mallick2007Fiber-Composites
+Warning--missing institution in Ultimaker2018TechnicalABS
+Warning--missing journal in Forster2015NISTApplicability
+Warning--missing journal in Materials2015ASTMD638-14
+Warning--missing journal in Afd2014NEN-EN-ISO179-1
+Warning--missing journal in ASTMInternational2017ISOParts
+Warning--empty author in 2019NEN-EN-ISOParts
+Warning--missing journal in 2019NEN-EN-ISOParts
+Warning--missing journal in NEN_EN_ISO2019NEN_EN_ISOTestmethoden
+Warning--empty author in 2013ASTMManufacturing
+Warning--empty year in ChuaStandardManufacturing
+Warning--missing institution in EssentiumTechnicalPLA
+Warning--empty year in EssentiumTechnicalPLA
+Warning--missing journal in Sheth2017NumericalOrientation
+Warning--missing journal in TronvollTheApproach
+Warning--empty year in TronvollTheApproach
+Warning--missing journal in De2013NEN-EN-ISO527-4
+Warning--missing institution in ASTM2008Standard3039
+Warning--missing journal in Fahrenholz2018TheZwick/Roell
+Warning--empty year in SimuliaWritingAbaqus
+You've used 94 entries,
+            5847 wiz_defined-function locations,
+            2269 strings with 38287 characters,
+and the built_in function-call counts, 86592 in all, are:
+= -- 5667
+> -- 2128
+< -- 488
++ -- 679
+- -- 488
+* -- 13372
+:= -- 8837
+add.period$ -- 174
+call.type$ -- 94
+change.case$ -- 463
+chr.to.int$ -- 93
+cite$ -- 143
+duplicate$ -- 8349
+empty$ -- 6569
+format.name$ -- 1218
+if$ -- 16887
+int.to.chr$ -- 2
+int.to.str$ -- 102
+missing$ -- 1020
+newline$ -- 334
+num.names$ -- 276
+pop$ -- 3588
+preamble$ -- 1
+purify$ -- 455
+quote$ -- 0
+skip$ -- 3083
+stack$ -- 0
+substring$ -- 1841
+swap$ -- 7644
+text.length$ -- 223
+text.prefix$ -- 0
+top$ -- 8
+type$ -- 1273
+warning$ -- 45
+while$ -- 243
+width$ -- 0
+write$ -- 805
+(There were 45 warnings)

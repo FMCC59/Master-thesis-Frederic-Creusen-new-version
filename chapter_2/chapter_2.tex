@@ -107,7 +107,7 @@ The so called "bead" or "road" is deposited in an oblong shape (similar to a sta
     \label{fig:welding}}
 \end{figure}
 
-The touching surfaces of the roads are "welded" together if the temperature of both roads is high enough (figure \ref{fig:welding}). The deposited filament is practically uniformly melted, since the liquifier temperature is set at a higher temperature than the melting temperature ($T_m$) or glass transisition temperature for thermoplastics ($T_g$). For perfect bonding the surface of the lower road should also reach this temperature and maintain this for enough time. However, the temperature of the lower road has cooled since it was deposited. The strength of the bond is therefore a function of time and temperature of both roads and can be expressed in two different mechanisms: wetting and healing (figure \ref{fig:polymerwelding}). This is an anisothermal process of heating and cooling different layers at high rates as can be seen in figure \ref{fig:temperaturehistory}. One of the first researchers that began investigating this process where Thomas and Rodriguez \cite{Thomas2000ModelingRoads} followed by Bellehumeur et al.\cite{Bellehumeur2004ModelingProcess}and  Sun et al. \cite{Sun2008}. Seppala et al. \cite{Seppala2017WeldManufacturing} did an extensive study on the temperature profile of extruded roads and the bond forming after different layers are being deposited on top of it. The temperature history can either empirically be observed with an infrared camera, or can numerically be approximated when the toolpath of the extruder is known.There are currently software tools available which will generate a predicted temperature profile for specific layers in a particular FFF produced geometry\cite{Digimat-AM}. 
+The touching surfaces of the roads are "welded" together if the temperature of both roads is high enough (figure \ref{fig:welding}). The deposited filament is practically uniformly melted, since the liquifier temperature is set at a higher temperature than the melting temperature ($T_m$) or glass transisition temperature for thermoplastics ($T_g$). For perfect bonding the surface of the lower road should also reach this temperature and maintain this for enough time. However, the temperature of the lower road has cooled since it was deposited. The strength of the bond is therefore a function of time and temperature of both roads and can be expressed in two different mechanisms: wetting and healing (figure \ref{fig:polymerwelding}). This is an anisothermal process of heating and cooling different layers at high rates as can be seen in figure \ref{fig:temperaturehistory}. One of the first researchers that began investigating this process where Thomas and Rodriguez \cite{Thomas2000ModelingRoads} followed by Bellehumeur et al.\cite{Bellehumeur2004ModelingProcess}and  Sun et al. \cite{Sun2008}. Seppala et al. \cite{Seppala2017WeldManufacturing} did an extensive study on the temperature profile of extruded roads and the bond forming after different layers are being deposited on top of it. The temperature history can either empirically be observed with an infrared camera, or can numerically be approximated when the toolpath of the extruder is known.There are currently software tools available which will generate a predicted temperature profile for specific layers in a particular FFF produced geometry \cite{XstreamDigimat_AM}. 
 
 \begin{figure}[H]
     \centering
@@ -160,14 +160,14 @@ In this equation $\sigma_{weld}$ is the weld strength in (MPa), $\sigma_{UTS}$ i
 
 \subsubsection{Build plate and chamber}
     \label{Build plate and chamber}
-The liquefied filament is deposited on the build plate (also called printbed) and is consequently deposited on top of the previous layers. The buildplate can be as simple as a piece of metal or glass. However, there are some crucial aspects concerning the properties of the bed. The adhesion of the first deposited layer with the bed is very important to prevent de-lamination during the process. Therefore, heat elements are used to decrease steep heat gradients in the part, which result in warping. To prevent the bed itself from deforming (as little as a few hundredth of a mm can have negative impact on the first layer) a material with a low thermal expansion coefficient is chosen (e.g. glass). The bed temperature has a positive effect on the layer bonding in the lower region of the part. However, this is only "felt" in roughly the first centimeters of the part trough conduction. It has been concluded that a higher overall temperature of the chamber has a beneficial impact on the road healing and subsequently on the mechanical properties\cite{VeenEnhancingTemperature}. More advanced systems therefore implement a heated envelope.
+The liquefied filament is deposited on the build plate (also called printbed) and is consequently deposited on top of the previous layers. The buildplate can be as simple as a piece of metal or glass. However, there are some crucial aspects concerning the properties of the bed. The adhesion of the first deposited layer with the bed is very important to prevent de-lamination during the process. Therefore, heat elements are used to decrease steep heat gradients in the part, which result in warping. To prevent the bed itself from deforming (as little as a few hundredth of a mm can have negative impact on the first layer) a material with a low thermal expansion coefficient is chosen (e.g. glass). The bed temperature has a positive effect on the layer bonding in the lower region of the part. However, this is only "felt" in roughly the first centimeters of the part trough conduction. It has been concluded that a higher overall temperature of the chamber has a beneficial impact on the road healing and subsequently on the mechanical properties \cite{Veen2019EnhancingTemperature}. More advanced systems therefore implement a heated envelope.
 
 \subsection{Process parameters}
     \label{Process parameters}
 Since the process parameters of the FFF process have major influence on the resulting parts, it is essential to analyze the parameters and identify their influence on the mechanical properties. In this section the important parameters are highlighted.
 
 %part about slicers
-Most of these setting are defined by the so called "slicer" software, which is used to edit setting before generating a machine code that can be read by the printer. Certain machines have unique compatibility with a certain slicer (e.g. Eiger software from Markforged), or are produced by a manufacturer which also allows compatibility with other FFF systems (e.g. Cura from Ultimaker) or are produced  by a third party software developer (e.g. Simplify 3D, Slic3r). These softwares have similar settings that can be adjusted which will result in a  trade-off between speed and weight versus resolution, precision and mechanical performance. Since this thesis is mostly based on an Ultimaker S5 system \cite{UltimakerUltimakerS5}, and Cura is used as its slicer by the manufacturers, the terminology and parameters of Cura will be used as a benchmark. 
+Most of these setting are defined by the so called "slicer" software, which is used to edit setting before generating a machine code that can be read by the printer. Certain machines have unique compatibility with a certain slicer (e.g. Eiger software from Markforged), or are produced by a manufacturer which also allows compatibility with other FFF systems (e.g. Cura from Ultimaker) or are produced  by a third party software developer (e.g. Simplify 3D, Slic3r). These softwares have similar settings that can be adjusted which will result in a  trade-off between speed and weight versus resolution, precision and mechanical performance. Since this thesis is mostly based on an Ultimaker S5 system \cite{Ultimaker2019UltimakerSheet}, and Cura is used as its slicer by the manufacturers, the terminology and parameters of Cura will be used as a benchmark. 
 
 The most significant parameters that have effect on the product are:
 - Layer height (mm)\\
@@ -182,7 +182,7 @@ The most significant parameters that have effect on the product are:
 - (negative) Airgap (mm)\\
 
 
-Regular slicers use different type of settings for  different elements in a part. Let's consider the cross section of a cube (as can be seen in figure \ref{fig:Shell}) for FFF printing. Once a CAD (computer aided design) file (often in the form of a STL "stereolithography" file) or other geometrical digital drawing supported by the slicer is uploaded, the slicer will define different settings for different elements. Most important being: Bottom layers, Outer shell (walls), top layers, infill. The effects of the  elements will be outside the scope of this thesis and can be easily found online (3Dhubs \cite{3Dhubs3DHubs}, All3D \cite{all3dpAll3dp}, Ultimaker \cite{UltimakerUltimakerSheet}, Simplify 3D\cite{Simplefy3DPrintGuide}). For this project the focus is on a part with only bottom-layers, mimicking fully "dense" parts. Applying only bottom layers will generate parts with best mechanical properties per volume.   \cite{Li2017TheProperties}
+Regular slicers use different type of settings for  different elements in a part. Let's consider the cross section of a cube (as can be seen in figure \ref{fig:Shell}) for FFF printing. Once a CAD (computer aided design) file (often in the form of a STL "stereolithography" file) or other geometrical digital drawing supported by the slicer is uploaded, the slicer will define different settings for different elements. Most important being: Bottom layers, Outer shell (walls), top layers, infill. The effects of the  elements will be outside the scope of this thesis and can be easily found online (3Dhubs \cite{3DHubsIntroductionPrinting}, All3D \cite{all3dpAll3dp}, Ultimaker \cite{Ultimaker2019UltimakerSheet}, Simplify 3D\cite{Simplefy3DPrintGuide}). For this project the focus is on a part with only bottom-layers, mimicking fully "dense" parts. Applying only bottom layers will generate parts with best mechanical properties per volume.   \cite{Li2017TheProperties}
 
 \begin{figure}[H]
     \centering
@@ -269,7 +269,7 @@ According to van Veen \cite{Veen2019EnhancingTemperature} a clear relation was f
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{chapter_2/figures/Dennisgraph.png}
-    \caption{Critical release energy rate vs. the time parts spend above Tg\cite{VeenEnhancingTemperature}}
+    \caption{Critical release energy rate vs. the time parts spend above Tg \cite{Veen2019EnhancingTemperature}.}
     \label{fig:Dennisgraph}
 \end{figure}
 
@@ -356,14 +356,14 @@ PLA and ABS are most distinguishable by their polymer structure,  PLA is semi-cr
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.3\textwidth]{chapter_2/figures/structurepolymers.PNG}
-    \caption{Molecule structure in molten and solid state \cite{PtolinePolymersCrystalline}}
+    \caption{Molecule structure in molten and solid state \cite{PtolinePolymersCrystalline}.}
     \label{fig:structurepolymers}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{chapter_2/figures/EvsT.PNG}
-    \caption{E modulus against temperature for amorphous and semi-crystalline polymers \cite{Vegt2001FromPlastics}}
+    \caption{E modulus against temperature for amorphous and semi-crystalline polymers \cite{Van_der_Vegt2001FromPlastics}.}
     \label{fig:EvsT}
 \end{figure}
 
@@ -479,7 +479,7 @@ The difference in yield and failure loci can be observed in figure \ref{fig:yiel
     \label{fig:yieldloci}
 \end{figure}
 The axis in this figure represent the principle stress directions. The left surface is defined by a stress state of the von Mises stress. If a pure hydrostatic pressure is applied, the surface will not be crossed. For polymers there is also a dependency on the hydro static pressure, since it  will cross the surface at some point.  
-It should me mentioned that the yield and failure surface for polymers is in reality not symmetric for tension and compression, as can be seen in figure \ref{fig:SStensioncompression}. It has been concluded by several book on fracture mechanics \cite{Janssen2014Co-magmeasurewD.pdf} that polymers have a higher compressive yield strength than in tension. 
+It should me mentioned that the yield and failure surface for polymers is in reality not symmetric for tension and compression, as can be seen in figure \ref{fig:SStensioncompression}. It has been concluded by several book on fracture mechanics \cite{Janssen2014Co_magmeasurewD.pdf} that polymers have a higher compressive yield strength than in tension. 
 For ductile polymers also failure criteria are used based on the equivalent strain. This strain is calculated in a similar way as the equivalent stress. The failure surface might differ from the conventional von Mises or Tresca surfaces. 
 \begin{figure}[H]
     \centering
@@ -626,7 +626,7 @@ The general stiffness damage as function of plastic strain is defined as
 E_{eff}=E_0*(1-D)
 \end{equation}Where Nutini and Vitali proposed a simple definition of the damage parameter calculated from the volume strain, since an important characteristic of thermoplastics is the generation of damage (voids and crazes) during plastic volumetric deformation $\epsilon_v$, which is defined as the sum of the principle strains.
 
-\begin{equation}\label{AzziTsai}
+\begin{equation}\label{eqn:stiffnessdamage}
 D=1-exp(-\epsilon_v)
 \end{equation}
 
@@ -641,7 +641,7 @@ In figure \ref{fig:damagepolymer} the results from a loading/unloading experimen
 As can be seen, the Youngs modulus slightly decreases with plastic strain. However, after the first cycle (just after the softening region) the change in stiffness seems minimal.  Unfortunately, no absolute values of the Youngs moduli are presented in this study. 
 Following the results, this study proposed a damage function that follows the equation \ref{eqn:stiffnessdamage} fitting the experimental results. Since the damage only occurs in the plastic region for polymers, the result is a function of plastic strain ($\epsilon_p$), and is fitted with a double term exponential function:
 
-\begin{equation}\label{AzziTsai}
+\begin{equation}%\label{AzziTsai}
 D=A*(exp(B*\epsilon_p)-exp(D*\epsilon_p))
 \end{equation}The study concludes that the damage parameter calcultated with the volumetric deformation underpredicts the damage occurring. A possible reason is that besides voids and crack that might be captured with the volumetric strain, microscracks that do not lead to macroscopic volume change also contribute to damage. 
 
@@ -682,13 +682,13 @@ Chain entanglements play a fundamental role in fracture properties. Correlations
     \centering
     \includegraphics[width=0.4\textwidth]{chapter_2/figures/KIc.png}
     \caption{Correlation between toughness, $K_{Ic}$, and entanglement density, $v_e$  \cite{Halary2011PolymerMaterials}}
-    \label{fig:stresscrack}
+    \label{ref:KIc}
 \end{figure}
 These empirical results shows that there is a linear dependence  between the two factors as would be predicted by theory. 
 
 Unfortunately, the work of Halary et al. does not include investigations on ABS polymers. 
 %Hergenhahn \cite{Hergenhahn2002FractureABS} has investigated the fracture toughness of ABS for different thicknesses. Following the Izod procedure, the fracture toughness of ABS was found to be 2.8 $MPa*m^{-3/2}$ and for a thickness of 15 mm 2.77. 
-Oskui \cite{Oskui2014ExperimentalDevice} determined a fracture toughness of 4.32 $MPa m^{-3/2}$ for a 10 mm thick specimen. %others also had 4. 
+Oskui \cite{Oskui2014ExperimentalDevice} determined a fracture toughness of 4.32~MPa m$^{-3/2}$ for a 10 mm thick specimen. %others also had 4. 
 
 %these analytical models might be appropriate for our problem, but the goal of this thesis is to implement and validate a numerical model, therefore they will not be researched further. 
 
@@ -713,7 +713,7 @@ In the past years efforts have been made to use standard printing processes and 
 
 As an alternative to the ISO 527 or ASTM D638 standard, a composite alternative is proposed by Rodriguez \cite{Rodriguez2001MechanicalInvestigation}, which applies the ASTM D3039 on his tests, which are normally used for long fiber samples. The advantage of this standard is the fact that it does not have fillets at the end of the sample, reducing the stress concentration and possibility for defects.
 
-The document presented by NIST \cite{Forster2015NISTApplicability} still lacks standars on the production of test specimen. Additionally, ISO and ASTM published useful documents on general principles and terminology including ISO 17296  \cite{Afd2014NEN-EN-ISO179-1} ISO/ASTM 52900 \cite{ASTMInternational2017ISOParts} ISO/ASTM 52901 \cite{2019NEN-EN-ISOParts} ISO/ASTM 52910  \cite{ASTMInternational2017ISOParts} ISO /ASTM 52921 \cite{Nen-iso2019NEN-EN-ISOTestmethoden} ASTM F2971 \cite{2013ASTMManufacturing}, the last standard assumes a coordinate system (figure \ref{fig:coordinates}) which will be used for further reference. A book on standards and quality control was presented by Chua et al. \cite{ChuaStandardManufacturing}
+The document presented by NIST \cite{Forster2015NISTApplicability} still lacks standars on the production of test specimen. Additionally, ISO and ASTM published useful documents on general principles and terminology including ISO 17296  \cite{Afd2014NEN-EN-ISO179-1}, ISO/ASTM 52900 \cite{ASTMInternational2017ISOParts}, ISO/ASTM 52901 \cite{2019NEN-EN-ISOParts}, ISO/ASTM 52910  \cite{ASTMInternational2017ISOParts}, ISO /ASTM 52921 \cite{NEN_EN_ISO2019NEN_EN_ISOTestmethoden}, ASTM F2971 \cite{2013ASTMManufacturing}, the last standard assumes a coordinate system (figure \ref{fig:coordinates}) which will be used for further reference. A book on standards and quality control was presented by Chua et al. \cite{ChuaStandardManufacturing}
 
 Rodriguez \cite{Rodriguez2003MechanicalModeling} has assumed three normal material directions in line with the Chauchy stress tensor to simplify the reference to the road structure as can be seen in figure \ref{fig:Principlematerial}. This is in accordance with the notation for orthotropic materials such as long fibre composites.
 \begin{figure}[H]
@@ -856,7 +856,7 @@ Since it was concluded that FFF parts are an-isotropic and have particular mecha
 
 \subsection{Elastic modelling}
 \subsubsection{Stiffness in orthotropic materials}
-As has been discussed in the section \ref{chp:FFF properties} we can conclude that the layers are thin and behave as orthotropic material, and therefor, orthotropic constitutive relation for plane stress case can be considered, a similar approach has been found in multiple papers \cite{Rodrguez2003DesignStrength} \cite{Rodriguez2003MechanicalModeling} \cite{Somireddy2018DevelopmentFDM} 
+As has been discussed in the section \ref{chp:FFF properties} we can conclude that the layers are thin and behave as orthotropic material, and therefor, orthotropic constitutive relation for plane stress case can be considered, a similar approach has been found in multiple papers \cite{Rodriguez2003DesignStrength,Rodriguez2003MechanicalModeling,Somireddy2018DevelopmentFDM} 
 %\cite{Somireddy2017FlexuralStudy} \cite{Somireddy2017MechanicalMesostructure} \cite{Li2017TheProperties} \cite{Ahn2002AnisotropicABS} \cite{Alaimo2017InfluenceParts} \cite{Sheth2017NumericalOrientation} \cite{Patanwala2018TheComposites}. 
 
 The stress strain relation for an orthotropic body can be written in the contracted notation as

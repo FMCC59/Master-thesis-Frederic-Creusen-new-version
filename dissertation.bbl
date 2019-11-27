@@ -1,0 +1,1009 @@
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (72) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{94}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \textit  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {{Wohlers
+  Associates}}(2017)}]{WohlersAssociates2017WohlersIndustry}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Wohlers
+  Associates}}},\ }\href {http://ir.obihiro.ac.jp/dspace/handle/10322/3933}
+  {\emph {\bibinfo {title} {{Wohlers Report 2017 3D Printing and Additive
+  Manufacturing State of the Industry}}}},\ \bibinfo {type} {Tech. Rep.}\
+  (\bibinfo {year} {2017})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bastiaans}\ \emph {et~al.}(2015)\citenamefont
+  {Bastiaans}, \citenamefont {Blankers}, \citenamefont {Scheepstal},\ and\
+  \citenamefont {Veraar}}]{Bastiaans2015DeDefensie}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Bastiaans}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Blankers}},
+  \bibinfo {author} {\bibfnamefont {P.~V.}\ \bibnamefont {Scheepstal}}, \ and\
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Veraar}},\ }\bibfield
+  {title} {\textit {\bibinfo {title} {{De impact van 3D-printen op
+  Defensie}},}\ }\href@noop {} {\  (\bibinfo {year} {2015})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{NATO}}()}]{NATOPerspectivesOperations}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{NATO}}},\ }\href@noop
+  {} {\emph {\bibinfo {title} {{Perspectives on the Use of Additive
+  Manufacturing in NATO Operations}}}},\ \bibinfo {type} {Tech.
+  Rep.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Joyce}\ \emph {et~al.}(2014)\citenamefont {Joyce},
+  \citenamefont {Louis},\ and\ \citenamefont {Seymour}}]{Joyce20143DDefense}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Joyce}}, \bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont {Louis}}, \
+  and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Seymour}},\ }\href
+  {http://dupress.com/articles/additive-manufacturing-defense-3d-printing/}
+  {\emph {\bibinfo {title} {Deloitte University Press}}},\ \bibinfo {type}
+  {Tech. Rep.}\ (\bibinfo {year} {2014})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kamran}\ and\ \citenamefont
+  {Saxena}(2016)}]{Kamran2016ATechnology}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Kamran}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Saxena}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{A Comprehensive
+  Study on 3D Printing Technology}},}\ }\href
+  {https://www.researchgate.net/publication/310961474} {\bibfield  {journal}
+  {\bibinfo  {journal} {MIT International Journal of Mechanical Engineering}\
+  }\textbf {\bibinfo {volume} {6}},\ \bibinfo {pages} {63} (\bibinfo {year}
+  {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Ultimaker}}(2019)}]{Ultimaker2019UltimakerSheet}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Ultimaker}}},\ }\href
+  {https://ultimaker.com/file/download/productgroup/Ultimaker S5 specification
+  sheet v1.03.pdf/5beacc4a00a26.pdf
+  https://ultimaker.com/3d-printers/ultimaker-s5} {\textit {\bibinfo {title}
+  {{Ultimaker S5 Specification sheet}},}\ } (\bibinfo {year}
+  {2019})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Turner}\ \emph {et~al.}(2014)\citenamefont {Turner},
+  \citenamefont {Strong},\ and\ \citenamefont {Gold}}]{Turner2014AModeling}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.~N.}\ \bibnamefont
+  {Turner}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Strong}}, \
+  and\ \bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont {Gold}},\
+  }\bibfield  {title} {\textit {\bibinfo {title} {{A review of melt extrusion
+  additive manufacturing processes : I . Process design and modeling}},}\
+  }\href {\doibase 10.1108/RPJ-01-2013-0012} {\ \textbf {\bibinfo {volume}
+  {3}},\ \bibinfo {pages} {192} (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {McIlroy}\ and\ \citenamefont
+  {Olmsted}(2017{\natexlab{a}})}]{Mcilroy2017DisentanglementManufacturing}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {McIlroy}}\ and\ \bibinfo {author} {\bibfnamefont {P.~D.}\ \bibnamefont
+  {Olmsted}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Disentanglement
+  effects on welding behaviour of polymer melts during the
+  fused-filament-fabrication method for additive manufacturing}},}\ }\href
+  {\doibase 10.1016/j.polymer.2017.06.051} {\bibfield  {journal} {\bibinfo
+  {journal} {Polymer}\ }\textbf {\bibinfo {volume} {123}},\ \bibinfo {pages}
+  {376} (\bibinfo {year} {2017}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{TNO}}(2017)}]{TNO2017ProcesbegeleidingLearned}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{TNO}}},\ }\bibfield
+  {title} {\textit {\bibinfo {title} {{Procesbegeleiding productie d.m.v.
+  3D-printen: Lessons learned}},}\ }\href@noop {} {\  (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bellini}\ and\ \citenamefont
+  {G{\"{u}}{\c{c}}eri}(2003)}]{Bellini2003MechanicalModeling}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Bellini}}\ and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {G{\"{u}}{\c{c}}eri}},\ }\bibfield  {title} {\textit {\bibinfo {title}
+  {{Mechanical characterization of parts fabricated using fused deposition
+  modeling}},}\ }\href {\doibase 10.1108/13552540310489631} {\bibfield
+  {journal} {\bibinfo  {journal} {Rapid Prototyping Journal}\ }\textbf
+  {\bibinfo {volume} {9}},\ \bibinfo {pages} {252} (\bibinfo {year}
+  {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {McIlroy}\ and\ \citenamefont
+  {Olmsted}(2017{\natexlab{b}})}]{McIlroy2017DeformationManufacturing}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {McIlroy}}\ and\ \bibinfo {author} {\bibfnamefont {P.~D.}\ \bibnamefont
+  {Olmsted}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Deformation of
+  an amorphous polymer during the fused-filament-fabrication method for
+  additive manufacturing}},}\ }\href {\doibase 10.1122/1.4976839} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Rheology}\ }\textbf {\bibinfo
+  {volume} {61}},\ \bibinfo {pages} {379} (\bibinfo {year}
+  {2017}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Thomas}\ and\ \citenamefont
+  {Fodriguez}(2000)}]{Thomas2000ModelingRoads}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
+  {Thomas}}\ and\ \bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont
+  {Fodriguez}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Modeling the
+  Fracture Strength Between Fused-Deposition Extruded Roads}},}\ }\href
+  {http://sffsymposium.engr.utexas.edu/Manuscripts/2000/2000-03-Thomas.pdf}
+  {\bibfield  {journal} {\bibinfo  {journal} {Solid Freeform Fabrication
+  Proceedings}\ ,\ \bibinfo {pages} {17}} (\bibinfo {year} {2000})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Bellehumeur}\ \emph {et~al.}(2004)\citenamefont
+  {Bellehumeur}, \citenamefont {Li}, \citenamefont {Sun},\ and\ \citenamefont
+  {Gu}}]{Bellehumeur2004ModelingProcess}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Bellehumeur}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Li}},
+  \bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont {Sun}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {Gu}},\ }\bibfield  {title}
+  {\textit {\bibinfo {title} {{Modeling of bond formation between polymer
+  filaments in the fused deposition modeling process}},}\ }\href {\doibase
+  10.1016/S1526-6125(04)70071-7} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Manufacturing Processes}\ }\textbf {\bibinfo {volume} {6}},\
+  \bibinfo {pages} {170} (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Sun}\ \emph {et~al.}(2008)\citenamefont {Sun},
+  \citenamefont {Rizvi}, \citenamefont {Bellehumeur},\ and\ \citenamefont
+  {Gu}}]{Sun2008}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont
+  {Sun}}, \bibinfo {author} {\bibfnamefont {G.~M.}\ \bibnamefont {Rizvi}},
+  \bibinfo {author} {\bibfnamefont {C.~T.}\ \bibnamefont {Bellehumeur}}, \ and\
+  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Gu}},\ }\bibfield
+  {title} {\textit {\bibinfo {title} {{Effect of processing conditions on the
+  bonding quality of FDM polymer filaments}},}\ }\href {\doibase
+  10.1108/13552540810862028} {\bibfield  {journal} {\bibinfo  {journal} {Rapid
+  Prototyping Journal}\ } (\bibinfo {year} {2008}),\
+  10.1108/13552540810862028}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Seppala}\ \emph {et~al.}(2017)\citenamefont
+  {Seppala}, \citenamefont {Hoon~Han}, \citenamefont {Hillgartner},
+  \citenamefont {Davis},\ and\ \citenamefont
+  {Migler}}]{Seppala2017WeldManufacturing}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~E.}\ \bibnamefont
+  {Seppala}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Hoon~Han}},
+  \bibinfo {author} {\bibfnamefont {K.~E.}\ \bibnamefont {Hillgartner}},
+  \bibinfo {author} {\bibfnamefont {C.~S.}\ \bibnamefont {Davis}}, \ and\
+  \bibinfo {author} {\bibfnamefont {K.~B.}\ \bibnamefont {Migler}},\ }\bibfield
+   {title} {\textit {\bibinfo {title} {{Weld formation during material
+  extrusion additive manufacturing}},}\ }\href {\doibase 10.1039/c7sm00950j}
+  {\bibfield  {journal} {\bibinfo  {journal} {Soft Matter}\ }\textbf {\bibinfo
+  {volume} {13}},\ \bibinfo {pages} {6761} (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Xstream}}()}]{XstreamDigimat_AM}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Xstream}}},\ }\href
+  {https://www.e-xstream.com/product/digimat-am} {\textit {\bibinfo {title}
+  {{Digimat-AM}},}\ }\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wool}()}]{WoolStrenghtInterfaces}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~P.}\ \bibnamefont
+  {Wool}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Strenght of
+  Polymer Interfaces}},}\ }\href@noop {} {\ }\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Somireddy}\ and\ \citenamefont
+  {Czekanski}(2017)}]{Somireddy2017MechanicalMesostructure}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Somireddy}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Czekanski}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Mechanical
+  Characterization of Additively Manufactured Parts by FE Modeling of
+  Mesostructure}},}\ }\href {\doibase 10.3390/jmmp1020018} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Manufacturing and Materials
+  Processing}\ }\textbf {\bibinfo {volume} {1}},\ \bibinfo {pages} {18}
+  (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Somireddy}\ \emph {et~al.}(2018)\citenamefont
+  {Somireddy}, \citenamefont {Czekanski},\ and\ \citenamefont
+  {Singh}}]{Somireddy2018DevelopmentFDM}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Somireddy}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Czekanski}}, \ and\ \bibinfo {author} {\bibfnamefont {C.~V.}\ \bibnamefont
+  {Singh}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Development of
+  constitutive material model of 3D printed structure via FDM}},}\ }\href
+  {\doibase 10.1016/J.MTCOMM.2018.03.004} {\bibfield  {journal} {\bibinfo
+  {journal} {Materials Today Communications}\ }\textbf {\bibinfo {volume}
+  {15}},\ \bibinfo {pages} {143} (\bibinfo {year} {2018})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Li}\ \emph {et~al.}(2002)\citenamefont {Li},
+  \citenamefont {Sun}, \citenamefont {Bellehumeur},\ and\ \citenamefont
+  {Gu}}]{Li2002CompositeProperties}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Li}}, \bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont {Sun}}, \bibinfo
+  {author} {\bibfnamefont {C.}~\bibnamefont {Bellehumeur}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {P.}~\bibnamefont {Gu}},\ }\bibfield  {title}
+  {\textit {\bibinfo {title} {{Composite modeling and analysis for fabrication
+  of FDM prototypes with locally controlled properties}},}\ }\href {\doibase
+  10.1016/S1526-6125(02)70139-4} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Manufacturing Processes}\ }\textbf {\bibinfo {volume} {4}},\
+  \bibinfo {pages} {129} (\bibinfo {year} {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rodr{\'{i}}guez}\ \emph {et~al.}(2001)\citenamefont
+  {Rodr{\'{i}}guez}, \citenamefont {Thomas},\ and\ \citenamefont
+  {Renaud}}]{Rodriguez2001MechanicalInvestigation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont
+  {Rodr{\'{i}}guez}}, \bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
+  {Thomas}}, \ and\ \bibinfo {author} {\bibfnamefont {J.~E.}\ \bibnamefont
+  {Renaud}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Mechanical
+  behavior of acrylonitrile butadiene styrene (ABS) fused deposition materials.
+  Experimental investigation}},}\ }\href {\doibase 10.1108/13552540110395547}
+  {\bibfield  {journal} {\bibinfo  {journal} {Rapid Prototyping Journal}\
+  }\textbf {\bibinfo {volume} {7}},\ \bibinfo {pages} {148} (\bibinfo {year}
+  {2001})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rodr{\'{i}}guez}\ \emph {et~al.}(2003)\citenamefont
+  {Rodr{\'{i}}guez}, \citenamefont {Thomas},\ and\ \citenamefont
+  {Renaud}}]{Rodriguez2003MechanicalModeling}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont
+  {Rodr{\'{i}}guez}}, \bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
+  {Thomas}}, \ and\ \bibinfo {author} {\bibfnamefont {J.~E.}\ \bibnamefont
+  {Renaud}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Mechanical
+  behavior of acrylonitrile butadiene styrene fused deposition materials
+  modeling}},}\ }\href {\doibase 10.1108/13552540310489604} {\bibfield
+  {journal} {\bibinfo  {journal} {Rapid Prototyping Journal}\ }\textbf
+  {\bibinfo {volume} {9}},\ \bibinfo {pages} {219} (\bibinfo {year}
+  {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Blok}\ \emph {et~al.}(2018)\citenamefont {Blok},
+  \citenamefont {Longana}, \citenamefont {Yu},\ and\ \citenamefont
+  {Woods}}]{Blok2018AnComposites}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~G.}\ \bibnamefont
+  {Blok}}, \bibinfo {author} {\bibfnamefont {M.~L.}\ \bibnamefont {Longana}},
+  \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Yu}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {B.~K.}\ \bibnamefont {Woods}},\ }\bibfield  {title}
+  {\textit {\bibinfo {title} {{An investigation into 3D printing of fibre
+  reinforced thermoplastic composites}},}\ }\href {\doibase
+  10.1016/j.addma.2018.04.039} {\bibfield  {journal} {\bibinfo  {journal}
+  {Additive Manufacturing}\ }\textbf {\bibinfo {volume} {22}},\ \bibinfo
+  {pages} {176} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hart}\ \emph {et~al.}(2018)\citenamefont {Hart},
+  \citenamefont {Dunn}, \citenamefont {Sietins}, \citenamefont
+  {Hofmeister~Mock}, \citenamefont {Mackay},\ and\ \citenamefont
+  {Wetzel}}]{Hart2018IncreasedAnnealing}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~R.}\ \bibnamefont
+  {Hart}}, \bibinfo {author} {\bibfnamefont {R.~M.}\ \bibnamefont {Dunn}},
+  \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Sietins}}, \bibinfo
+  {author} {\bibfnamefont {C.~M.}\ \bibnamefont {Hofmeister~Mock}}, \bibinfo
+  {author} {\bibfnamefont {M.~E.}\ \bibnamefont {Mackay}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {E.~D.}\ \bibnamefont {Wetzel}},\ }\bibfield  {title}
+  {\textit {\bibinfo {title} {{Increased fracture toughness of additively
+  manufactured amorphous thermoplastics via thermal annealing}},}\ }\href
+  {\doibase 10.1016/j.polymer.2018.04.024} {\bibfield  {journal} {\bibinfo
+  {journal} {Polymer}\ }\textbf {\bibinfo {volume} {144}},\ \bibinfo {pages}
+  {192} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bartolai}\ \emph {et~al.}(2016)\citenamefont
+  {Bartolai}, \citenamefont {Simpson},\ and\ \citenamefont
+  {Xie}}]{Bartolai2016PredictingManufacturing}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Bartolai}}, \bibinfo {author} {\bibfnamefont {T.~W.}\ \bibnamefont
+  {Simpson}}, \ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Xie}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Predicting Strength
+  of Thermoplastic Polymer Parts Produced Using Additive Manufacturing}},}\
+  }in\ \href@noop {} {\emph {\bibinfo {booktitle} {Solid Freeform Fabrication
+  2016: Proceedings of the 26th Annual International}}}\ (\bibinfo {year}
+  {2016})\ pp.\ \bibinfo {pages} {951--963}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Peterson}(2019)}]{Peterson2019ReviewPerspective}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont
+  {Peterson}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Review of
+  acrylonitrile butadiene styrene in fused filament fabrication: A plastics
+  engineering-focused perspective}},}\ }\href {\doibase
+  10.1016/j.addma.2019.03.030} {\bibfield  {journal} {\bibinfo  {journal}
+  {Additive Manufacturing}\ }\textbf {\bibinfo {volume} {27}},\ \bibinfo
+  {pages} {363} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Veen}(2019)}]{Veen2019EnhancingTemperature}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~v.}\ \bibnamefont
+  {Veen}},\ }\emph {\bibinfo {title} {{Enhancing the mechanical properties of
+  fused filament fabricated parts by elevating the print room temperature}}},\
+  \href@noop {} {Ph.D. thesis} (\bibinfo {year} {2019})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{3D Hubs}}()}]{3DHubsIntroductionPrinting}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{3D Hubs}}},\
+  }\href@noop {} {\textit {\bibinfo {title} {{introduction FFF 3d printing}},}\
+  }\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{all3dp}}()}]{all3dpAll3dp}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{all3dp}}},\ }\href
+  {https://all3dp.com/} {\textit {\bibinfo {title} {{all3dp}},}\ }\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {{Simplefy3D}}()}]{Simplefy3DPrintGuide}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Simplefy3D}}},\ }\href
+  {https://www.simplify3d.com/support/print-quality-troubleshooting/} {\textit
+  {\bibinfo {title} {{Print Quality Troubleshooting Guide}},}\ }\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Li}\ \emph {et~al.}(2017)\citenamefont {Li},
+  \citenamefont {Wang}, \citenamefont {Sun},\ and\ \citenamefont
+  {Yu}}]{Li2017TheProperties}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Li}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Wang}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Sun}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {Z.}~\bibnamefont {Yu}},\ }\bibfield  {title} {\textit
+  {\bibinfo {title} {{The effect of process parameters in fused deposition
+  modelling on bonding degree and mechanical properties}},}\ }\href
+  {https://doi.org/10.1108/RPJ-06-2016-0090} {\bibfield  {journal} {\bibinfo
+  {journal} {Rapid Prototyping Journal Rapid Prototyping Journal Iss Rapid
+  Prototyping Journal}\ }\textbf {\bibinfo {volume} {24}},\ \bibinfo {pages}
+  {80} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ahn}\ \emph {et~al.}(2002)\citenamefont {Ahn},
+  \citenamefont {Montero}, \citenamefont {Odell}, \citenamefont {Roundy},\ and\
+  \citenamefont {Wright}}]{Ahn2002AnisotropicABS}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~H.}\ \bibnamefont
+  {Ahn}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Montero}},
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Odell}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Roundy}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {P.~K.}\ \bibnamefont {Wright}},\ }\bibfield  {title} {\textit
+  {\bibinfo {title} {{Anisotropic material properties of fused deposition
+  modeling ABS}},}\ }\href {\doibase 10.1108/13552540210441166} {\bibfield
+  {journal} {\bibinfo  {journal} {Rapid Prototyping Journal}\ }\textbf
+  {\bibinfo {volume} {8}},\ \bibinfo {pages} {248} (\bibinfo {year}
+  {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mohamed}\ \emph {et~al.}(2016)\citenamefont
+  {Mohamed}, \citenamefont {Masood}, \citenamefont {Bhowmik}, \citenamefont
+  {Nikzad},\ and\ \citenamefont {Azadmanjiri}}]{Mohamed2016EffectExperiment}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.~A.}\ \bibnamefont
+  {Mohamed}}, \bibinfo {author} {\bibfnamefont {S.~H.}\ \bibnamefont {Masood}},
+  \bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont {Bhowmik}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Nikzad}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Azadmanjiri}},\ }\bibfield  {title}
+  {\textit {\bibinfo {title} {{Effect of Process Parameters on Dynamic
+  Mechanical Performance of FDM PC/ABS Printed Parts Through Design of
+  Experiment}},}\ }\href {\doibase 10.1007/s11665-016-2157-6} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Materials Engineering and
+  Performance}\ } (\bibinfo {year} {2016}),\
+  10.1007/s11665-016-2157-6}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kuznetsov}\ \emph {et~al.}(2018)\citenamefont
+  {Kuznetsov}, \citenamefont {Solonin}, \citenamefont {Urzhumtsev},
+  \citenamefont {Schilling},\ and\ \citenamefont
+  {Tavitov}}]{Kuznetsov2018StrengthProcess}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~E.}\ \bibnamefont
+  {Kuznetsov}}, \bibinfo {author} {\bibfnamefont {A.~N.}\ \bibnamefont
+  {Solonin}}, \bibinfo {author} {\bibfnamefont {O.~D.}\ \bibnamefont
+  {Urzhumtsev}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Schilling}}, \ and\ \bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont
+  {Tavitov}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Strength of PLA
+  components fabricated with fused deposition technology using a desktop 3D
+  printer as a function of geometrical parameters of the process}},}\ }\href
+  {\doibase 10.3390/polym10030313} {\bibfield  {journal} {\bibinfo  {journal}
+  {Polymers}\ }\textbf {\bibinfo {volume} {10}} (\bibinfo {year} {2018}),\
+  10.3390/polym10030313}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Gary Hodgson}}()}]{GaryHodgsonSlic3rMath}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Gary Hodgson}}},\
+  }\href {https://manual.slic3r.org/advanced/flow-math} {\textit {\bibinfo
+  {title} {{Slic3r Manual – Flow Math}},}\ }\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cuan-Urquizo}\ \emph {et~al.}(2019)\citenamefont
+  {Cuan-Urquizo}, \citenamefont {Barocio}, \citenamefont {Tejada-Ortigoza},
+  \citenamefont {Pipes}, \citenamefont {Rodriguez},\ and\ \citenamefont
+  {Roman-Flores}}]{Cuan-Urquizo2019CharacterizationApproaches}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Cuan-Urquizo}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Barocio}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Tejada-Ortigoza}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Pipes}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Rodriguez}}, \
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Roman-Flores}},\
+  }\bibfield  {title} {\textit {\bibinfo {title} {{Characterization of the
+  Mechanical Properties of FFF Structures and Materials: A Review on the
+  Experimental, Computational and Theoretical Approaches}},}\ }\href {\doibase
+  10.3390/ma12060895} {\bibfield  {journal} {\bibinfo  {journal} {Materials}\
+  }\textbf {\bibinfo {volume} {12}},\ \bibinfo {pages} {895} (\bibinfo {year}
+  {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Montero}\ \emph {et~al.}(2001)\citenamefont
+  {Montero}, \citenamefont {Roundy},\ and\ \citenamefont
+  {Odell}}]{Montero2001MaterialExperiments}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Montero}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Roundy}}, \
+  and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Odell}},\ }\bibfield
+   {title} {\textit {\bibinfo {title} {{Material characterization of fused
+  deposition modeling (FDM) ABS by designed experiments}},}\ }\href
+  {http://groups.csail.mit.edu/drl/wiki/images/e/e7/Montero_Roundy_Odell_Ahn_Wright_2001_Material_Characterization_of_Fused_Deposition_Modeling_FDM_ABS_by_Designed_Experiments.pdf}
+  {\bibfield  {journal} {\bibinfo  {journal} {Proceedings of Rapid Prototyping
+  and Manufacturing Conference}\ ,\ \bibinfo {pages} {1}} (\bibinfo {year}
+  {2001})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dawoud}\ \emph {et~al.}(2016)\citenamefont {Dawoud},
+  \citenamefont {Taha},\ and\ \citenamefont
+  {Ebeid}}]{Dawoud2016MechanicalTechniques}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Dawoud}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Taha}}, \ and\
+  \bibinfo {author} {\bibfnamefont {S.~J.}\ \bibnamefont {Ebeid}},\ }\bibfield
+  {title} {\textit {\bibinfo {title} {{Mechanical behaviour of ABS: An
+  experimental study using FDM and injection moulding techniques}},}\ }\href
+  {\doibase 10.1016/j.jmapro.2015.11.002} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Manufacturing Processes}\ }\textbf {\bibinfo {volume}
+  {21}},\ \bibinfo {pages} {39} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gebisa}\ and\ \citenamefont
+  {Lemu}(2018)}]{Gebisa2018InvestigatingExperiment}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~W.}\ \bibnamefont
+  {Gebisa}}\ and\ \bibinfo {author} {\bibfnamefont {H.~G.}\ \bibnamefont
+  {Lemu}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Investigating
+  effects of Fused-deposition modeling (FDM) processing parameters on flexural
+  properties of ULTEM 9085 using designed experiment}},}\ }\href {\doibase
+  10.3390/ma11040500} {\bibfield  {journal} {\bibinfo  {journal} {Materials}\
+  }\textbf {\bibinfo {volume} {11}} (\bibinfo {year} {2018}),\
+  10.3390/ma11040500}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hossain}\ \emph {et~al.}()\citenamefont {Hossain},
+  \citenamefont {Ramos}, \citenamefont {Espalin}, \citenamefont {Perez},
+  \citenamefont {Wicker},\ and\ \citenamefont
+  {Keck}}]{HossainImprovingParameters}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~S.}\ \bibnamefont
+  {Hossain}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Ramos}},
+  \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Espalin}}, \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Perez}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Wicker}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {W.~M.}\ \bibnamefont {Keck}},\ }\href
+  {http://sffsymposium.engr.utexas.edu/Manuscripts/2013/2013-30-Hossain.pdf}
+  {\emph {\bibinfo {title} {{Improving Tensile Mechanical Properties of
+  FDM-Manufactured Specimens via Modifying Build Parameters}}}},\ \bibinfo
+  {type} {Tech. Rep.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Patanwala}\ \emph {et~al.}(2018)\citenamefont
+  {Patanwala}, \citenamefont {Hong}, \citenamefont {Vora}, \citenamefont
+  {Bognet},\ and\ \citenamefont {Ma}}]{Patanwala2018TheComposites}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~S.}\ \bibnamefont
+  {Patanwala}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Hong}},
+  \bibinfo {author} {\bibfnamefont {S.~R.}\ \bibnamefont {Vora}}, \bibinfo
+  {author} {\bibfnamefont {B.}~\bibnamefont {Bognet}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {A.~W.}\ \bibnamefont {Ma}},\ }\bibfield  {title} {\textit
+  {\bibinfo {title} {{The microstructure and mechanical properties of 3D
+  printed carbon nanotube-polylactic acid composites}},}\ }\href {\doibase
+  10.1002/pc.24494} {\bibfield  {journal} {\bibinfo  {journal} {Polymer
+  Composites}\ }\textbf {\bibinfo {volume} {39}},\ \bibinfo {pages} {E1060}
+  (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Ultimaker}}()}]{UltimakerSpeed}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Ultimaker}}},\ }\href
+  {https://ultimaker.com/en/resources/52664-speed} {\textit {\bibinfo {title}
+  {{Speed}},}\ }\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Daniel}}(2006)}]{Daniel2006EngineeringMaterials}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Daniel}}},\ }\href
+  {\doibase 10.11647/obp.0130.01} {\emph {\bibinfo {title} {{Engineering
+  Mechanics of Composite Materials}}}}\ (\bibinfo  {publisher} {Oxford
+  university press},\ \bibinfo {address} {Oxford},\ \bibinfo {year} {2006})\
+  pp.\ \bibinfo {pages} {1--157}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rodr{\'{i}}guez-Panes}\ \emph
+  {et~al.}(2018)\citenamefont {Rodr{\'{i}}guez-Panes}, \citenamefont {Claver},\
+  and\ \citenamefont {Camacho}}]{Rodriguez-Panes2018TheAnalysis}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Rodr{\'{i}}guez-Panes}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Claver}}, \ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Camacho}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{The Influence
+  of Manufacturing Parameters on the Mechanical Behaviour of PLA and ABS Pieces
+  Manufactured by FDM: A Comparative Analysis}},}\ }\href {\doibase
+  10.3390/ma11081333} {\bibfield  {journal} {\bibinfo  {journal} {Materials}\
+  }\textbf {\bibinfo {volume} {11}},\ \bibinfo {pages} {1333} (\bibinfo {year}
+  {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Balani}\ \emph {et~al.}(2015)\citenamefont {Balani},
+  \citenamefont {Verma}, \citenamefont {Agarwal},\ and\ \citenamefont
+  {Narayan}}]{Balani2015PhysicalPolymers}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Balani}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Verma}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Agarwal}}, \ and\
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Narayan}},\ }\bibfield
+  {title} {\textit {\bibinfo {title} {{Physical, Thermal, and Mechanical
+  Properties of Polymers}},}\ }\href {\doibase 10.1002/9781118950623.app1}
+  {\bibfield  {journal} {\bibinfo  {journal} {Biosurfaces}\ ,\ \bibinfo {pages}
+  {329}} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Van{\_}der{\_}Vegt}(2001)}]{Van_der_Vegt2001FromPlastics}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Van{\_}der{\_}Vegt}},\ }\href {\doibase 10.1017/CBO9781107415324.004} {\emph
+  {\bibinfo {title} {DUP Blue Print}}}\ (\bibinfo {year} {2001})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Halary}(2011)}]{Halary2011PolymerMaterials}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
+  {Halary}},\ }\href@noop {} {\emph {\bibinfo {title} {Wiley}}}\ (\bibinfo
+  {year} {2011})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Ptoline}}()}]{PtolinePolymersCrystalline}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Ptoline}}},\ }\href
+  {https://www.ptonline.com/columns/injection-molding-} {\textit {\bibinfo
+  {title} {{Polymers, Ingjection molding of amorphous and crystalline}},}\
+  }\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Popescu}\ \emph {et~al.}(2018)\citenamefont
+  {Popescu}, \citenamefont {Zapciu}, \citenamefont {Amza}, \citenamefont
+  {Baciu},\ and\ \citenamefont {Marinescu}}]{Popescu2018FDMReview}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Popescu}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Zapciu}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Amza}}, \bibinfo {author}
+  {\bibfnamefont {F.}~\bibnamefont {Baciu}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Marinescu}},\ }\bibfield  {title} {\textit
+  {\bibinfo {title} {{FDM process parameters influence over the mechanical
+  properties of polymer specimens: A review}},}\ }\href {\doibase
+  10.1016/j.polymertesting.2018.05.020} {\bibfield  {journal} {\bibinfo
+  {journal} {Polymer Testing}\ }\textbf {\bibinfo {volume} {69}},\ \bibinfo
+  {pages} {157} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mohamed}\ \emph {et~al.}(2015)\citenamefont
+  {Mohamed}, \citenamefont {Masood},\ and\ \citenamefont
+  {Bhowmik}}]{Mohamed2015OptimizationProspects}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.~A.}\ \bibnamefont
+  {Mohamed}}, \bibinfo {author} {\bibfnamefont {S.~H.}\ \bibnamefont {Masood}},
+  \ and\ \bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont {Bhowmik}},\
+  }\bibfield  {title} {\textit {\bibinfo {title} {{Optimization of fused
+  deposition modeling process parameters: a review of current research and
+  future prospects}},}\ }\href {\doibase 10.1007/s40436-014-0097-7} {\bibfield
+  {journal} {\bibinfo  {journal} {Advances in Manufacturing}\ }\textbf
+  {\bibinfo {volume} {3}},\ \bibinfo {pages} {42} (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Granta Design
+  Limited}}(2018)}]{GrantaDesignLimited2018CESEdupack}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Granta Design
+  Limited}}},\ }\href@noop {} {\textit {\bibinfo {title} {{CES edupack}},}\ }
+  (\bibinfo {year} {2018})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Appelsved}(2012)}]{Appelsved2012InvestigationModels}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Appelsved}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Investigation
+  of Mechanical Properties of Thermoplastics with Implementations of LS-DYNA
+  Material Models}},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Degree project in Solid Mechanics}\ ,\ \bibinfo {pages} {48}}
+  (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Afd}\ and\ \citenamefont
+  {Wullms}(2016)}]{Afd2016NEN-EN-ISO527-2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~N.~O.}\
+  \bibnamefont {Afd}}\ and\ \bibinfo {author} {\bibfnamefont {R.~I. S.~A.}\
+  \bibnamefont {Wullms}},\ }\bibfield  {title} {\textit {\bibinfo {title}
+  {{NEN-EN-ISO 527-2}},}\ }\href@noop {} {\  (\bibinfo {year}
+  {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Christensen}(2013)}]{Christensen2013TheFailure}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Christensen}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{The Thoery
+  of Materials failure}},}\ }\href@noop {} {\ ,\ \bibinfo {pages} {298}
+  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Janssen}\ \emph {et~al.}(2014)\citenamefont
+  {Janssen}, \citenamefont {Blankers}, \citenamefont {Moolenburgh},\ and\
+  \citenamefont {Posthumus}}]{Janssen2014Co_magmeasurewD.pdf}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Janssen}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Blankers}},
+  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Moolenburgh}}, \ and\
+  \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Posthumus}},\ }\bibfield
+  {title} {\textit {\bibinfo {title} {Tno: The impact of 3-d printing on supply
+  chain management},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {The Hague, Netherlands: TNO}\ } (\bibinfo {year}
+  {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lin}\ \emph {et~al.}(2013)\citenamefont {Lin},
+  \citenamefont {Xia}, \citenamefont {Lin}, \citenamefont {Wang},\ and\
+  \citenamefont {Gu}}]{Lin2013StressLoading}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Lin}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Xia}}, \bibinfo
+  {author} {\bibfnamefont {C.~H.}\ \bibnamefont {Lin}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Wang}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Gu}},\ }\bibfield  {title} {\textit
+  {\bibinfo {title} {{Stress state dependent failure loci of a talc-filled
+  polypropylene material under static loading and dynamic loading}},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {13th International
+  Conference on Fracture 2013, ICF 2013}\ }\textbf {\bibinfo {volume} {2}},\
+  \bibinfo {pages} {865} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Melick}(2002)}]{Melick2002DeformationGlasses}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~G. H.~V.}\
+  \bibnamefont {Melick}},\ }\emph {\bibinfo {title} {{Deformation and failure
+  of polymer glasses}}},\ \href
+  {http://scholar.google.com/scholar?hl=en&btnG=Search&q=intitle:Deformation+and+failure+of+polymer+glasses#1}
+  {Ph.D. thesis},\ \bibinfo  {school} {Technische Universiteit Eindhoven}
+  (\bibinfo {year} {2002})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Melro}\ \emph {et~al.}(2013)\citenamefont {Melro},
+  \citenamefont {Camanho}, \citenamefont {Andrade~Pires},\ and\ \citenamefont
+  {Pinho}}]{Melro2013MicromechanicalModelling}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~R.}\ \bibnamefont
+  {Melro}}, \bibinfo {author} {\bibfnamefont {P.~P.}\ \bibnamefont {Camanho}},
+  \bibinfo {author} {\bibfnamefont {F.~M.}\ \bibnamefont {Andrade~Pires}}, \
+  and\ \bibinfo {author} {\bibfnamefont {S.~T.}\ \bibnamefont {Pinho}},\
+  }\bibfield  {title} {\textit {\bibinfo {title} {{Micromechanical analysis of
+  polymer composites reinforced by unidirectional fibres: Part I-Constitutive
+  modelling}},}\ }\href {\doibase 10.1016/j.ijsolstr.2013.02.009} {\bibfield
+  {journal} {\bibinfo  {journal} {International Journal of Solids and
+  Structures}\ }\textbf {\bibinfo {volume} {50}},\ \bibinfo {pages} {1897}
+  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Du~Bois}\ \emph {et~al.}(2006)\citenamefont
+  {Du~Bois}, \citenamefont {Kolling}, \citenamefont {Haufe},\ and\
+  \citenamefont {Feucht}}]{DuBois2006APolymers}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~A.}\ \bibnamefont
+  {Du~Bois}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Kolling}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Haufe}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {M.}~\bibnamefont {Feucht}},\ }\bibfield  {title}
+  {\textit {\bibinfo {title} {{A semianalytical model for the simulation of
+  polymers}},}\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Proceedings of the 2006 Korea LS-DYNA Conference, Seoul, Korea, published by
+  Korean Simulation Technologies, KOSTECH}\ }\textbf {\bibinfo {volume} {1}},\
+  \bibinfo {pages} {1} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{ABAQUS}}(2006)}]{ABAQUS2006MaterialFailure}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{ABAQUS}}},\ }\bibfield
+   {title} {\textit {\bibinfo {title} {{Material Damage and Failure}},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {ABAQUS}\ ,\
+  \bibinfo {pages} {1}} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bois}\ \emph {et~al.}()\citenamefont {Bois},
+  \citenamefont {Kolling}, \citenamefont {Feucht},\ and\ \citenamefont
+  {Haufe}}]{BoisA:}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~a.~D.}\
+  \bibnamefont {Bois}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Kolling}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Feucht}}, \
+  and\ \bibinfo {author} {\bibfnamefont {a.}~\bibnamefont {Haufe}},\ }\bibfield
+   {title} {\textit {\bibinfo {title} {{A COMPARATIVE REVIEW OF DAMAGE AND
+  FAILURE MODELS AND A TABULATED GENERALIZATION AUTHORS : ABSTRACT : Keywords
+  :}},}\ }\href@noop {} {\ ,\ \bibinfo {pages} {75}}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gao}\ \emph {et~al.}(2013)\citenamefont {Gao},
+  \citenamefont {Krishnamurthy}, \citenamefont {Tandon},\ and\ \citenamefont
+  {Arumugam}}]{Gao2013CriticalPipelines}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Gao}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Krishnamurthy}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Tandon}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {U.}~\bibnamefont {Arumugam}},\ }\bibfield  {title}
+  {\textit {\bibinfo {title} {{Critical strain based ductile damage criterion
+  and its application to mechanical damage in pipelines}},}\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {13th International Conference on
+  Fracture 2013, ICF 2013}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages}
+  {3723} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gu}\ \emph {et~al.}(2013)\citenamefont {Gu},
+  \citenamefont {Xia}, \citenamefont {Lin}, \citenamefont {Lin}, \citenamefont
+  {Meng},\ and\ \citenamefont {Zhou}}]{Gu2013ExperimentalThermoplastics}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Gu}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Xia}}, \bibinfo
+  {author} {\bibfnamefont {C.~H.}\ \bibnamefont {Lin}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Lin}}, \bibinfo {author} {\bibfnamefont
+  {Y.}~\bibnamefont {Meng}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {Q.}~\bibnamefont {Zhou}},\ }\bibfield  {title} {\textit {\bibinfo {title}
+  {{Experimental study on characterizing damage behavior of thermoplastics}},}\
+  }\href {\doibase 10.1016/j.matdes.2012.07.062} {\bibfield  {journal}
+  {\bibinfo  {journal} {Materials and Design}\ } (\bibinfo {year} {2013}),\
+  10.1016/j.matdes.2012.07.062}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mallick}(2007)}]{Mallick2007Fiber-Composites}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Mallick}},\ }\href@noop {} {\emph {\bibinfo {title} {{Fiber- Reinforced
+  Composites}}}}\ (\bibinfo {year} {2007})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Oskui}\ \emph {et~al.}(2014)\citenamefont {Oskui},
+  \citenamefont {Choupani},\ and\ \citenamefont
+  {Haddadi}}]{Oskui2014ExperimentalDevice}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~E.}\ \bibnamefont
+  {Oskui}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Choupani}}, \
+  and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Haddadi}},\
+  }\bibfield  {title} {\textit {\bibinfo {title} {{Experimental and numerical
+  investigation of fracture of ABS polymeric material for different sample's
+  thickness using a new loading device}},}\ }\href {\doibase 10.1002/pen.23745}
+  {\bibfield  {journal} {\bibinfo  {journal} {Polymer Engineering {\&}
+  Science}\ }\textbf {\bibinfo {volume} {54}},\ \bibinfo {pages} {2086}
+  (\bibinfo {year} {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Ultimaker}}(2018)}]{Ultimaker2018TechnicalABS}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Ultimaker}}},\ }\href
+  {https://ultimaker.com/download/74972/UM180821 TDS ABS RB V12.pdf} {\emph
+  {\bibinfo {title} {{Technical data sheet ABS}}}},\ \bibinfo {type} {Tech.
+  Rep.}\ (\bibinfo {year} {2018})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tanikella}\ \emph {et~al.}(2017)\citenamefont
+  {Tanikella}, \citenamefont {Wittbrodt},\ and\ \citenamefont
+  {Pearce}}]{Tanikella2017TensilePrinting}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~G.}\ \bibnamefont
+  {Tanikella}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Wittbrodt}}, \ and\ \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont
+  {Pearce}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Tensile strength
+  of commercial polymer materials for fused filament fabrication 3D
+  printing}},}\ }\href {\doibase 10.1016/j.addma.2017.03.005} {\bibfield
+  {journal} {\bibinfo  {journal} {Additive Manufacturing}\ }\textbf {\bibinfo
+  {volume} {15}},\ \bibinfo {pages} {40} (\bibinfo {year} {2017})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Forster}(2015)}]{Forster2015NISTApplicability}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont
+  {Forster}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{NIST Materials
+  Testing Standards for Additive Manufacturing of Polymer Materials : state of
+  the Art and Standars Applicability}},}\ }\href {\doibase
+  http://dx.doi.org/10.6028/NIST.IR.8059} {\ \textbf {\bibinfo {volume} {1}},\
+  \bibinfo {pages} {9} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Materials}\ and\ \citenamefont
+  {Materials}(2015)}]{Materials2015ASTMD638-14}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Materials}}\ and\ \bibinfo {author} {\bibfnamefont {E.~I.}\ \bibnamefont
+  {Materials}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{ASTM D638
+  Standard Test Method for Tensile Properties of Plastics 1 D638-14}},}\ }\href
+  {\doibase 10.1520/D0638-14.1} {\ ,\ \bibinfo {pages} {1} (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Alaimo}\ \emph {et~al.}(2017)\citenamefont {Alaimo},
+  \citenamefont {Marconi}, \citenamefont {Costato},\ and\ \citenamefont
+  {Auricchio}}]{Alaimo2017InfluenceParts}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Alaimo}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Marconi}},
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Costato}}, \ and\
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Auricchio}},\ }\bibfield
+  {title} {\textit {\bibinfo {title} {{Influence of meso-structure and chemical
+  composition on FDM 3D-printed parts}},}\ }\href {\doibase
+  10.1016/J.COMPOSITESB.2017.01.019} {\bibfield  {journal} {\bibinfo  {journal}
+  {Composites Part B: Engineering}\ }\textbf {\bibinfo {volume} {113}},\
+  \bibinfo {pages} {371} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bertoldi}\ \emph {et~al.}(1998)\citenamefont
+  {Bertoldi}, \citenamefont {Yardimci}, \citenamefont {Pistor}, \citenamefont
+  {Guceri},\ and\ \citenamefont {Sala}}]{Bertoldi1998MechanicalDeposition}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Bertoldi}}, \bibinfo {author} {\bibfnamefont {M.~a.}\ \bibnamefont
+  {Yardimci}}, \bibinfo {author} {\bibfnamefont {C.~M.}\ \bibnamefont
+  {Pistor}}, \bibinfo {author} {\bibfnamefont {S.~I.}\ \bibnamefont {Guceri}},
+  \ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Sala}},\
+  }\bibfield  {title} {\textit {\bibinfo {title} {{Mechanical characterization
+  of parts processed via fused deposition}},}\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Solid Freeform Fabrication Proceedings}\ ,\
+  \bibinfo {pages} {557}} (\bibinfo {year} {1998})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Afd}\ and\ \citenamefont
+  {Wullms}(2014)}]{Afd2014NEN-EN-ISO179-1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~N.~O.}\
+  \bibnamefont {Afd}}\ and\ \bibinfo {author} {\bibfnamefont {R.~I. S.~A.}\
+  \bibnamefont {Wullms}},\ }\bibfield  {title} {\textit {\bibinfo {title}
+  {{NEN-EN-ISO 179-1}},}\ }\href@noop {} {\  (\bibinfo {year}
+  {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{ASTM International}}\ and\ \citenamefont
+  {{ISO}}(2017)}]{ASTMInternational2017ISOParts}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{ASTM International}}}\
+  and\ \bibinfo {author} {\bibnamefont {{ISO}}},\ }\bibfield  {title} {\textit
+  {\bibinfo {title} {{ISO / ASTM Additive manufacturing 52900 — General
+  principles — Requirements for purchased AM parts}},}\ }\href@noop {} {\
+  \textbf {\bibinfo {volume} {2016}} (\bibinfo {year} {2017})}\BibitemShut
+  {NoStop}%
+\bibitem [{201(2019)}]{2019NEN-EN-ISOParts}%
+  \BibitemOpen
+  \bibfield  {title} {\textit {\bibinfo {title} {{NEN-EN-ISO / ASTM 52901
+  General principles - Requirements for purchased AM parts}},}\ }\href@noop {}
+  {\  (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {{NEN-EN-ISO}}(2019)}]{NEN_EN_ISO2019NEN_EN_ISOTestmethoden}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{NEN-EN-ISO}}},\
+  }\bibfield  {title} {\textit {\bibinfo {title} {{NEN-EN-ISO 17296-3
+  3D-printen - Algemene beginselen - Deel 3: Belangrijkste eigenschappen en
+  bijbehorende testmethoden}},}\ }\href@noop {} {\ \textbf {\bibinfo {volume}
+  {3}} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{201(2013)}]{2013ASTMManufacturing}%
+  \BibitemOpen
+  \bibfield  {title} {\textit {\bibinfo {title} {{ASTM F2971 Standard Practice
+  for Reporting Data for Test Specimens Prepared by Additive Manufacturing}},}\
+  }\href {\doibase 10.1520/F2971-13} {\bibfield  {journal} {\bibinfo  {journal}
+  {ASTM Standards}\ }\textbf {\bibinfo {volume} {i}},\ \bibinfo {pages} {3}
+  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chua}\ \emph {et~al.}()\citenamefont {Chua},
+  \citenamefont {{Chee How Wong}},\ and\ \citenamefont {{Way Yee
+  Yeong}}}]{ChuaStandardManufacturing}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~K.}\ \bibnamefont
+  {Chua}}, \bibinfo {author} {\bibnamefont {{Chee How Wong}}}, \ and\ \bibinfo
+  {author} {\bibnamefont {{Way Yee Yeong}}},\ }\href@noop {} {\emph {\bibinfo
+  {title} {{Standard, Quality Control, and Measurements Sciences in 3D printing
+  and Additive Manufacturing}}}}\ (\bibinfo  {publisher} {Matthew
+  Deans})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Essentium}}()}]{EssentiumTechnicalPLA}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Essentium}}},\ }\href
+  {https://cdn.shopify.com/s/files/1/0019/5405/4209/files/Essentium_TDS_High_Performance_PLA.pdf?11555355853600115034%0A}
+  {\emph {\bibinfo {title} {{Technical Data Sheet High Performance PLA}}}},\
+  \bibinfo {type} {Tech. Rep.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Garg}\ and\ \citenamefont
+  {Bhattacharya}(2017)}]{Garg2017AnStudy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Garg}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Bhattacharya}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{An insight
+  to the failure of FDM parts under tensile loading: finite element analysis
+  and experimental study}},}\ }\href {\doibase 10.1016/j.ijmecsci.2016.11.032}
+  {\bibfield  {journal} {\bibinfo  {journal} {International Journal of
+  Mechanical Sciences}\ }\textbf {\bibinfo {volume} {120}},\ \bibinfo {pages}
+  {225} (\bibinfo {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rodríguez}\ \emph {et~al.}(2003)\citenamefont
+  {Rodríguez}, \citenamefont {Thomas},\ and\ \citenamefont
+  {Renaud}}]{Rodriguez2003DesignStrength}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~F.}\ \bibnamefont
+  {Rodríguez}}, \bibinfo {author} {\bibfnamefont {J.~P.}\ \bibnamefont
+  {Thomas}}, \ and\ \bibinfo {author} {\bibfnamefont {J.~E.}\ \bibnamefont
+  {Renaud}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Design of
+  Fused-Deposition ABS Components for Stiffness and Strength}},}\ }\href
+  {\doibase 10.1115/1.1582499} {\bibfield  {journal} {\bibinfo  {journal}
+  {Journal of Mechanical Design}\ }\textbf {\bibinfo {volume} {125}},\ \bibinfo
+  {pages} {545} (\bibinfo {year} {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Somireddy}\ \emph {et~al.}(2017)\citenamefont
+  {Somireddy}, \citenamefont {Moraes},\ and\ \citenamefont
+  {Czekanski}}]{Somireddy2017FlexuralStudy}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Somireddy}}, \bibinfo {author} {\bibfnamefont {D.~A.~D.}\ \bibnamefont
+  {Moraes}}, \ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Czekanski}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Flexural
+  Behavior of Fdm Parts: Experimental, Analytical and Numerical Study}},}\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Solid Freeform
+  Fabrication Symposium}\ ,\ \bibinfo {pages} {992}} (\bibinfo {year}
+  {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Casavola}\ \emph {et~al.}(2016)\citenamefont
+  {Casavola}, \citenamefont {Cazzato}, \citenamefont {Moramarco},\ and\
+  \citenamefont {Pappalettere}}]{Casavola2016OrthotropicTheory}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Casavola}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Cazzato}},
+  \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Moramarco}}, \ and\
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Pappalettere}},\
+  }\bibfield  {title} {\textit {\bibinfo {title} {{Orthotropic mechanical
+  properties of fused deposition modelling parts described by classical
+  laminate theory}},}\ }\href {\doibase 10.1016/j.matdes.2015.11.009}
+  {\bibfield  {journal} {\bibinfo  {journal} {Materials {\&} Design}\ }\textbf
+  {\bibinfo {volume} {90}},\ \bibinfo {pages} {453} (\bibinfo {year}
+  {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {G{\'{o}}rski}\ \emph {et~al.}(2015)\citenamefont
+  {G{\'{o}}rski}, \citenamefont {Kuczko}, \citenamefont {Wichniarek},\ and\
+  \citenamefont {Hamrol}}]{Gorski2015ComputationMethod}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {G{\'{o}}rski}}, \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Kuczko}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Wichniarek}},
+  \ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Hamrol}},\
+  }\bibfield  {title} {\textit {\bibinfo {title} {{Computation of Mechanical
+  Properties of Parts Manufactured by Fused Deposition Modeling Using Finite
+  Element Method}},}\ \ }(\bibinfo  {publisher} {Springer, Cham},\ \bibinfo
+  {year} {2015})\ pp.\ \bibinfo {pages} {403--413}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Melro}\ \emph {et~al.}(2012)\citenamefont {Melro},
+  \citenamefont {Camanho},\ and\ \citenamefont
+  {Pinho}}]{Melro2012InfluenceMaterials}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~R.}\ \bibnamefont
+  {Melro}}, \bibinfo {author} {\bibfnamefont {P.~P.}\ \bibnamefont {Camanho}},
+  \ and\ \bibinfo {author} {\bibfnamefont {S.~T.}\ \bibnamefont {Pinho}},\
+  }\bibfield  {title} {\textit {\bibinfo {title} {{Influence of geometrical
+  parameters on the elastic response of unidirectional composite materials}},}\
+  }\href {\doibase 10.1016/j.compstruct.2012.05.004} {\bibfield  {journal}
+  {\bibinfo  {journal} {Composite Structures}\ }\textbf {\bibinfo {volume}
+  {94}},\ \bibinfo {pages} {3223} (\bibinfo {year} {2012})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Sheth}\ and\ \citenamefont
+  {Taylor}(2017)}]{Sheth2017NumericalOrientation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Sheth}}\ and\ \bibinfo {author} {\bibfnamefont {R.~M.}\ \bibnamefont
+  {Taylor}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{Numerical
+  Investigation of Stiffness Properties of FDM Parts as a Function of Raster
+  Orientation}},}\ }\href@noop {} {\ ,\ \bibinfo {pages} {1112} (\bibinfo
+  {year} {2017})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Liu}\ and\ \citenamefont
+  {Shapiro}(2016)}]{Liu2016HomogenizationStructures}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Liu}}\ and\ \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Shapiro}},\
+  }\bibfield  {title} {\textit {\bibinfo {title} {{Homogenization of material
+  properties in additively manufactured structures}},}\ }\href {\doibase
+  10.1016/J.CAD.2016.05.017} {\bibfield  {journal} {\bibinfo  {journal}
+  {Computer-Aided Design}\ }\textbf {\bibinfo {volume} {78}},\ \bibinfo {pages}
+  {71} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tronvoll}\ \emph {et~al.}()\citenamefont {Tronvoll},
+  \citenamefont {Welo},\ and\ \citenamefont {Elverum}}]{TronvollTheApproach}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~A.}\ \bibnamefont
+  {Tronvoll}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Welo}}, \
+  and\ \bibinfo {author} {\bibfnamefont {C.~W.}\ \bibnamefont {Elverum}},\
+  }\bibfield  {title} {\textit {\bibinfo {title} {{The effects of voids on
+  structural properties of fused deposition modelled parts: a probabilistic
+  approach}},}\ }\href {\doibase 10.1007/s00170-018-2148-x} {\
+  10.1007/s00170-018-2148-x}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {De}(2013)}]{De2013NEN-EN-ISO527-4}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~B.~V.}\
+  \bibnamefont {De}},\ }\bibfield  {title} {\textit {\bibinfo {title}
+  {{NEN-EN-ISO 527-4}},}\ }\href@noop {} {\  (\bibinfo {year}
+  {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{ASTM}}(2008)}]{ASTM2008Standard3039}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{ASTM}}},\ }\href@noop
+  {} {\emph {\bibinfo {title} {{Standard Test Method for Tensile Properties of
+  Polymer Matrix Composite Materials, ASTM D 3039}}}},\ \bibinfo {type} {Tech.
+  Rep.}\ (\bibinfo {year} {2008})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fahrenholz}(2018)}]{Fahrenholz2018TheZwick/Roell}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Fahrenholz}},\ }\bibfield  {title} {\textit {\bibinfo {title} {{The 2012
+  version of ISO 527 Plastics : Determination of tensile properties
+  Zwick/Roell}},}\ }\href@noop {} {\  (\bibinfo {year} {2018})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Melro}\ and\ \citenamefont {{P.P.
+  Camanho}}(2013)}]{Melro2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Melro}}\ and\ \bibinfo {author} {\bibnamefont {{P.P. Camanho}}},\ }\bibfield
+   {title} {\textit {\bibinfo {title} {{Micromechanical analysis of polymer
+  composites reinforced by unidirectional fibres: Part II-Micromechanical
+  analyses}},}\ }\href {\doibase 10.1016/j.ijsolstr.2013.02.007} {\bibfield
+  {journal} {\bibinfo  {journal} {International Journal of Solids and
+  Structures}\ }\textbf {\bibinfo {volume} {50}},\ \bibinfo {pages} {1906}
+  (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Harish}(2019)}]{Harish2019ImplicitMethod}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Harish}},\ }\href
+  {https://www.simscale.com/blog/2019/01/implicit-vs-explicit-fem/} {\textit
+  {\bibinfo {title} {{Implicit vs Explicit FEM: What is the Difference? |
+  Finite Element Method}},}\ } (\bibinfo {year} {2019})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Simulia}}()}]{SimuliaWritingAbaqus}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Simulia}}},\ }\href
+  {http://dsk.ippt.pan.pl/docs/abaqus/v6.13/books/sub/default.htm} {\textit
+  {\bibinfo {title} {{Writing a UMAT or VUMAT in Abaqus}},}\ }\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Wang}\ \emph {et~al.}(2016)\citenamefont {Wang},
+  \citenamefont {Zhang}, \citenamefont {Huang}, \citenamefont {Gao},
+  \citenamefont {Zhang}, \citenamefont {Gao},\ and\ \citenamefont
+  {Zhou}}]{Wang2016ExperimentalRates}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Wang}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Zhang}},
+  \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont {Huang}}, \bibinfo
+  {author} {\bibfnamefont {H.}~\bibnamefont {Gao}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Zhang}}, \bibinfo {author} {\bibfnamefont
+  {X.}~\bibnamefont {Gao}}, \ and\ \bibinfo {author} {\bibfnamefont
+  {H.}~\bibnamefont {Zhou}},\ }\bibfield  {title} {\textit {\bibinfo {title}
+  {{Experimental and modeling study of the compressive behavior of PC/ABS at
+  low, moderate and high strain rates}},}\ }\href {\doibase
+  10.1016/J.POLYMERTESTING.2016.09.027} {\bibfield  {journal} {\bibinfo
+  {journal} {Polymer Testing}\ }\textbf {\bibinfo {volume} {56}},\ \bibinfo
+  {pages} {115} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\end{thebibliography}%

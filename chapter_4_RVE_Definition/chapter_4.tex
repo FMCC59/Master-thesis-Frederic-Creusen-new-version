@@ -149,7 +149,7 @@ In figure \ref{fig:Mesoresults} images of different region of the mesostructure 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.50\textwidth]{chapter_4_RVE_Definition/figures/ABS100yxmiddle.png}
+    \includegraphics[width=0.70\textwidth]{chapter_4_RVE_Definition/figures/ABS100yxmiddle.png}
     \caption{Fractured surface observed with optical microscopy}
     \label{fig:ABS100yxmiddle}
 \end{figure}
@@ -190,10 +190,10 @@ The results of the optical microscopy of the colored analysis are shown in figur
     \label{fig:coloredroads}
 \end{figure}
 
-Figure \ref{fig:colored road 500x zoom} shows a 500x zoom on a road interface to observe the weld between different roads.
+Figure \ref{fig:colored500x} shows a 500x zoom on a road interface to observe the weld between different roads.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.40\textwidth]{chapter_4_RVE_Definition/figures/colored/Tv89_LI.jpg}
+    \includegraphics[width=0.70\textwidth]{chapter_4_RVE_Definition/figures/colored/Tv89_LI.jpg}
     \caption{Road interface 500x zoom}
     \label{fig:colored500x}
 \end{figure}
@@ -224,7 +224,7 @@ The sides of the specimen show clear curvature of the molten roads. The spots be
 On the top the mono-chromatic sample (figure \ref{fig:Mesoresults} (c) and (d)) there seems to be a certain amount of distortion (wave like artifacts), this can be accounted to the theory of overlap between roads. Additionally, the nozzle can create nicks in the roof by passing too close to the surface.
 
 %// colored roads
-The multicolored specimen with black and white filament was produced to investigate the interfaces between road. The figures \ref{fig:Colored roads} and \ref{fig:digitalcolored} are cross sectional micrographs of these multi-colored specimen, these show a significantly less structured mesostructure in comparison to the mono-chromatic specimen. This is likely due to the sequence of deposition; a type of filament is consecutively deposited in one layer,  ensuing squeezing of the second type between roads due to the programmed road overlap. This phenomenon largely influences the density and the contact surface between roads, resulting in better mechanical properties.
+The multicolored specimen with black and white filament was produced to investigate the interfaces between road. The figures \ref{fig:coloredroads} and \ref{fig:digitalcolored} are cross sectional micrographs of these multi-colored specimen, these show a significantly less structured mesostructure in comparison to the mono-chromatic specimen. This is likely due to the sequence of deposition; a type of filament is consecutively deposited in one layer,  ensuing squeezing of the second type between roads due to the programmed road overlap. This phenomenon largely influences the density and the contact surface between roads, resulting in better mechanical properties.
 
 %// information on road structure according to slicer
 The theory of the larger line width which causes overlap is supported by a slicer producer called "Slic3r" \cite{GaryHodgsonSlic3rMath}. One of the programmers of Slic3r explains how the line width is calculated based on the porosity that needs to be filled. They assume that roads are extruded in rectangular shape with  semicircular ends as can be seen in figure \ref{fig:Slic3rshape}, this shape is generally referred to as "stadium shapes".
@@ -286,21 +286,21 @@ A_{RVE}=l_h*l_w
 %diameter, the excess line width (which was expected to be 10\% by Somireddy) becomes 50\%(!). The micro graphs and single lines produced are in line with the 10\% theory, however the tolerance tests gave results that the parts to be fitted have a over dimension of 0.3-0.4 in 2 directions, resulting in a 75\%-100\% increase in line width, which would actually be closer in line with the Hodgson theory.
 
 Now that the form of the RVE is defined by the $l_h$ and $l_w$ parameters, we can define a relation of the void surface according to: 
-<<<<<<< HEAD
+%<<<<<<< HEAD
 \begin{equation}
 \small
-\begin{array}{l}
+\begin{array}{ll}
 A_v = & ((l_h/2)-(e_w-l_w)/2)^2*(l_h/2)-(asin((l_h/2)-(e_w-l_w)/(l_h))/(2*\pi)*(l_h/2)^2*\pi 
 \\
 & -\sqrt{(l_h^2-((l_h/2)-(e_w-l_w)/2)^2 )}*(l_h/2)-(e_w-l_w)/2 )*2
 \end{array}
 \end{equation}
-=======
-\begin{align*}
-A_v = ((l_h/2)-(e_w-l_w)/2)^2*(l_h/2)-(asin((l_h/2)-(e_w-l_w)/(l_h))/(2*\pi)*(l_h/2)^2*\pi  -\\
-\sqrt{(l_h^2-((l_h/2)-(e_w-l_w)/2)^2 )}*(l_h/2)-(e_w-l_w)/2 )*2
-\end{align*}
->>>>>>> e529cd4dc8433365205f11d075203472220c74a1
+%=======
+%\begin{align*}
+%A_v = ((l_h/2)-(e_w-l_w)/2)^2*(l_h/2)-(asin((l_h/2)-(e_w-l_w)/(l_h))/(2*\pi)*(l_h/2)^2*\pi  -\\
+%\sqrt{(l_h^2-((l_h/2)-(e_w-l_w)/2)^2 )}*(l_h/2)-(e_w-l_w)/2 )*2
+%\end{align*}
+%>>>>>>> e529cd4dc8433365205f11d075203472220c74a1
 And the surface fraction of the RVE can be found with
 \begin{equation}
 f_v = \frac{A_v}{A_{RVE}}
