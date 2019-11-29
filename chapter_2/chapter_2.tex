@@ -28,14 +28,16 @@ To get a good understanding of the mechanical properties of Fused Filament Fabri
 
 \subsection{History}
     \label{History}
-The FFF process has its fundamentals in polymer extrusion, which is a well known process well before the first 3D printer. Generally it is assumed that the first working robotic FFF 3D printer (as we know them) was developed in 1984, since that moment it has been a tool for manufacturing and prototyping that gained popularity in the next decades. 
+The FFF process has its fundamentals in polymer extrusion, which is a well known process well before the first 3D printer. Generally it is assumed that the first working robotic FFF 3D printer (as we know them) was developed in 1984 \todo{reference!}, since that moment it has been a tool for manufacturing and prototyping that gained popularity in the next decades. 
 
 %It was not until late 2000's that "desktop printers" (small affordable printers that could be used by particular users) were readily available to the public. In 1989 the founders of the currently leading 3D printer manufacturer "Stratasys" patented the Fused Deposition Modeling technology, also known as Fused Filament Fabrication (FFF). In 2005 some key patents expired and the technology became available to the public, this gave rise to a massive innovation movement called RepRap where different small businesses and individuals collaborated to design and optimize consumer focused FFF 3D printers.Different individuals even gained initial funding from different Research Councils. 
-During the decade of 2010, 3D printing technology experienced an explosive growth. A wide variety of start-ups presented their systems on the market, with the consequence of being bought by big players like Stratasys \cite{Kamran2016ATechnology}. With these innovations also the process and products of 3D printers have been significantly optimized. From producing mostly fixtures, jigs, consumer, aesthetic and prototyping products, FFF parts are increasingly implemented as functional parts in e.g. machinery and vehicles. However, the mechanical properties are still a fraction of the conventional made counterparts and are unpredictable. To overcome this problem more research is being done in the process and properties of FFF products. Also new solutions such as reinforced polymers are being presented to create better functional parts. 
+During the decade of 2010, 3D printing technology experienced an explosive growth. A wide variety of start-ups presented their systems to the market, and in some cases they have been acquired by established companies \cite{Kamran2016ATechnology}. With these innovations also the process and products of 3D printers have been significantly optimized. From producing mostly fixtures, jigs, consumer, aesthetic and prototyping products, FFF parts are increasingly implemented as functional parts, e.g. machinery and vehicles \todo{reference!}. However, the mechanical properties are still a fraction of the conventional made counterparts and are unpredictable. To overcome this problem more research is being done in the process and properties of FFF products. Also new solutions such as reinforced polymers are being presented to create better functional parts. 
 
 \subsection{Process \& hardware}
     \label{Hardware}
-The basics of FFF have been  similar since the start of the technology, a polymer filament of a few millimeters (currently 1.75 and 2.85mm are most common) is pushed through a metal heating element before being deposited by a nozzle (a diameter of 0.4mm is most common, larger and smaller nozzles are also available). One resulting line is defined as a "road". The nozzle and heating element assembly is also referred as the "hot end", depicted as "liquifier" in figure \ref{fig:Wirefeed}. For simplification the "extruder" is defined as the whole assembly of the mechanism for extruding filament, shown in figure \ref{fig:Wirefeed}. This hot end is attached to a moving mechanism that can have different principles of motion, most of the systems use stepper motors that are connected to the extruder trough rubber belts. These systems use three stepper motors which control the extruder in three degrees of freedom x, y and z in Cartesian coordinates. Alternatively, an axis of motion can be used to move the buildplate vertically or horizontally. Above mentioned systems are called "Cartasian printers". Another popular extruder positioning method is through 3 motors connected to worm wheels in vertical moving direction, with an arm connected to the extruder allowing it to also have three degrees of freedom, these systems are called "Delta-style printers". 
+The basics of FFF have been  similar since the start of the technology. A polymer filament of a few millimeters (typically between 1.75 and 2.85mm) is pushed through \todo{''through'', not trough; this typo appears a lot} a metal heating element before being deposited by a nozzle (a diameter of 0.4mm is most common, larger and smaller nozzles are also available). One resulting line is defined as a "road". The nozzle and heating element assembly is also referred as the "hot end", depicted as "liquifier" in figure \ref{fig:Wirefeed}. For simplification the "extruder" is defined as the whole assembly of the mechanism for extruding filament, shown in figure \ref{fig:Wirefeed}. This hot end is attached to a moving mechanism that can have different principles of motion, most of the systems use stepper motors that are connected to the extruder through rubber belts. These systems use three stepper motors which control the extruder in three degrees of freedom $x$, $y$ and $z$ in Cartesian coordinates. Alternatively, an axis of motion can be used to move the buildplate vertically or horizontally. Above mentioned systems are called "Cartesian printers". Another popular extruder positioning method is through 3 motors connected to worm wheels in vertical moving direction, with an arm connected to the extruder allowing it to also have three degrees of freedom, these systems are called "Delta-style printers". 
+
+\todo{Reference for Figure 2.1}
 
 \begin{figure}[H]
     \centering
@@ -44,7 +46,7 @@ The basics of FFF have been  similar since the start of the technology, a polyme
     \label{fig:cartesiandelta}
 \end{figure}
 
-In this thesis, the focus will be on cartesian style printers, the specific system that will be used for investigation is the Ultimaker S5 system \cite{Ultimaker2019UltimakerSheet} shown in figure \ref{fig:Ultimaker}. The exturder is positioned through a machine code named g-code above the so called "printbed", "builplate" or "buildplatform" and deposits molten filament in a particular path along the x-y plane. After finishing the programmed path of a supposed "layer" the extruder moves up in the z direction to start depositing a new layer on top of the previous one. The part can be removed with little to no effort from the buildplate. The buildplate has often an implemented heating element to prevent large temperature gradients in the first layers, which can result in so called warping (due to difference in shrinkage in layers the corners of the part can start to curl, resulting in de-lamination from the buildplate), this is often an issue with materials with a high glass transition temperature and thermal expansion coefficients \cite{Turner2014AModeling}. 
+In this thesis, the focus will be on cartesian style printers, the specific system that will be used for investigation is the Ultimaker S5 system \cite{Ultimaker2019UltimakerSheet} shown in figure \ref{fig:Ultimaker}. The extruder is positioned according to machine code (named g-code) instructions above the so called "printbed", "builplate" or "buildplatform" and deposits molten filament in a particular path along the $x$-$y$ plane. After finishing the programmed path of a supposed "layer" the extruder moves up in the z direction to start depositing a new layer on top of the previous one. The part can be removed with little to no effort from the buildplate. The buildplate has often an implemented heating element to prevent large temperature gradients in the first layers, which can result in so called warping (due to difference in shrinkage in layers the corners of the part can start to curl, resulting in delamination from the buildplate), this is often an issue with materials with high thermal expansion coefficients and high glass transition temperature \cite{Turner2014AModeling}. 
 
 \begin{figure}[H]
     \centering
@@ -53,11 +55,11 @@ In this thesis, the focus will be on cartesian style printers, the specific syst
     \label{fig:Ultimaker}
 \end{figure}
 
- Turner et al.\cite{Turner2014AModeling} have done a great job at clarifying the process and the effect it has on the product, the relevant concepts will be presented here. Note that this system is typical for consumer based FFF systems and is (generally) the basis for more advanced systems. It might happen that particular systems use different processes, for this thesis the process of the Ultimaker S5 is assumed. 
+Turner et al.\cite{Turner2014AModeling} have extensively discussed the process and the effect it has on the product. The relevant concepts are summarized herein. Note that this system is typical for consumer based FFF systems and is (generally) the basis for more advanced systems. It might happen that particular systems use different processes, for this thesis the process of the Ultimaker S5 is assumed.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.50\textwidth]{chapter_2/figures/Wirefeedmechanism.PNG}
+    \includegraphics[width=0.70\textwidth]{chapter_2/figures/Wirefeedmechanism.PNG}
     \caption{Wire feed mechanism \cite{Turner2014AModeling}.}
     \label{fig:Wirefeed}
 \end{figure}
@@ -72,71 +74,67 @@ The liquifier (figure \ref{fig:Wirefeed}) has a critical function: the softening
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/polymerallignment.PNG}
-    \caption{a)Allignment of Polymer chains b)Velocity profile of polymer chains exiting the nozzle\cite{Mcilroy2017DisentanglementManufacturing}}
+    \includegraphics[width=0.55\textwidth]{chapter_2/figures/polymerallignment.PNG}
+    \caption{a) Alignment of polymer chains, and b) velocity profile of polymer chains exiting the nozzle \cite{Mcilroy2017DisentanglementManufacturing}.}
     \label{fig:polymerallignment}
 \end{figure}
 
 \subsubsection{Road deposition}
     \label{Road deposition}
-The nozzle pushes hot filament onto the buildplate. During the extrusion the polymer melt is under stress, which reduces its volume due to deformation of energy being stored elastically. The nozzle hovers above the substrate at the prescribed layer height (often between 0.1 and 0.4mm), as can be seen in figure \ref{fig:Roaddepostion}. Consequently, the polymer melt is pushed outside and expands due to the absence of pressure. This phenomenon is called "dye swelling" and can be seen in figure \ref{fig:dieswelling}. Dye swelling plays a large role in the determination of the tolerance and surface roughness of a part. A ratio $(s)$ can be assigned to the swelling of the material with respect to the diameter of the die opening (nozzle). This value depends on the geometry of the nozzle, material properties (such as thermal expansion coefficient) and is generally in the range of 1.05 to 1.3. Shofner et al\cite{Turner2014AModeling} have found that the implementation of inelastic particles, such as short carbon fibers, have a positive effect of reducing the dye swelling, resulting in smoother surfaces (which is confirmed in empirical test with onyx, a carbon fibre filled nylon polymer \cite{TNO2017ProcesbegeleidingLearned}). 
+The nozzle pushes hot filament onto the buildplate. During the extrusion the polymer melt is under stress, which reduces its volume due to deformation of energy being stored elastically. The nozzle hovers above the substrate at the prescribed layer height (often between 0.1 and 0.4mm), as can be seen in figure \ref{fig:Roaddepostion}. Consequently, the polymer melt is pushed outside and expands due to the absence of pressure. This phenomenon is called "dye swelling" and can be seen in figure \ref{fig:dieswelling}. Dye swelling plays a large role in the determination of the tolerance and surface roughness of a part. A ratio $(s)$ can be assigned to the swelling of the material with respect to the diameter of the die opening (nozzle). This value depends on the geometry of the nozzle, material properties (such as thermal expansion coefficient) and is generally in the range of 1.05 to 1.3. Shofner et al \cite{Turner2014AModeling} have found that the implementation of inelastic particles, such as short carbon fibers, have a positive effect of reducing the dye swelling, resulting in smoother surfaces (which is confirmed in empirical test with onyx, a carbon fibre filled nylon polymer \cite{TNO2017ProcesbegeleidingLearned}). 
 
+\todo{It's usually better to use [htb] in Figure, otherwise there are lots of empry spaces in the text.}
 
-\begin{figure}
+\begin{figure}[htb]
 \centering
-\begin{minipage}{.5\textwidth}
+\begin{minipage}{.45\textwidth}
   \centering
-    \includegraphics[width=.6\textwidth]{chapter_2/figures/Extrusion.PNG}
+    \includegraphics[width=.80\textwidth]{chapter_2/figures/Extrusion.PNG}
    \caption{Road deposition \cite{Turner2014AModeling}}
     \label{fig:Roaddepostion}
 \end{minipage}%
-\begin{minipage}{.5\textwidth}
+\begin{minipage}{.45\textwidth}
   \centering
-  \includegraphics[width=.6\textwidth]{chapter_2/figures/dieswelling.PNG}
+  \includegraphics[width=.80\textwidth]{chapter_2/figures/dieswelling.PNG}
     \caption{Die swelling \cite{Turner2014AModeling}}
     \label{fig:dieswelling}
 \end{minipage}
 \end{figure}
 
-The so called "bead" or "road" is deposited in an oblong shape (similar to a stadium shaped oval), and starts to cool due to convective cooling once it comes in contact with air and conductive cooling once it comes in contact with neighbouring roads. Bellini et al. \cite{Bellini2003MechanicalModeling} modeled this convective cooling assuming a heat transfer coefficient of $h =20 W/m^2$. In chapter 4 further investigation will be conducted on the shape of the road. Interestingly enough, the thermal conductivity of the feedstock material has a positive effect on the temperature of the bead after deposition. Instead of losing heat due to high thermal conduction, materials with high conductivity can more easily extract heat from the hot end at a larger distance, therefore creating better bonding between layers. 
+The so called "bead" or "road" is deposited in an oblong shape (similar to a stadium shaped oval), and starts to cool due to convective cooling once it comes in contact with air and conductive cooling once it comes in contact with neighbouring roads. Bellini et al. \cite{Bellini2003MechanicalModeling} modeled this convective cooling assuming a heat transfer coefficient of $h =20 W/m^2$. In chapter 4 \todo{refer to Chapter 4 with ``ref''; search for other references like this and do the same} further investigation will be conducted on the shape of the road. Interestingly enough, the thermal conductivity of the feedstock material has a positive effect on the temperature of the bead after deposition. Instead of losing heat due to high thermal conduction, materials with high conductivity can more easily extract heat from the hot end at a larger distance, therefore creating better bonding between layers. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.7\textwidth]{chapter_2/figures/welding.png}
-    \caption{a)Welding of subsequent roads. b)Heated top layer contacts with cooled lower layer \cite{McIlroy2017DeformationManufacturing}
+    \includegraphics[width=0.9\textwidth]{chapter_2/figures/welding.png}
+    \caption{a) Welding of subsequent roads, and b) heated top layer contacts with cooled lower layer \cite{McIlroy2017DeformationManufacturing}.
     \label{fig:welding}}
 \end{figure}
 
-The touching surfaces of the roads are "welded" together if the temperature of both roads is high enough (figure \ref{fig:welding}). The deposited filament is practically uniformly melted, since the liquifier temperature is set at a higher temperature than the melting temperature ($T_m$) or glass transisition temperature for thermoplastics ($T_g$). For perfect bonding the surface of the lower road should also reach this temperature and maintain this for enough time. However, the temperature of the lower road has cooled since it was deposited. The strength of the bond is therefore a function of time and temperature of both roads and can be expressed in two different mechanisms: wetting and healing (figure \ref{fig:polymerwelding}). This is an anisothermal process of heating and cooling different layers at high rates as can be seen in figure \ref{fig:temperaturehistory}. One of the first researchers that began investigating this process where Thomas and Rodriguez \cite{Thomas2000ModelingRoads} followed by Bellehumeur et al.\cite{Bellehumeur2004ModelingProcess}and  Sun et al. \cite{Sun2008}. Seppala et al. \cite{Seppala2017WeldManufacturing} did an extensive study on the temperature profile of extruded roads and the bond forming after different layers are being deposited on top of it. The temperature history can either empirically be observed with an infrared camera, or can numerically be approximated when the toolpath of the extruder is known.There are currently software tools available which will generate a predicted temperature profile for specific layers in a particular FFF produced geometry \cite{XstreamDigimat_AM}. 
+The touching surfaces of the roads are "welded" together if the temperature in both roads is high enough (figure \ref{fig:welding}). The deposited filament is practically uniformly melted, since the liquifier temperature is set at a higher temperature than the melting temperature ($T_m$) or glass transition temperature for thermoplastics ($T_g$). For perfect bonding the surface of the lower road should also reach this temperature and maintain this for enough time. However, the temperature of the lower road has cooled since it was deposited. The strength of the bond is therefore a function of time and temperature of both roads and can be expressed in two different mechanisms: wetting and healing (figure \ref{fig:polymerwelding}). This is an anisothermal process of heating and cooling different layers at high rates as can be seen in figure \ref{fig:temperaturehistory}. One of the first researchers that began investigating this process where Thomas and Rodriguez \cite{Thomas2000ModelingRoads} followed by Bellehumeur et al. \cite{Bellehumeur2004ModelingProcess} and  Sun et al. \cite{Sun2008}. Seppala et al. \cite{Seppala2017WeldManufacturing} did an extensive study on the temperature profile of extruded roads and the bond forming after different layers are being deposited on top of it. The temperature history can either empirically be observed with an infrared camera, or can numerically be approximated when the toolpath of the extruder is known. There are currently software tools available which will generate a predicted temperature profile for specific layers in a particular FFF produced geometry \cite{XstreamDigimat_AM}. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/temperaturehistory.PNG}
+    \includegraphics[width=0.60\textwidth]{chapter_2/figures/temperaturehistory.PNG}
     \caption{Temperature profile of the bottom filament \cite{Sun2008}
     \label{fig:temperaturehistory}}
 \end{figure}
 
 Wetting is defined by Wool \cite{WoolStrenghtInterfaces} as close molecular contact (van der Waals bonds) when two pieces of molten polymers are brought into contact followed by inter diffusion of chain segments back and forth across the wetted interface. The diffusion of polymer chains is called healing, which is investigated by Sun et al \cite{Sun2008}. After wetting of the roads, neck growth occurs which widens the area between adjunct roads. These three processes can be seen in figure \ref{fig:polymerwelding}. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/polymerwelding.PNG}
+    \includegraphics[width=0.60\textwidth]{chapter_2/figures/polymerwelding.PNG}
     \caption{Bond formation between roads: (1) contact, (2) wetting and necking (3) healing  \cite{Sun2008}}
     \label{fig:polymerwelding}
 \end{figure}
 
-After subsequent roads are deposited in layers on top of each other, a particular "mesostructure" of welded beads, with an elliptical shape, will appear. These mesostructures (shown in figure \ref{fig:mesostructure}) are analyzed in different articles \cite{Somireddy2017MechanicalMesostructure}
-\cite{Somireddy2018DevelopmentFDM}
-\cite{Li2002CompositeProperties} \cite{Rodriguez2001MechanicalInvestigation}
-\cite{Rodriguez2003MechanicalModeling}
-\cite{Blok2018AnComposites} 
-\cite{Sun2008}, all conclude that the mesostructre has significant impact on the mechanical properties.
+After subsequent roads are deposited in layers on top of each other, a particular "mesostructure" of welded beads, with an elliptical shape, will appear. These mesostructures (shown in figure \ref{fig:mesostructure}) are analyzed in different articles \cite{Somireddy2017MechanicalMesostructure,Somireddy2018DevelopmentFDM,Li2002CompositeProperties,Rodriguez2001MechanicalInvestigation,Rodriguez2003MechanicalModeling,Blok2018AnComposites,Sun2008}, where all conclude that the mesostructre has significant impact on the mechanical properties.
 Most of the researchers used microtoming and optical microscopy to produce clear images (in the range of tenths of millimeters) of the mesostructure. These voids form a significant amount of porosity which has an adverse effect on the mechanical properties, resulting in stress concentrations and leading to premature brittle failure  near the porous region.  What is not observable in the mesostructure is the degree of healing between the roads. 
-The majority of above mentioned the researchers do not provide satisfactory information regarding their process settings or hardware used. Early experiments often incorporated Stratasys systems with their own produced ABS P400, due to their early market share. 
+The majority of above mentioned researchers do not provide satisfactory information regarding their process settings or hardware used. Early experiments often incorporated Stratasys systems with their own produced ABS P400, due to their early market share. 
 
-The final shape of the road depends on the surface tension, feed rate, viscosity, rate of cooling and interaction with the print head. There have been attempts of modelling the shape and spreading of the roads without being successful. A model proposed in the work of Turner \cite{Turner2014AModeling} assumes full wetting but does not account for the change of viscosity. The result significantly differs from empirical observations. 
+The final shape of the road depends on the surface tension, feed rate, viscosity, rate of cooling and interaction with the print head. There have been attempts of modelling the shape and spreading of the roads without being successful. A model proposed in the work of Turner \cite{Turner2014AModeling} assumes full wetting but does not account for the change of viscosity. The result significantly differs from empirical observations. \todo{references}
 
-\begin{figure}[H]
+\begin{figure}[hbt]
     \centering
     \includegraphics[width=1\textwidth]{chapter_2/figures/Mesostructure.PNG}
     \caption{Different types of mesostructures \cite{Rodriguez2001MechanicalInvestigation}}
@@ -151,23 +149,23 @@ According to Sun, the amount of wetting and healing determines largely  the mech
 
 In this equation $\sigma_{weld}$ is the weld strength in (MPa), $\sigma_{UTS}$ is the bulk ultimate tensile strength (in MPa), $t_{weld}$ is the time of molecular activity at a defined temperature (accodring to the WLF graph) at the interface (in seconds), and $t_{rep}$ is the time average reptation time of the polymer (in seconds). As $t_{weld}$ approaches $t_{rep}$ the polymer becomes fully healed and best strength is achieved. In the (limited) validation and verification of Bartolai, the conclusion was the of $\sigma_{weld}$ weld can be quite difficult for an accurate prediction.
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/WLFreptation.PNG}
+    \includegraphics[width=0.70\textwidth]{chapter_2/figures/WLFreptation.PNG}
     \caption{WLF model, reptation time is a function of temperature \cite{Seppala2017WeldManufacturing}}
     \label{fig:WLFreptation}
 \end{figure}
 
 \subsubsection{Build plate and chamber}
     \label{Build plate and chamber}
-The liquefied filament is deposited on the build plate (also called printbed) and is consequently deposited on top of the previous layers. The buildplate can be as simple as a piece of metal or glass. However, there are some crucial aspects concerning the properties of the bed. The adhesion of the first deposited layer with the bed is very important to prevent de-lamination during the process. Therefore, heat elements are used to decrease steep heat gradients in the part, which result in warping. To prevent the bed itself from deforming (as little as a few hundredth of a mm can have negative impact on the first layer) a material with a low thermal expansion coefficient is chosen (e.g. glass). The bed temperature has a positive effect on the layer bonding in the lower region of the part. However, this is only "felt" in roughly the first centimeters of the part trough conduction. It has been concluded that a higher overall temperature of the chamber has a beneficial impact on the road healing and subsequently on the mechanical properties \cite{Veen2019EnhancingTemperature}. More advanced systems therefore implement a heated envelope.
+The liquefied filament is deposited on the build plate (also called printbed) and is consequently deposited on top of the previous layers. The buildplate can be as simple as a piece of metal or glass. However, there are some crucial aspects concerning the properties of the bed. The adhesion of the first deposited layer with the bed is very important to prevent delamination during the process. Therefore, heat elements are used to decrease steep heat gradients in the part, which result in warping. To prevent the bed itself from deforming (as little as a few hundredth of a mm can have negative impact on the first layer) a material with a low thermal expansion coefficient is chosen (e.g. glass). The bed temperature has a positive effect on the layer bonding in the lower region of the part. However, this is only "felt" in roughly the first centimeters of the part through conduction. It has been concluded that a higher overall temperature of the chamber has a beneficial impact on the road healing and subsequently on the mechanical properties \cite{Veen2019EnhancingTemperature}. More advanced systems therefore implement a heated envelope.
 
 \subsection{Process parameters}
     \label{Process parameters}
 Since the process parameters of the FFF process have major influence on the resulting parts, it is essential to analyze the parameters and identify their influence on the mechanical properties. In this section the important parameters are highlighted.
 
 %part about slicers
-Most of these setting are defined by the so called "slicer" software, which is used to edit setting before generating a machine code that can be read by the printer. Certain machines have unique compatibility with a certain slicer (e.g. Eiger software from Markforged), or are produced by a manufacturer which also allows compatibility with other FFF systems (e.g. Cura from Ultimaker) or are produced  by a third party software developer (e.g. Simplify 3D, Slic3r). These softwares have similar settings that can be adjusted which will result in a  trade-off between speed and weight versus resolution, precision and mechanical performance. Since this thesis is mostly based on an Ultimaker S5 system \cite{Ultimaker2019UltimakerSheet}, and Cura is used as its slicer by the manufacturers, the terminology and parameters of Cura will be used as a benchmark. 
+Most of these setting are defined by the so called "slicer" software, which is used to edit settings before generating a machine code that can be read by the printer. Certain machines have unique compatibility with a certain slicer (e.g. Eiger software from Markforged), or are produced by a manufacturer which also allows compatibility with other FFF systems (e.g. Cura from Ultimaker) or are produced  by a third party software developer (e.g. Simplify 3D, Slic3r). These softwares have similar settings that can be adjusted which will result in a  trade-off between speed and weight versus resolution, precision and mechanical performance. Since this thesis is mostly based on an Ultimaker S5 system \cite{Ultimaker2019UltimakerSheet}, and Cura is used as its slicer by the manufacturers, the terminology and parameters of Cura will be used as a benchmark. 
 
 The most significant parameters that have effect on the product are:
 - Layer height (mm)\\
@@ -182,11 +180,11 @@ The most significant parameters that have effect on the product are:
 - (negative) Airgap (mm)\\
 
 
-Regular slicers use different type of settings for  different elements in a part. Let's consider the cross section of a cube (as can be seen in figure \ref{fig:Shell}) for FFF printing. Once a CAD (computer aided design) file (often in the form of a STL "stereolithography" file) or other geometrical digital drawing supported by the slicer is uploaded, the slicer will define different settings for different elements. Most important being: Bottom layers, Outer shell (walls), top layers, infill. The effects of the  elements will be outside the scope of this thesis and can be easily found online (3Dhubs \cite{3DHubsIntroductionPrinting}, All3D \cite{all3dpAll3dp}, Ultimaker \cite{Ultimaker2019UltimakerSheet}, Simplify 3D\cite{Simplefy3DPrintGuide}). For this project the focus is on a part with only bottom-layers, mimicking fully "dense" parts. Applying only bottom layers will generate parts with best mechanical properties per volume.   \cite{Li2017TheProperties}
+Regular slicers use different type of settings for  different elements in a part. Let's consider the cross section of a cube (as can be seen in figure \ref{fig:Shell}) for FFF printing. Once a CAD (computer aided design) file (often in the form of a STL "stereolithography" file) or other geometrical digital drawing supported by the slicer is uploaded, the slicer will define different settings for different elements. Most important being: Bottom layers, Outer shell (walls), top layers, infill. The effects of the  elements will be outside the scope of this thesis and can be easily found online (3Dhubs \cite{3DHubsIntroductionPrinting}, All3D \cite{all3dpAll3dp}, Ultimaker \cite{Ultimaker2019UltimakerSheet}, Simplify 3D \cite{Simplefy3DPrintGuide}). For this project the focus is on a part with only bottom-layers, mimicking fully "dense" parts. Applying only bottom layers will generate parts with best mechanical properties per volume \cite{Li2017TheProperties}.
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.5\textwidth]{chapter_2/figures/Shell.PNG}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/Shell.PNG}
     \caption{Elements of a 3D printed part \cite{3DHubsIntroductionPrinting}}
     \label{fig:Shell}
 \end{figure}
@@ -198,9 +196,11 @@ A similar but more extensive research has been conducted by Mohamed et al. \cite
 \subsubsection{Layer height}
 The layer height is the height of one layer, subsequently also the height of one road. Increasing this parameter will decrease the print time proportionally, the drawback is higher surface roughness, larger porosity, larger stress concentration points and worse layer bonding. In Cura the layer height is limited between 0.04 and 0.32 mm. Since the polymer is welded by applying pressure and heat, different researchers assume that the roads have a horizontal and vertical overlap. This is about 10\% according to Somireddy \cite{Somireddy2017MechanicalMesostructure}.  The emperical results of Li et al. \cite{Li2017TheProperties} regarding the layer height parameter are shown in figure \ref{fig:Layerheigth}.
 
-\begin{figure}[H]
+\todo{Clearer illustration of the XYZ system and the [45/-45]?}
+
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.5\textwidth]{chapter_2/figures/Layerheight.PNG}
+    \includegraphics[width=0.70\textwidth]{chapter_2/figures/Layerheight.PNG}
     \caption{Layer height against tensile strength for XY[45/-45] samples \cite{Li2017TheProperties}}
     \label{fig:Layerheigth}
 \end{figure}
@@ -211,47 +211,46 @@ Li \cite{Li2017TheProperties} explains that a smaller layer height will actually
 This process parameter can be misleading. According to Somireddy \cite{Somireddy2017MechanicalMesostructure} FFF systems produce roads that are set to have a 10\% overlap with its neighbouring roads in the xy plane. The line width defines the distance between adjacent roads, which could be assumed as nominal line width or the distance between roads. According to him the extruded line width is therefor about 10\% wider, if one would extrude a single road with a line width of 0.4 mm and a layer height of 0.2 mm it would be observed that a 10\% larger ellipse is produced. 
 %By personal observation it was observed that multiple single roads deposited on top of each other produce a width that is 5-10\% larger than the nominal line width. 
 This is in line with the observed increase in dimension for the production of fitted parts. A similar theory is proposed by Hodgson \cite{GaryHodgsonSlic3rMath}, "Extrusion Width is the thickness of a single filament extruded either in free air or above a surface. It's not the distance of two adjacent paths since some overlap will be generally applied in order to get better bonding."
-When printing only bottom layers the roads are constrained by the substrate on the bottom, by the nozzle on the top, and possibly by a road on one side.  In figure \ref{fig:roadconnecting} the sintering of roads can be observed. The problem with this model is the fact that the overlapped material is not accounted for. In the chapter 4 a new model will be presented. There is currently not a consensus on the form of the mesostructure, this is partly due to large development and  variety of printers and available printer settings.
+When printing only bottom layers the roads are constrained by the substrate on the bottom, by the nozzle on the top, and possibly by a road on one side.  In figure \ref{fig:roadconnecting} the sintering of roads can be observed. The problem with this model is the fact that the overlapped material is not accounted for. In chapter 4 a new model will be presented. There is currently not a consensus on the form of the mesostructure, this is partly due to large development and  variety of printers and available printer settings.
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
     \includegraphics[width=0.7\textwidth]{chapter_2/figures/roadconnecting.PNG}
     \caption{A schematic representation of filament cross-sectional areas, showing the difference between positive and negative gaps \cite{Cuan-Urquizo2019CharacterizationApproaches}}
     \label{fig:roadconnecting}
 \end{figure}
 
-The range of the line width process parameter is limited by the nozzle diameter. For a nozzle of 0.4mm Cura allows for a line width ranging between 0.25 to 0.8. According to Montero \cite{Montero2001MaterialExperiments} a variation in line width has no significant effect on the mechanical properties of the part. Thomas \cite{Thomas2000ModelingRoads} and  Kuznetsov\cite{Kuznetsov2018StrengthProcess} notice a positive effect in inter-road bonding with increased line width.
+The range of the line width process parameter is limited by the nozzle diameter. For a nozzle of 0.4mm Cura allows for a line width ranging between 0.25 to 0.8. According to Montero \cite{Montero2001MaterialExperiments} a variation in line width has no significant effect on the mechanical properties of the part. Thomas \cite{Thomas2000ModelingRoads} and  Kuznetsov \cite{Kuznetsov2018StrengthProcess} notice a positive effect in inter-road bonding with increased line width.
 %due to the larger  volume which cause prolongation of high temperature in the contact points and a reduction in porosity.  
 %[for revision] The slicer always calculates the roads to be tangent, meaning that a 4mm wide beam will generate 10 0.4mm wide roads. Increasing this will have similar effects as increasing the layer height. This generates often just enough polymer to sinter the surfaces together, in comparison with the layer height, the different roads are not aided by gravity for better bonding. Be aware that the line width can also be influenced by inconsistencies of the filament. Filaments for the ultimaker have a nominal diameter of 2.85 +- 0.05, which mean that the road line width might have a fluctuation of 2\%.
 
 \subsubsection{Airgap}
-The airgap is defined as the gap in between different roads in the xy plane (intra-laminar) figure \ref{fig:roadconnecting}. Generating an airgap that is the same size of your road width will half your infill density, creating an negative airgap will produce an overlap between roads. It is not possible to select a negative value in Cura (implying an overlap of roads). This was possible in the Stratasys slicer settings, and has been thoroughly studied in different experiments \cite{Somireddy2017MechanicalMesostructure}  \cite{Rodriguez2001MechanicalInvestigation}   \cite{Ahn2002AnisotropicABS}  \cite{Dawoud2016MechanicalTechniques} \cite{Gebisa2018InvestigatingExperiment}
-\cite{HossainImprovingParameters}
-and resulted in higher density and mechanical properties (increase of about 5-10\% in $E_{11}$, $E_{22}$ and a 10\% increase in $G_{12}$) at the cost of speed and higher surface roughness and distortion. Additionally, the excess material can be accumulated on the nozzle and the part itself. Gebisa et al. \cite{Gebisa2018InvestigatingExperiment} claim that a negative airgap has also a negative influence on the heat transfer since the roads are deposited very close to each other and that more room facilitates the spread of semi-molten material between the gaps, resulting in structurally stronger parts. The conclusion of most experiments is that for ABS a negative airgap of not more than 10\% can lead to improvements in mechanical properties without significant influence on the dimensional accuracy and surface quality. It appears that  slicers have optimized this phenomena in the past years to achieve minimal porosity \cite{GaryHodgsonSlic3rMath}. Simplify 3D has the option to enhance the infill extrustion width for only the infill (Cura can only modify it for the whole part).
-If we consider Somireddy's \cite{Somireddy2017MechanicalMesostructure} mesostructure images for regular settings a 10\% overlap is observed,  if the line width is reduced with 10\% while the extruded width remains equal,  approximately 20\%overlap is observed figure \ref{fig:Meso10&20}. The section \ref{mesostructure} will address this subject in more detail.
+The airgap is defined as the gap in between different roads in the xy plane (intra-laminar) \todo{plane perpendicular to the sheet?} figure \ref{fig:roadconnecting}. Generating an airgap that is the same size of your road width will half your infill density, creating a negative airgap will produce an overlap between roads. It is not possible to select a negative value in Cura (implying an overlap of roads). This was possible in the Stratasys slicer settings, and has been thoroughly studied in different experiments \cite{Somireddy2017MechanicalMesostructure,Rodriguez2001MechanicalInvestigation,Ahn2002AnisotropicABS,Dawoud2016MechanicalTechniques,Gebisa2018InvestigatingExperiment,HossainImprovingParameters}
+and resulted in higher density and mechanical properties (increase of about 5-10\% in $E_{11}$, $E_{22}$ and a 10\% increase in $G_{12}$) at the cost of speed and higher surface roughness and distortion. Additionally, the excess material can be accumulated on the nozzle and the part itself. Gebisa et al. \cite{Gebisa2018InvestigatingExperiment} claim that a negative airgap has also a negative influence on the heat transfer since the roads are deposited very close to each other and that more room facilitates the spread of semi-molten material between the gaps, resulting in structurally stronger parts. The conclusion of most experiments is that for ABS a negative airgap of not more than 10\% can lead to improvements in mechanical properties without significant influence on the dimensional accuracy and surface quality. It appears that  slicers have optimized this phenomena in the past years to achieve minimal porosity \cite{GaryHodgsonSlic3rMath}. Simplify 3D has the option to enhance the infill extrusion width for only the infill (Cura can only modify it for the whole part).
+If we consider Somireddy's \cite{Somireddy2017MechanicalMesostructure} mesostructure images for regular settings a 10\% overlap is observed,  if the line width is reduced with 10\% while the extruded width remains equal,  approximately 20\% overlap is observed figure \ref{fig:Meso10&20}. The section \ref{mesostructure} will address this subject in more detail.
 We can conclude from this analysis that negative airgap has an optimum where the mechanical properties are optimized without significantly distorting the surface of the product, it seems that this is already applied in some slicers. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.5\textwidth]{chapter_2/figures/Meso10and20.jpg}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/Meso10and20.jpg}
     \caption{20\% overlap (left) 10\% overlap (right)\cite{Somireddy2017MechanicalMesostructure}}
     \label{fig:Meso10&20}
 \end{figure}
 
 \subsubsection{Feed rate}
 The feed rate is the volume of filament that is extruded per timescale. Since this is automatically calculated by Cura as a function of the layer height, line width and speed, it is difficult to precisely enhance, therefore it is defined as a multiplier of the default setting. Adjusting this will multiply the original calculated feed rate with a defined factor. This can for example fix under-extrusion (figure \ref{fig:underextrusion} when the feed rate is too low, resulting in bad bonding and large gaps) which is detrimental for the mechanical properties of the part. It can also compensate for over-extrusion \ref{fig:overextrusion}, which is detrimental for tolerance and accuracy. However, this could also be used to increase the extrusion to generate the so called "negative air gap". By increasing the flow multiplier, a wider road can be deposited without an increase in distance between roads as would happen with increase line width. This could be a detour to achieve the same increase in mechanical properties as a negative air gap would have.
-We can conclude that the feed rate is closely related to the negative airgap parameter. The theory presented above and at the subsection of "line width" is supported by Patanwala et al. \cite{Patanwala2018TheComposites}, who wrote an detailed report on the characterization of the flow rate and bonding of carbon nanotubes-PLA composites.  
+We can conclude that the feed rate is closely related to the negative airgap parameter. The theory presented above and at the subsection of "line width" is supported by Patanwala et al. \cite{Patanwala2018TheComposites}, who wrote a detailed report on the characterization of the flow rate and bonding of carbon nanotubes-PLA composites.  
 \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-    \includegraphics[width=0.6\textwidth]{chapter_2/figures/overextrusion.jpg}
+    \includegraphics[width=0.8\textwidth]{chapter_2/figures/overextrusion.jpg}
     \caption{Overextrusion generating distortion of the part \cite{Simplefy3DPrintGuide}}
     \label{fig:overextrusion}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-    \includegraphics[width=0.6\textwidth]{chapter_2/figures/underextrusion.jpg}
+    \includegraphics[width=0.8\textwidth]{chapter_2/figures/underextrusion.jpg}
     \caption{Underextrusion generating limited contact areas between roads \cite{Simplefy3DPrintGuide}}
     \label{fig:underextrusion}
 \end{minipage}
@@ -266,9 +265,9 @@ There is an optimal range for the extrusion temperature which has been studied b
 Advanced FFF systems include a heated chamber or envelope. This is applied to increase the bonding of the roads, different studies \cite{Sun2008} \cite{Bellehumeur2004ModelingProcess} have shown that the bonding properties (healing and wetting) are affected by temperature and time. The downside is the possibility of small segments being heated too much, which results in distortion. The optimal envelope temperature for semi-crystalline materials is between $T_g$ and $T_m$. For amorphous polymers this is more problematic, since they do not have a specific melting temperature, instead they have a plateau after $T_g$ as can be seen in figure \ref{fig:EvsT}, the first observation would be to not exceed the temperature of this plateau.
 According to van Veen \cite{Veen2019EnhancingTemperature} a clear relation was found between the envelope temperature and the bonding between layers, this is supported by the healing theory. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.5\textwidth]{chapter_2/figures/Dennisgraph.png}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/Dennisgraph.png}
     \caption{Critical release energy rate vs. the time parts spend above Tg \cite{Veen2019EnhancingTemperature}.}
     \label{fig:Dennisgraph}
 \end{figure}
@@ -279,58 +278,57 @@ The quantitative effects of the build plate temperature on the mechanical proper
 %possible conduction laws, predicting temperature??
 
 \subsubsection {Print speed }
-Print speed proportionally alters the process times,  but comes at a cost of larger in-homogeneity. Due to a large amount of accelerations the feed rate can differ trough-out the part. Often over-extrusion is observed near the walls of a layer.
+Print speed proportionally alters the process times,  but comes at a cost of larger in-homogeneity. Due to a large amount of accelerations the feed rate can differ through-out the part. Often over-extrusion is observed near the walls of a layer.
 
 A low speed (approximately 35 mm/s) should be used to avoid large speed differences \cite{Li2017TheProperties}.  In figure \ref{fig:speedgraph} the dependency of the speed related to the position is shown.
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/Speedgraph.PNG}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/Speedgraph.PNG}
     \caption{Speed graph of the toolhead while printing \cite{UltimakerSpeed}}
     \label{fig:speedgraph}
 \end{figure}
 
-Li \cite{Li2017TheProperties} also investigated the effect of the deposition velocity on the tensile strength as can be seen in figure \ref{fig:depositionspeed}
+Li \cite{Li2017TheProperties} also investigated the effect of the deposition velocity on the tensile strength as can be seen in figure \ref{fig:depositionspeed}. Print speed directly influences the feed rate, which is most likely the cause of a decrease in mechanical properties with an increasing speed. Li also explains that for slower speeds the bottom layers remain at a temperature higher than $T_g$ for a longer period of time, which suggest that the adjacent filaments have more time to bond.
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.3\textwidth]{chapter_2/figures/depostionspeed.PNG}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/depostionspeed.PNG}
     \caption{Deposition velocity against tensile strength for XY[45/-45] samples \cite{Li2017TheProperties}}
     \label{fig:depositionspeed}
 \end{figure}
 
-Print speed directly influences the feed rate, which is most likely the cause of a decrease in mechanical properties with an increasing speed. Li also explains that for slower speeds the bottom layers remain at a temperature higher than $T_g$ for a longer period of time, which suggest that the adjacent filaments have more time to bond.
-
 \subsubsection{Infill density}
 The infill percentage determines the percentage of material with respect to air used in the infill structure. The infill is generally enclosed by so called wall layers (also called perimeters) and top and bottom layers. These roads form a solid shell on the surface. This volume of the infill can have different geometries, ranging from simple rectangles, to intricate 3D patterns as can be seen in figure \ref{fig:Infill}. The density can be changed in a variety of forms, creating thicker lines, more lines, direction etc. For this thesis the focus will be on structurally optimized parts, which includes 100\% infill (which won't result in a related relative density since there is a high amount of porosity).
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.5\textwidth]{chapter_2/figures/Infillbetter.jpg}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/Infillbetter.jpg}
     \caption{Different types of infill \cite{UltimakerSpeed}}
     \label{fig:Infill}
 \end{figure}
 
 \subsubsection{Road orientation}
-If considering roads as fibres, one would notice that the structure starts to look like a composite laminate, where one layer of unidirectional roads can be considered as a lamina. In the field of composites, lamina's and the resulting mechanical behaviour of laminates has been studied thoroughly in the book by Daniel \cite{Daniel2006EngineeringMaterials}.
-Relating FFF products to composites was done as one of the first by Rodriguez et al. \cite{Rodriguez2003MechanicalModeling}, who used composite theory \ref{Modelling of FFF parts} and validated this with empirical results, as is depicted in figure \ref{fig:Orientation}.
+If considering roads as fibres, one would notice that the structure starts to look like a composite laminate, where one layer of unidirectional roads can be considered as a lamina. Leveraging the extensive knowledge on conventional composite materials \cite{Daniel2006EngineeringMaterials}, the mechanical behavior of FFF products has been predicted by Rodriguez et al. \cite{Rodriguez2003MechanicalModeling} and compared to experimental results, as shown in figure \ref{fig:Orientation}. Section \ref{Modelling of FFF parts} provides a short overview on composite theory.
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/Orientation.PNG}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/Orientation.PNG}
     \caption{Orientations of roads with respect to load applied \cite{Rodriguez2003MechanicalModeling}}
     \label{fig:Orientation}
 \end{figure}
 
-The part will have the best mechanical behaviour if it is loaded along the axis direction of the deposited roads. Subsequently, stacking the layers in  $[45/-45]_n$ configuration will result in quasi isotropic properties.
+Intuitively, the part will have the best mechanical behaviour if it is loaded along the axis direction of the deposited roads. Stacking the layers in  $[45/-45]_n$ configuration will result in quasi isotropic properties.
 
-Additionally, not only the raster orientation, but the part orientation significantly influence the part properties. The printbed is in general oriented according to Cartesian coordinates, y being the longitudinal horizontal direction , y the transverse horizontal direction, and z the vertical direction (as can be seen in figure \ref{fig:coordinates}. When defining the angle of the roads, the slicers use the y direction as principle direction, meaning a [0] road will be directed along the y axis, while [90] will be directed along the x direction. 
+Additionally, not only the raster orientation, but the part orientation significantly influence the part properties. The printbed is in general oriented according to Cartesian coordinates, $y$ \todo{there were 2 ``y'', changed the second to ``x''. Confirm} being the longitudinal horizontal direction , $x$ the transverse horizontal direction, and $z$ the vertical direction (as can be seen in figure \ref{fig:coordinates}. When defining the angle of the roads, the slicers use the $y$ direction as principle direction, meaning a [0] road will be directed along the $y$ axis, while [90] will be directed along the $x$ direction. 
 
 %%% replace with ASTM F2971
 
-\begin{figure}[H]
+\todo{I think this figure comes in too late. Even if you leave it here, you should refer to it much earlier in the document.}
+
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/Coordinates.png}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/Coordinates.png}
     \caption{FFF coördinates for test specimen production}
     \label{fig:coordinates}
 \end{figure}
@@ -340,45 +338,45 @@ Additionally, not only the raster orientation, but the part orientation signific
 There is currently a wide range of polymer blends available for FFF, these can also include reinforced particles. The nature of the process, liquefying the polymer, only allows for thermoplastics. Thermosets have cross-links connecting the polymer chains, causing the material to degrade rather than to flow when heated. Parameters and properties such as crystallinity, $T_m$, $T_g$ and the thermal expansion coefficient make certain polymers more applicable for FFF.  A deep comparison of different polymers and their properties will not be part of this thesis. A concise analysis and substantiation for the material that will be used in this thesis will be presented in this chapter.
 
 \subsection{Materials for FFF}
-In figure \ref{fig:pyramidpolymer} the different thermoplastic polymers can be seen. The y-axis represents the performance of the material, often related to the cost and ease of use. Be aware that the material properties of bulk or conventional produced polymer differ from the material properties found in the produced part. 
+In figure \ref{fig:pyramidpolymer} the different thermoplastic polymers can be seen. The $y$-axis represents the performance of the material, often related to the cost and ease of use. Be aware that the material properties of bulk or conventional produced polymer differ from the material properties found in the produced part. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.6\textwidth]{chapter_2/figures/Pyramidpolymer.png}
+    \includegraphics[width=0.8\textwidth]{chapter_2/figures/Pyramidpolymer.png}
     \caption{Polymer pyramid with FFF polymers \cite{3DHubsIntroductionPrinting}}
     \label{fig:pyramidpolymer}
 \end{figure}
 
 To create a focus for this thesis, a particular material must be chosen to apply a scope on the research. To identify the mechanical properties of FFF produced parts, and the parameters affecting this, a polymer that has been used and researched extensively should be selected. This leads us to the lower tier of the pyramid, where PLA en ABS are by far the most implemented polymers. This is mostly due to the fact that FFF printers had only the possibility to print PLA and ABS until late 2012 \cite{WohlersAssociates2017WohlersIndustry}, therefore it is not surprising that most systems are optimized for these materials. Since the academic research is limited on the topic of FFF (compared to e.g. injection moulding, which is a technology that has matured for decades), PLA and ABS are the best candidates.
 
-PLA and ABS are most distinguishable by their polymer structure,  PLA is semi-crystalline and ABS is amorphous. This difference is mostly noticable in the thermal/viscous properties \cite{Rodriguez-Panes2018TheAnalysis}. PLA has a clear melting temperature $T_m$ (the moment where the semi-crystalline isotactic chains break its van der Waals forces), while ABS has only a glass transition temperature $T_g$, (where the polymer chains have enough thermal energy to start diffusing and consequently drop its Youngs modulus). This phenomenon is pictured in \ref{fig:EvsT}. The amount of crystallization can differ through a polymer based on the thermal history. High rates cooling can prevent chains from crystallizing, resulting in a smaller crystalline phase, this is typical for the FFF process. High degree of crystallinity is coupled with harder and thermally stable materials\cite{Balani2015PhysicalPolymers}. The amorphous regions provide elasticity and impact resistance. These properties are also reflected in the properties of PLA and ABS. The temperature history is dependant on the process parameters and geomtery, resulting in an even larger fluctuation in mechanical properties when comparing different studies. This also means that it will be harder to generate constant samples and products with semi-crystalline polymers. Additionally, Peterson \cite{Peterson2019ReviewPerspective} confirms this with the following statements; "due to the high cooling rates (in the order of 10K/s) polymers experience: 1) trapping polymers in non-equilibrium conformations; 2) limited time for polymer diffusion at road interfaces; 3) complex (in-unifromaly) crystallization profiles for semi-crysalline polymers". Crystallinity of polymers is extensively discussed in the books on polymer science by Vegt \cite{Van_der_Vegt2001FromPlastics} and Halary \cite{Halary2011PolymerMaterials}.
+PLA and ABS are most distinguishable by their polymer structure,  PLA is semi-crystalline and ABS is amorphous. This difference is mostly noticable in the thermal/viscous properties \cite{Rodriguez-Panes2018TheAnalysis}. PLA has a clear melting temperature $T_m$ (the moment where the semi-crystalline isotactic chains break its van der Waals forces), while ABS has only a glass transition temperature $T_g$, (where the polymer chains have enough thermal energy to start diffusing and consequently drop its Youngs modulus). This phenomenon is pictured in \ref{fig:EvsT}. The amount of crystallization can differ through a polymer based on the thermal history. High rates cooling can prevent chains from crystallizing, resulting in a smaller crystalline phase, this is typical for the FFF process. High degree of crystallinity is coupled with harder and thermally stable materials\cite{Balani2015PhysicalPolymers}. The amorphous regions provide elasticity and impact resistance. These properties are also reflected in the properties of PLA and ABS. The temperature history is dependant on the process parameters and geomtery, resulting in an even larger fluctuation in mechanical properties when comparing different studies. This also means that it will be harder to generate constant samples and products with semi-crystalline polymers, as stated by Peterson \cite{Peterson2019ReviewPerspective}: "due to the high cooling rates (in the order of 10K/s) polymers experience: 1) trapping polymers in non-equilibrium conformations; 2) limited time for polymer diffusion at road interfaces; 3) complex (non-uniformly) crystallization profiles for semi-crystalline polymers". \todo{The quoted sentence does not read well.} Crystallinity of polymers is extensively discussed in the books on polymer science by Vegt \cite{Van_der_Vegt2001FromPlastics} and Halary \cite{Halary2011PolymerMaterials}.
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.3\textwidth]{chapter_2/figures/structurepolymers.PNG}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/structurepolymers.PNG}
     \caption{Molecule structure in molten and solid state \cite{PtolinePolymersCrystalline}.}
     \label{fig:structurepolymers}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
     \includegraphics[width=1\textwidth]{chapter_2/figures/EvsT.PNG}
     \caption{E modulus against temperature for amorphous and semi-crystalline polymers \cite{Van_der_Vegt2001FromPlastics}.}
     \label{fig:EvsT}
 \end{figure}
 
-Despite that PLA is gaining popularity, due to its ease of use, low cost and biodegradability, it has limited scientific backed research compared to ABS. ABS has been used more extensively in different production methods (e.g. injection moulding). Especially with the systems of Stratasys (which were optimized for ABS P400) a lot of research was done. Popescu et al. \cite{Popescu2018FDMReview} reviewed a large amount of articles related to the mechanical properties of FFF printed parts, additionally Mohamed et al. \cite{Mohamed2015OptimizationProspects} and Peterson \cite{Peterson2019ReviewPerspective} did a similar review on the empirical research that has been done, all results are in line with previous statements.  
+Despite that PLA is gaining popularity, due to its ease of use, low cost and biodegradability. However, ABS has been used more extensively in different production methods (e.g. injection moulding). Especially with the systems of Stratasys (which were optimized for ABS P400) a lot of research was conducted, as reviewed by Popescu et al. \cite{Popescu2018FDMReview}, Mohamed et al. \cite{Mohamed2015OptimizationProspects} and Peterson \cite{Peterson2019ReviewPerspective}.  
 
-Taking into account the physical issues with semi-crystalline polymers and the abundance of research presented on ABS, the choice to focus this thesis on ABS is substantiated.
+Taking into account the physical issues with semi-crystalline polymers and the abundance of research presented on ABS, this thesis focuses on that material.
 
 \subsection{ABS properties}
     \label{ABS properties}
  \subsubsection{Chemical composition}
-As stated before, ABS (Acrylonitrile Butadiene Styrene $(C_8H_8)x (C_4H_6)y (C_3H_3N)z)$ is a amorphous thermoplastic with a glass transition temperature of approximately 105$^{\circ}$C \cite{Peterson2019ReviewPerspective}. Due to it's amorphous nature it has no true melting point, therefore there is no sudden viscosity drop. It is a terpolymer (build from three monomers), and is created by polymerizing styrene and acrylonitrile in the presence of polybutadiene, figure \ref{fig:ABSforumla}.
+As stated before, ABS\footnote{Acrylonitrile Butadiene Styrene $(C_8H_8)x (C_4H_6)y (C_3H_3N)z$} is an amorphous thermoplastic with a glass transition temperature of approximately 105$^{\circ}$C \cite{Peterson2019ReviewPerspective}. Due to it's amorphous nature it has no true melting point, therefore there is no sudden viscosity drop. It is a terpolymer (build from three monomers), and is created by polymerizing styrene and acrylonitrile in the presence of polybutadiene, figure \ref{fig:ABSforumla}.
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.\textwidth]{chapter_2/figures/ABSformula.PNG}
+    \includegraphics[width=0.5\textwidth]{chapter_2/figures/ABSformula.PNG}
     \caption{Monomers in ABS polymer}
     \label{fig:ABSforumla}
 \end{figure}
@@ -399,11 +397,11 @@ The limiting factors of ABS are its poor resistance to UV light and it's low ope
 where $\rho$ is the polymer density, $M_e$ the molecular weight of the chain between two entanglements, $N_a$ the Avogadro number\cite{Halary2011PolymerMaterials}. 
 
 Amorphous polymers show a significant drop in stiffness after the glass transition temperature. According to Appelsved \cite{Appelsved2012InvestigationModels}, this is the moment where the inter molecular bonds (van der Waals) break, after this moment the chains are able to diffuse through the polymer blend. 
-For samples with a molecular weight higher than the molecular weight between entanglements, $M_e$, the Young modulus decreases through the glass transition and reaches a plateau value of about 1 MPa. This is called the rubberey plateau and its extent increases with molecular weight. At higher temperatures these high molecular weight polymers go trough a fluidification zone before becoming highly viscous liquids. This is consequently the phase of material where the material is extruded. If  $M$ is smaller than $M_e$, the polymer skips the rubbery plateau, and almost immediately forms a viscous liquid. A relation between the temperature molecular weight and phase is shown in figure \ref{fig:polymerphase} \cite{Halary2011PolymerMaterials}.
+For samples with a molecular weight higher than the molecular weight between entanglements, $M_e$, the Young modulus decreases through the glass transition and reaches a plateau value of about 1 MPa. This is called the rubberey plateau and its extent increases with molecular weight. At higher temperatures these high molecular weight polymers go through a fluidification zone before becoming highly viscous liquids. This is consequently the phase of material where the material is extruded. If  $M$ is smaller than $M_e$, the polymer skips the rubbery plateau, and almost immediately forms a viscous liquid. A relation between the temperature molecular weight and phase is shown in figure \ref{fig:polymerphase} \cite{Halary2011PolymerMaterials}.
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/polymerphases.PNG}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/polymerphases.PNG}
     \caption{State diagram of un-cross-linked amorphous cis-1,4-polyisoprene \cite{Halary2011PolymerMaterials}}
     \label{fig:polymerphase}
 \end{figure}
@@ -415,41 +413,41 @@ When extruding or processing thermoplastics, chains are being broken and reduced
 \subsection{Elasticity}
 Polymers exhibit an elastic response to a loading that is defined as instantaneous and reversible and may have either an energetic or an entropic physical origin. These constitutive mechanism are designated as true elasticity and hyper elasticity respectively. True elasticity, which for polymers only occurs at low strains, is linked to a poisson ratio that varies between 0.3 at low temperature and 0.5 at temperatures equal to or higher than the glass transition temperature. 
 The entropic effect describes the increase in entropic energy (heat) of the polymer chain as a larger force due to the dynamic movement of the molecule. 
-Random coils can be considered as a spring, multiple springs are connected to each other through entanglements. Thermosets, which contain crosslinks, have more predictable elastic behaviour than thermoplastics, which inhibit a large amount of viscoelasticity. However, these entanglements have similarities to cross links in the glassy state at a low strain, these enthanglements will dissapear as a result of sliding motion of the chain. Different models exists to predict the elastic behaviour of polymers, especially for thermosets, these are defined in detailed in the book of Halary \cite{Halary2011PolymerMaterials}. If we consider the stress strain curve of a typical thermoplast from figure\ref{fig:SSpolymers}, we observe a quasi-linear region up to the top of the curve where $d\sigma/d\epsilon=0$. This top is defined as the yield point for thermoplastics \cite{Afd2016NEN-EN-ISO527-2}, which differs from the definition for e.g. metals. According to Appelsved \cite{Appelsved2012InvestigationModels} the true yield point of polymers is the stress at which van der Waals bonds are all broken, and chains can diffuse freely.  
+Random coils can be considered as a spring, multiple springs are connected to each other through entanglements. Thermosets, which contain crosslinks, have more predictable elastic behaviour than thermoplastics, which inhibit a large amount of viscoelasticity. However, these entanglements have similarities to cross links in the glassy state at a low strain, these enthanglements will dissapear as a result of sliding motion of the chain. Different models exists to predict the elastic behaviour of polymers, especially for thermosets, these are defined in detailed in the book of Halary \cite{Halary2011PolymerMaterials}. If we consider the stress strain curve of a typical thermoplastic from figure \ref{fig:SSpolymers}, we observe a quasi-linear region up to the top of the curve where $d\sigma/d\epsilon=0$. This top is defined as the yield point for thermoplastics \cite{Afd2016NEN-EN-ISO527-2}, which differs from the definition for e.g. metals. According to Appelsved \cite{Appelsved2012InvestigationModels} the true yield point of polymers is the stress at which van der Waals bonds are all broken, and chains can diffuse freely.  
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.6\textwidth]{chapter_2/figures/SSpolymers.PNG}
+    \includegraphics[width=0.9\textwidth]{chapter_2/figures/SSpolymers.PNG}
     \caption{Typical stress-strain curves for thermoplastics \cite{Appelsved2012InvestigationModels}}
     \label{fig:SSpolymers}
 \end{figure}
 Additionally, Appelsved differentiates two different phases (figure \ref{fig:SSpolymers}); phase A which dominates up to the stress maxima and deformation is mainly generated from movement of the molecular chains relatively to each other. Eventually the bonds break and the slope decreases. Since a polymer blend is a distribution of chains with different lengths, this is expected to occur over a strain range instead of a sudden drop. After the bonds are broken strain softening occurs. In phase B, the molecule chain itself is straightened, resulting in re-hardening at larger strains. The alignment at large strains cause transverse isotropy. The straightening of the molecular chains makes the material stronger, resulting in a different necking behaviour in contrast to metals. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.5\textwidth]{chapter_2/figures/Strainrate.PNG}
+    \includegraphics[width=0.9\textwidth]{chapter_2/figures/Strainrate.PNG}
     \caption{Effect of strain rate dependency on polymers \cite{Appelsved2012InvestigationModels}}
     \label{fig:Strainrate}
 \end{figure}
 \subsection{Plasticity, damage and failure}
-Due to the molecular structure of polymers, it is difficult to determine the start of plasticity. Loading/unloading experiments can be carried out to determine irreversible strains.  The effect of loading and un-loading is depicted in figure \ref{fig:Irr}. The unloading is followed by recovery, until the residual strain have stabilized and can be concluded as permanent.
-\begin{figure}[H]
+Due to the molecular structure of polymers, it is difficult to determine the start of plasticity. Loading/unloading experiments can be carried out to determine irreversible strains.  The effect of loading and unloading is depicted in figure \ref{fig:Irr}. The unloading is followed by recovery, until the residual strain have stabilized and can be concluded as permanent.
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.5\textwidth]{chapter_2/figures/Irr.PNG}
+    \includegraphics[width=0.8\textwidth]{chapter_2/figures/Irr.PNG}
     \caption{Loading/unloading behaviour with recovery \cite{Appelsved2012InvestigationModels}}
     \label{fig:Irr}
 \end{figure}
-Halary \cite{Halary2011PolymerMaterials} claims that conducting compressive tests have the advantage of avoiding the effect of micro-voids always present in samples, since these voids increase sample brittleness on straining. In figure \ref{fig:SSPMMA} empirically generated uniaxial compression stress strain curve of an amorphous thermoplastic polymer (PMMA) can be seen. The slope of the straight line corresponds to the material Young modulus. Between A and B the stress-strain relation is no longer linear and the material exhibits an anelastic behaviour. In figure \ref{fig:SSresidual} a schematic drawing of different loading regions is shown to support the explanation. In this region strain is still reversible. After the stress maximum at the yield point, a clear viscoplastic behaviour occurs. Additional strain is irreversible, and will lead to residual strain after unloading. It is worth pointing out that these residual strains can be removed by heating the polymer sample above its glass transition temperature. In general, it can be assumed that the Youngs modulus remains relatively similar up to the plastic range. 
+Halary \cite{Halary2011PolymerMaterials} claims that conducting compressive tests have the advantage of avoiding the effect of micro-voids always present in samples, since these voids increase sample brittleness on straining. In figure \ref{fig:SSPMMA} empirically generated uniaxial compression stress strain curve of an amorphous thermoplastic polymer (PMMA) can be seen. The slope of the straight line corresponds to the material Young's modulus. Between A and B the stress-strain relation is no longer linear and the material exhibits anelastic behaviour. In figure \ref{fig:SSresidual} a schematic drawing of different loading regions is shown to support the explanation. In this region strain is still reversible. After the stress maximum at the yield point, a clear viscoplastic behaviour occurs. Additional strain is irreversible, and will lead to residual strain after unloading. It is worth pointing out that these residual strains can be removed by heating the polymer sample above its glass transition temperature. In general, it can be assumed that the Young's modulus remains relatively similar up to the plastic range. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.5\textwidth]{chapter_2/figures/SSPMMA.png}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/SSPMMA.png}
     \caption{Compression stress-strain curve of a PMMA (A, elastic limit; B,yield point; C, plastic flow)\cite{Halary2011PolymerMaterials}}
     \label{fig:SSPMMA}
    \end{figure}
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/SSresidual.png}
+    \includegraphics[width=0.5\textwidth]{chapter_2/figures/SSresidual.png}
     \caption{Schematic drawings of unloading profiles for a sample compressed at various strain values.)\cite{Halary2011PolymerMaterials}}
     \label{fig:SSresidual}
    \end{figure}
@@ -474,16 +472,16 @@ Additionally the yield and failure are criterion are a function of the the stres
 The difference in yield and failure loci can be observed in figure \ref{fig:yieldloci}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{chapter_2/figures/yieldloci.png}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/yieldloci.png}
     \caption{Failure locus for metals (left), and for ductile polymers (right), with the axis corresponding to the principle directions \cite{Christensen2013TheFailure}}.
     \label{fig:yieldloci}
 \end{figure}
 The axis in this figure represent the principle stress directions. The left surface is defined by a stress state of the von Mises stress. If a pure hydrostatic pressure is applied, the surface will not be crossed. For polymers there is also a dependency on the hydro static pressure, since it  will cross the surface at some point.  
 It should me mentioned that the yield and failure surface for polymers is in reality not symmetric for tension and compression, as can be seen in figure \ref{fig:SStensioncompression}. It has been concluded by several book on fracture mechanics \cite{Janssen2014Co_magmeasurewD.pdf} that polymers have a higher compressive yield strength than in tension. 
 For ductile polymers also failure criteria are used based on the equivalent strain. This strain is calculated in a similar way as the equivalent stress. The failure surface might differ from the conventional von Mises or Tresca surfaces. 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.3\textwidth]{chapter_2/figures/SStensioncompression.png}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/SStensioncompression.png}
     \caption{Comparison of stress-strain curves for PMMA for compression and tension \cite{Halary2011PolymerMaterials}}
     \label{fig:SStensioncompression}
 \end{figure}
@@ -516,9 +514,9 @@ An enhanced form of the von Mises criterion can then be applied to polymers in t
 \end{equation}
 Where $\mu_{vM}$ is an internal friction coefficient. The corresponding plasticity envelope is a cone whose axis is the hydrostatic pressure axis, and whose axis increases with hyrdrostatic pressure, similar to the yield locus for polymers in figure \ref{fig:yieldloci}. A similar procedure can be applied to the tresca criterion. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.75\textwidth]{chapter_2/figures/yieldpolymers.png}
+    \includegraphics[width=0.9\textwidth]{chapter_2/figures/yieldpolymers.png}
     \caption{Yield surface for polymers a) three-dimensional b) two-dimensional compared with von Mises \cite{Halary2011PolymerMaterials} }
     \label{fig:Midplane}
 \end{figure}
@@ -526,17 +524,17 @@ Where $\mu_{vM}$ is an internal friction coefficient. The corresponding plastici
 %Ree-Eyring
 The Ree-Eyring model explains the yield behaviour on a molecular scale, according to this model, the sliding of molecules with respect to each other is achieved by passing through a transition state, called activated state, overcoming an energy barrier depending on both temperature and applied stress. This models assumes plastic deformation of amorphous polymers is occurs as the displacement of chain segments from a site A to a site B due to an activation state, related to energy $\Delta G$, both located in a sliding plane resulting from the presence of a shear component. The principle of the model can be seen in figure \ref{fig:Ree-Eyring}. In the anelastic range the chains are merely "stretched" and will not permanently displaced with respect to the other chains in the blend. In comparison with the theory presented by Apselveld, one could argue that the "activation energy" for permanent displacement is analogous to the breaking of the van der Waals bonds.
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.8\textwidth]{chapter_2/figures/Ree-Eyring.png}
+    \includegraphics[width=1.0\textwidth]{chapter_2/figures/Ree-Eyring.png}
     \caption{Energy diagram showing the principle of the Ree-Eyring model \cite{Halary2011PolymerMaterials}}
     \label{fig:Ree-Eyring}
 \end{figure}
 %plastic instability
-During tensile tests beyond the yield point many polymers, including amorphous polymers, undergo a plastic instability, the necking phenomenon. In this plastic region, chains have reached their extensibility limit, further neck propagation occurs trough neighboring regions. After development of the whole neck propagation a uniform strain occurs again, until the sample breaks as can be seen in figure \ref{fig:Necking}. In figure stable necking is observed, while in figure b unstable necking leads to quick fracture. This behaviour depends on the considered polymer, possible defects, temperature and strain rate conditions. 
-\begin{figure}[H]
+During tensile tests beyond the yield point many polymers, including amorphous polymers, undergo a plastic instability, the necking phenomenon. In this plastic region, chains have reached their extensibility limit, further neck propagation occurs through neighboring regions. After development of the whole neck propagation a uniform strain occurs again, until the sample breaks as can be seen in figure \ref{fig:Necking}. In figure stable necking is observed, while in figure b unstable necking leads to quick fracture. This behaviour depends on the considered polymer, possible defects, temperature and strain rate conditions. 
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/Necking.png}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/Necking.png}
     \caption{Schematic drawing of the necking phenomenon \cite{Halary2011PolymerMaterials}}
     \label{fig:Necking}
 \end{figure}
@@ -561,7 +559,7 @@ Damage and fracture are important to investigate to identify the failure mechani
 %crazes
 Crazes are small microvoids containing fibrils bridging the two craze faces. Such fibrils play a major role in the ability of the craze to sustain loading in the direction perpendicular to its faces. These microvoids are ellipsoidal heterogeneities with a size ranging from 10 $\mu$m to 10 mm along the major axis and from 1 to 10 $\mu$m in along the minor axis. In figure \ref{fig:Craze} a schematically image is shown of crazes. The ratio between crazes an fibrils are approximately equal.  
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
     \includegraphics[width=0.8\textwidth]{chapter_2/figures/Craze.png}
     \caption{Schematic drawing of a craze a) Microvoids b) conformations of chains within a craze \cite{Halary2011PolymerMaterials}}
@@ -577,15 +575,15 @@ A craze criterion is proposed based on two arguments:
 %adding strain surface??
 Where X an Y are experimental parameters. From this criterion a envelope can be made to compare it with the von Mises yield criterion as can be seen in figure \ref{fig:crazecrit}. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.3\textwidth]{chapter_2/figures/crazecrit.png}
+    \includegraphics[width=0.5\textwidth]{chapter_2/figures/crazecrit.png}
     \caption{Plasticity envelope and craze criterion for PMMA \cite{Halary2011PolymerMaterials}}
     \label{fig:crazecrit}
 \end{figure}
 
 The craze strain criterion can occur before yielding and plasticity, whereas shear bands only occur beyond the plasticity threshold. This result implies that any combination of two tensile stresses generates crazes instead of shear bands. A combination of a tenisle and compressive stress might lead to both, pure compression always generates shear bands.
-To discriminate between shear bands and crazes, one could perform optical microscopy. Extensive research was conducted on this topic, the general conclusions are that the type of damage (crazing or shear bands) are dependant on the polymer, stress state, and temperature. In amorphous thermoplastics, both can be identified by the whitish color due to the scattering of light trough polymer alignment. This effect is more intense for crazing, as a result of the higher density, and is more localized for shear banding.
+To discriminate between shear bands and crazes, one could perform optical microscopy. Extensive research was conducted on this topic, the general conclusions are that the type of damage (crazing or shear bands) are dependant on the polymer, stress state, and temperature. In amorphous thermoplastics, both can be identified by the whitish color due to the scattering of light through polymer alignment. This effect is more intense for crazing, as a result of the higher density, and is more localized for shear banding.
 Additionally interactions may exist between these two types of damage. Initiation of shear deformation zones at the craze tip can occur when the craze propagation rate and widening are small. 
 
 Halary et al. concluded that despite the issues with microvoids, the uniaxial tensile test and uniaxial compressive tensile have a generally identical shape and domains. Fracture occurs in the viscoplastic domain, it is a ductile fracture with a specific angle of about 45 degrees between the fracture line and stretching direction. At lower temperatures, fracture generally takes place in the anelastic domain, there might be overlap with theory concerning brittle fracture of metals at low temperatures.  
@@ -632,9 +630,9 @@ D=1-exp(-\epsilon_v)
 
 In figure \ref{fig:damagepolymer} the results from a loading/unloading experiment was carried out on a polypropylene sample to get more insight on the damage behaviour. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/damagepolymer.png}
+    \includegraphics[width=0.5\textwidth]{chapter_2/figures/damagepolymer.png}
     \caption{Sample of trues stress-strain curve of polypropylene\cite{Gu2013ExperimentalThermoplastics} }
     \label{fig:damagepolymer}
 \end{figure}
@@ -664,7 +662,7 @@ K_{Ic}=\frac{E*G_{Ic}}{\sqrt{1-v^2_p}}
 \end{equation}
 Irwin was the first to take into account that stress concentrations at the crack tip may be large enough to move from a local elastic to a plastic response. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
     \includegraphics[width=0.4\textwidth]{chapter_2/figures/Crackstress.png}
     \caption{Geometry of the plastic zone a crack tip a) Irwin model b) analysis using von Mises stress\cite{Halary2011PolymerMaterials}}
@@ -678,9 +676,9 @@ r_y=\frac{1}{6\pi}*\left(\frac{K_I}{\sigma_y}\right)^2
 %Molecular approach of fracture behviour.
 Chain entanglements play a fundamental role in fracture properties. Correlations between the fracture properties of polymers and their entanglement density, $v_e$ where found by Halaray et al., as can be seen in figure \ref{ref:KIc}.  
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/KIc.png}
+    \includegraphics[width=0.6\textwidth]{chapter_2/figures/KIc.png}
     \caption{Correlation between toughness, $K_{Ic}$, and entanglement density, $v_e$  \cite{Halary2011PolymerMaterials}}
     \label{ref:KIc}
 \end{figure}
@@ -707,7 +705,7 @@ The technical data sheet of ABS produced by Ultimaker \cite{Ultimaker2018Technic
 
 \subsection{Standardization}
     \label{Standarization}
-In the prior sections it has been made clear that there are a wide range of parameters that can be adjusted. However, there is limited guidance in the standardization of the production process to produce a procedure that can be reproduced. Different researchers have tried to create standardization for their work, generating a multitude of different parameters that are being used, this is well portrayed by review studies such as \cite{Peterson2019ReviewPerspective} and \cite{Popescu2018FDMReview}.  Most plastic producers give relatively little to no information on the process parameters used to test their filament, as can be observed in the Ultimaker ABS datasheet \cite{Ultimaker2018TechnicalABS}. One of the most important characteristics that fluctuate in parts being produced (even if the same process parameters are used), is the healing, wetting and porosity in parts. Although the wetting and porosity can be analyzed by observing the mesostructure, it is extremely hard to characterize the extent of polymer entanglement that will result in road bonding. Employing good hardware (such as a constant envelope heater), reliable sensors and thermocouples and high quality robotics and stepper-motors will generate more consistent results. After a part is produced it can be checked trough some relatively easy steps to determine the quality as described by Tanikella et al. \cite{Tanikella2017TensilePrinting}, e.g. one can weight the produced part to create an estimation for the porosity, and to determine the fluctuation in extrusion by comparing it with the calculated weight by the slicer. Additionally, one could perform a density test by applying the Archimedes principle.
+In the prior sections it has been made clear that there are a wide range of parameters that can be adjusted. However, there is limited guidance in the standardization of the production process to produce a procedure that can be reproduced. Different researchers have tried to create standardization for their work, generating a multitude of different parameters that are being used, this is well portrayed by review studies such as \cite{Peterson2019ReviewPerspective} and \cite{Popescu2018FDMReview}.  Most plastic producers give relatively little to no information on the process parameters used to test their filament, as can be observed in the Ultimaker ABS datasheet \cite{Ultimaker2018TechnicalABS}. One of the most important characteristics that fluctuate in parts being produced (even if the same process parameters are used), is the healing, wetting and porosity in parts. Although the wetting and porosity can be analyzed by observing the mesostructure, it is extremely hard to characterize the extent of polymer entanglement that will result in road bonding. Employing good hardware (such as a constant envelope heater), reliable sensors and thermocouples and high quality robotics and stepper-motors will generate more consistent results. After a part is produced it can be checked through some relatively easy steps to determine the quality as described by Tanikella et al. \cite{Tanikella2017TensilePrinting}, e.g. one can weight the produced part to create an estimation for the porosity, and to determine the fluctuation in extrusion by comparing it with the calculated weight by the slicer. Additionally, one could perform a density test by applying the Archimedes principle.
 
 In the past years efforts have been made to use standard printing processes and test procedures.. Nist \cite{Forster2015NISTApplicability} published a standard for testing additively manufactured polymer materials, including FFF thermoplastic testing. These test methods advise using either ISO 527-2 \cite{Afd2016NEN-EN-ISO527-2} or ASTM D638 \cite{Materials2015ASTMD638-14} for tensile test, which both describe the tensile test for a thermoplastic polymers. They are similar on most points, indicating a geometry and test conditions for the experiments, including a sample size of 5 specimen per test. In general this seems like a decent test method, however, in some cases (due to the large in-isotropic behaviour and nonuniform bonding between roads) the test specimen fails in unexpected ways, often failing at the clamps or the fillets due to stress concentrations\cite{Alaimo2017InfluenceParts}, or having consecutive roads failing due to bad layer bonding and surface roughness \cite{Ahn2002AnisotropicABS} \cite{Bertoldi1998MechanicalDeposition}. 
 
@@ -716,9 +714,9 @@ As an alternative to the ISO 527 or ASTM D638 standard, a composite alternative 
 The document presented by NIST \cite{Forster2015NISTApplicability} still lacks standars on the production of test specimen. Additionally, ISO and ASTM published useful documents on general principles and terminology including ISO 17296  \cite{Afd2014NEN-EN-ISO179-1}, ISO/ASTM 52900 \cite{ASTMInternational2017ISOParts}, ISO/ASTM 52901 \cite{2019NEN-EN-ISOParts}, ISO/ASTM 52910  \cite{ASTMInternational2017ISOParts}, ISO /ASTM 52921 \cite{NEN_EN_ISO2019NEN_EN_ISOTestmethoden}, ASTM F2971 \cite{2013ASTMManufacturing}, the last standard assumes a coordinate system (figure \ref{fig:coordinates}) which will be used for further reference. A book on standards and quality control was presented by Chua et al. \cite{ChuaStandardManufacturing}
 
 Rodriguez \cite{Rodriguez2003MechanicalModeling} has assumed three normal material directions in line with the Chauchy stress tensor to simplify the reference to the road structure as can be seen in figure \ref{fig:Principlematerial}. This is in accordance with the notation for orthotropic materials such as long fibre composites.
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.25\textwidth]{chapter_2/figures/Principlematerial.PNG}
+    \includegraphics[width=0.4\textwidth]{chapter_2/figures/Principlematerial.PNG}
     \caption{Three principle directions in the axis of asymmetry}
     \label{fig:Principlematerial}
 \end{figure}
@@ -742,7 +740,7 @@ Intuitively, the YX[0] specimen would generate the best behaviour, since there a
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{chapter_2/figures/Transverseraster.PNG}
+    \includegraphics[width=0.9\textwidth]{chapter_2/figures/Transverseraster.PNG}
     \caption{a) (YX)[0] b) (XY)[0] \cite{Montero2001MaterialExperiments}}
     \label{fig:Transverseraster}
 \end{figure}
@@ -751,7 +749,7 @@ Multiple researchers did similar research, which is limited to the research of t
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{chapter_2/figures/Rodriguezgraph.jpg}
+    \includegraphics[width=0.7\textwidth]{chapter_2/figures/Rodriguezgraph.jpg}
     \caption{stress strain graph for (YX)[0] (long.dir.) and (XY)[0] \cite{Rodriguez2001MechanicalInvestigation}}
     \label{fig:Rodriguezgraph}
 \end{figure}
@@ -787,17 +785,17 @@ The mesostructure of a FFF part (the road structure on 0.1 to 1 millimeter scale
 
 The fundamental mesostructure (cross section of XY[0] specimen) is a structured stacking of multiple roads in a rectilinear cadence. If standard extrusion settings are implemented with a well calibrated system, the FFF system should deposit a road structure similar to the one seen in figure \ref{fig:Meso10&20} b. As has been discussed in the section \ref{Process parameters}, the process parameters have a large influence on the result on the mesostructure.  The mesostructure could be optimized (meaning a decrease in porosity) by increasing the flow multiplier.
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.5\textwidth]{chapter_2/figures/SEMmesostructure.PNG}
-    \caption{Mesostructure observed with SEM by Cuan-Urquizo} \cite{Cuan-Urquizo2019CharacterizationApproaches}
+    \includegraphics[width=0.9\textwidth]{chapter_2/figures/SEMmesostructure.PNG}
+    \caption{Mesostructure observed with SEM by Cuan-Urquizo \cite{Cuan-Urquizo2019CharacterizationApproaches}.}
     \label{fig:SEMmesostructure}
 \end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.5\textwidth]{chapter_2/figures/AhnMeso.jpg}
-    \caption{Mesostructure observed with SEM by Ahn} \cite{Ahn2002AnisotropicABS}
+    \includegraphics[width=0.8\textwidth]{chapter_2/figures/AhnMeso.jpg}
+    \caption{Mesostructure observed with SEM by Ahn \cite{Ahn2002AnisotropicABS}.}
     \label{fig:AhnMeso}
 \end{figure}
 
@@ -963,7 +961,7 @@ E_2=\zeta(1-\rho_2)*E
 \end{equation}
 where $\zeta$ is an empirical factor that takes into account the bonding strength. $\rho_2$ is a linear void fraction along the transverse direction. $1-\rho_2$  represents the relative contact area of the neck between roads. The void area density is determined according to empirical observations. 
 
-Rodriguez \cite{Rodriguez2003MechanicalModeling} proposed a method to obtain the the $E_1$ and $E_2$ where he calculates the cross sectional void density to be squared voids with perfect bonding. He additionally assumes the void density to be uniform in any given plane trough the solid. 
+Rodriguez \cite{Rodriguez2003MechanicalModeling} proposed a method to obtain the the $E_1$ and $E_2$ where he calculates the cross sectional void density to be squared voids with perfect bonding. He additionally assumes the void density to be uniform in any given plane through the solid. 
 \begin{equation}\label{eqn:E_1}
 E_1=(1-\rho_1)*E
 \end{equation}The void area density in the 2 direction is assumed to be the square root (one side of the void) of the void area density in the 1 direction.
@@ -975,9 +973,9 @@ It has been made clear that the FFF produced parts have a significant overlap wi
 
 Once the material properties of a single ply are acquired one can predict the properties in different orientations and have them stacked as a composite and predict the properties of the laminate as is shown in figure \ref{fig:Transverseraster}
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
-    \includegraphics[width=0.25\textwidth]{chapter_2/figures/CompositeTheory.PNG}
+    \includegraphics[width=0.4\textwidth]{chapter_2/figures/CompositeTheory.PNG}
     \caption{Principle of the Classical Laminate Theory \cite{Daniel2006EngineeringMaterials}}
     \label{fig:Transverseraster}
 \end{figure}
@@ -998,14 +996,14 @@ An RVE homgogenization approach in combination with the Finite Element Method (i
 \bar{\epsilon}_{ij}=\frac{1}{V_{RVE}}\int_V \epsilon_{ij}dV=\epsilon_{ij}^0
 \end{equation}
 
-In order to determine the stiffness tensor, where afterwards the 9 elastic constants can be retrieved by inverting the stiffness tensor to the compliance tensor, an analysis for each column should be carried out. Therefore, trough the average volume stress from the elements in the RVE for the 6 different loading conditions the stiffness tensor can be found
+In order to determine the stiffness tensor, where afterwards the 9 elastic constants can be retrieved by inverting the stiffness tensor to the compliance tensor, an analysis for each column should be carried out. Therefore, through the average volume stress from the elements in the RVE for the 6 different loading conditions the stiffness tensor can be found
 
 \begin{equation}\label{eqn:homogenization}
 C_{ijkl}=\bar{\sigma}_{ij}=\frac{1}{V_{RVE}}\int_V \sigma_{ij}dV \\ 
 \bar{\epsilon}_{kl}^0=1
 \end{equation}
 
-\todo{What's up with this equation?}
+%\todo{What's up with this equation?}
 
 Rodriguez \cite{Rodriguez2003MechanicalModeling} implements a method known as the the asymptotic theory of homogenization. He assumed in his FEM model a mesostructure based on empirically obtained micrographs. This method allowed hem to predict the Youngs moduli in the 1 and 2 direction with a overestimation of approximately 5 percent.  The reader is referred to his paper for further details.
 

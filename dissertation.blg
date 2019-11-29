@@ -77,36 +77,36 @@ Warning--empty year in SimuliaWritingAbaqus
 You've used 94 entries,
             5847 wiz_defined-function locations,
             2269 strings with 38287 characters,
-and the built_in function-call counts, 86592 in all, are:
-= -- 5667
+and the built_in function-call counts, 86644 in all, are:
+= -- 5677
 > -- 2128
 < -- 488
 + -- 679
 - -- 488
-* -- 13372
-:= -- 8837
+* -- 13378
+:= -- 8840
 add.period$ -- 174
 call.type$ -- 94
-change.case$ -- 463
+change.case$ -- 464
 chr.to.int$ -- 93
 cite$ -- 143
-duplicate$ -- 8349
-empty$ -- 6569
+duplicate$ -- 8354
+empty$ -- 6571
 format.name$ -- 1218
-if$ -- 16887
+if$ -- 16900
 int.to.chr$ -- 2
 int.to.str$ -- 102
-missing$ -- 1020
+missing$ -- 1021
 newline$ -- 334
 num.names$ -- 276
 pop$ -- 3588
 preamble$ -- 1
 purify$ -- 455
 quote$ -- 0
-skip$ -- 3083
+skip$ -- 3086
 stack$ -- 0
-substring$ -- 1841
-swap$ -- 7644
+substring$ -- 1843
+swap$ -- 7649
 text.length$ -- 223
 text.prefix$ -- 0
 top$ -- 8
@@ -114,5 +114,5 @@ type$ -- 1273
 warning$ -- 45
 while$ -- 243
 width$ -- 0
-write$ -- 805
+write$ -- 806
 (There were 45 warnings)

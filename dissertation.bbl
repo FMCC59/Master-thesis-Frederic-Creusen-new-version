@@ -341,8 +341,8 @@
 \bibitem [{\citenamefont {{all3dp}}()}]{all3dpAll3dp}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibnamefont {{all3dp}}},\ }\href
-  {https://all3dp.com/} {\textit {\bibinfo {title} {{all3dp}},}\ }\BibitemShut
-  {NoStop}%
+  {https://all3dp.com/} {\textit {\bibinfo {title} {{all3dp}},}\ }\bibinfo
+  {note} {Https://all3dp.com/}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {{Simplefy3D}}()}]{Simplefy3DPrintGuide}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibnamefont {{Simplefy3D}}},\ }\href

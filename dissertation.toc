@@ -1,107 +1,107 @@
 \select@language {english}
 \contentsline {chapter}{Abstract}{v}{chapter*.1}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Literature review}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Fused Filament Fabrication}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}History}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Process \& hardware}{6}{subsection.2.1.2}
-\contentsline {subsubsection}{Feed mechanism}{7}{figure.caption.5}
-\contentsline {subsubsection}{Liquifier}{8}{figure.caption.5}
-\contentsline {subsubsection}{Road deposition}{8}{figure.caption.6}
-\contentsline {subsubsection}{Build plate and chamber}{12}{figure.caption.12}
-\contentsline {subsection}{\numberline {2.1.3}Process parameters}{13}{subsection.2.1.3}
-\contentsline {subsubsection}{Layer height}{14}{figure.caption.13}
-\contentsline {subsubsection}{Line width}{15}{figure.caption.14}
-\contentsline {subsubsection}{Airgap}{16}{figure.caption.15}
-\contentsline {subsubsection}{Feed rate}{16}{figure.caption.16}
-\contentsline {subsubsection}{Extrusion temperature }{17}{figure.caption.17}
-\contentsline {subsubsection}{Envelope temperature }{17}{figure.caption.17}
-\contentsline {subsubsection}{Build plate temperature }{18}{figure.caption.18}
-\contentsline {subsubsection}{Print speed }{18}{figure.caption.18}
-\contentsline {subsubsection}{Infill density}{19}{figure.caption.20}
-\contentsline {subsubsection}{Road orientation}{19}{figure.caption.21}
-\contentsline {section}{\numberline {2.2}Materials}{20}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Materials for FFF}{21}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}ABS properties}{23}{subsection.2.2.2}
-\contentsline {subsubsection}{Chemical composition}{23}{subsection.2.2.2}
-\contentsline {subsubsection}{General properties}{23}{figure.caption.27}
-\contentsline {subsubsection}{Molecular structure}{23}{figure.caption.27}
+\contentsline {chapter}{\numberline {2}Literature review}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Fused Filament Fabrication}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}History}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Process \& hardware}{4}{subsection.2.1.2}
+\contentsline {subsubsection}{Feed mechanism}{5}{figure.caption.15}
+\contentsline {subsubsection}{Liquifier}{6}{figure.caption.15}
+\contentsline {subsubsection}{Road deposition}{7}{figure.caption.16}
+\contentsline {subsubsection}{Build plate and chamber}{10}{figure.caption.25}
+\contentsline {subsection}{\numberline {2.1.3}Process parameters}{11}{subsection.2.1.3}
+\contentsline {subsubsection}{Layer height}{13}{figure.caption.26}
+\contentsline {subsubsection}{Line width}{13}{figure.caption.28}
+\contentsline {subsubsection}{Airgap}{14}{figure.caption.29}
+\contentsline {subsubsection}{Feed rate}{15}{figure.caption.31}
+\contentsline {subsubsection}{Extrusion temperature }{16}{figure.caption.32}
+\contentsline {subsubsection}{Envelope temperature }{16}{figure.caption.32}
+\contentsline {subsubsection}{Build plate temperature }{16}{figure.caption.33}
+\contentsline {subsubsection}{Print speed }{17}{figure.caption.33}
+\contentsline {subsubsection}{Infill density}{18}{figure.caption.35}
+\contentsline {subsubsection}{Road orientation}{19}{figure.caption.36}
+\contentsline {section}{\numberline {2.2}Materials}{19}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Materials for FFF}{20}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}ABS properties}{21}{subsection.2.2.2}
+\contentsline {subsubsection}{Chemical composition}{21}{subsection.2.2.2}
+\contentsline {subsubsection}{General properties}{23}{figure.caption.45}
+\contentsline {subsubsection}{Molecular structure}{23}{figure.caption.45}
 \contentsline {subsection}{\numberline {2.2.3}Elasticity}{25}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Plasticity, damage and failure}{26}{subsection.2.2.4}
-\contentsline {subsubsection}{Yielding}{27}{figure.caption.33}
+\contentsline {subsubsection}{Yielding}{27}{figure.caption.51}
 \contentsline {subsubsection}{Damage and failure}{31}{equation.2.2.9}
-\contentsline {subsubsection}{Fracture}{35}{equation.2.2.17}
+\contentsline {subsubsection}{Fracture}{36}{equation.2.2.17}
 \contentsline {subsection}{\numberline {2.2.5}Application of ABS for FFF}{37}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}Standard parameters for ABS}{37}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.6}Standard parameters for ABS}{38}{subsection.2.2.6}
 \contentsline {subsection}{\numberline {2.2.7}Standardization}{38}{subsection.2.2.7}
-\contentsline {section}{\numberline {2.3}FFF properties}{39}{section.2.3}
+\contentsline {section}{\numberline {2.3}FFF properties}{40}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Experimental mechanical characterization}{40}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Mesostructure}{42}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Composite theory}{43}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Elastic modelling}{43}{subsection.2.4.1}
-\contentsline {subsubsection}{Stiffness in orthotropic materials}{43}{subsection.2.4.1}
-\contentsline {subsubsection}{Mechanics of Materials}{44}{equation.2.4.23}
-\contentsline {subsubsection}{Rule of mixtures}{44}{equation.2.4.23}
-\contentsline {subsubsection}{Classical Laminate Theory}{45}{equation.2.4.28}
-\contentsline {subsubsection}{Finite Element Method}{46}{figure.caption.49}
-\contentsline {subsubsection}{Homogenization approach}{46}{figure.caption.49}
-\contentsline {section}{\numberline {2.5}Summary}{47}{section.2.5}
-\contentsline {chapter}{\numberline {3}Hypothesis and research questions}{49}{chapter.3}
-\contentsline {section}{\numberline {3.1}Knowledge gap in the current state of the art}{49}{section.3.1}
-\contentsline {section}{\numberline {3.2}Hypothesis}{50}{section.3.2}
-\contentsline {section}{\numberline {3.3}Research questions}{50}{section.3.3}
-\contentsline {section}{\numberline {3.4}Research methodology}{51}{section.3.4}
-\contentsline {chapter}{\numberline {4}RVE Definition}{53}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{53}{section.4.1}
-\contentsline {section}{\numberline {4.2}Methods and procedures}{53}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Cross sectional Analysis}{53}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Production strategy}{55}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Microscopy}{56}{section.4.3}
-\contentsline {section}{\numberline {4.4}Results}{56}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Optical micrographs mesostructure regular analysis}{56}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Optical micrographs mesostructure colored analysis}{58}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Digital micrographs mesostructure colored analysis}{60}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Discussion}{60}{section.4.5}
-\contentsline {section}{\numberline {4.6}Conclusion}{65}{section.4.6}
-\contentsline {chapter}{\numberline {5}Experimental testing}{67}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{67}{section.5.1}
-\contentsline {section}{\numberline {5.2}Methods and procedures}{67}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}ISO 527}{68}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}ASTM D 3039}{68}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Ultimaker ABS Filament}{69}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Results}{69}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}ISO 527}{69}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}ASTM D 3039}{71}{subsection.5.3.2}
-\contentsline {subsubsection}{No wall layers }{71}{subsection.5.3.2}
-\contentsline {subsubsection}{Additional}{72}{figure.caption.73}
-\contentsline {subsection}{\numberline {5.3.3}Ultimaker ABS Filament}{73}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Discussion}{75}{section.5.4}
-\contentsline {section}{\numberline {5.5}Conclusion}{77}{section.5.5}
-\contentsline {chapter}{\numberline {6}Elastic modelling}{79}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{79}{section.6.1}
-\contentsline {section}{\numberline {6.2}Methods and procedures}{79}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}RVE homogenization model}{79}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Mesh}{80}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Voigt model}{80}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Results}{81}{section.6.3}
-\contentsline {section}{\numberline {6.4}Discussion}{82}{section.6.4}
-\contentsline {section}{\numberline {6.5}Conclusion}{82}{section.6.5}
-\contentsline {chapter}{\numberline {7}Non-linear modelling}{83}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introduction}{83}{section.7.1}
-\contentsline {section}{\numberline {7.2}Methods and procedures}{83}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Finite Element Method}{83}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Convergence study}{86}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Stress Intensity approach}{87}{subsection.7.2.3}
-\contentsline {section}{\numberline {7.3}Results}{88}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Convergence study mesh}{88}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Convergence study RVEs}{89}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Simulations compared with empirical results }{89}{subsection.7.3.3}
-\contentsline {subsection}{\numberline {7.3.4}Simulations with altering aspect ratio}{90}{subsection.7.3.4}
-\contentsline {subsection}{\numberline {7.3.5}Contour plots of different aspect ratios }{92}{subsection.7.3.5}
-\contentsline {subsection}{\numberline {7.3.6}Comparison fracture stress}{92}{subsection.7.3.6}
-\contentsline {subsection}{\numberline {7.3.7}Cracktip plasticity}{95}{subsection.7.3.7}
-\contentsline {section}{\numberline {7.4}Discussion}{96}{section.7.4}
-\contentsline {section}{\numberline {7.5}Conclusion}{98}{section.7.5}
-\contentsline {chapter}{\numberline {8}Conclusion and recommendations}{101}{chapter.8}
-\contentsline {chapter}{\color {title}References}{103}{chapter*.100}
+\contentsline {section}{\numberline {2.4}Composite theory}{44}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Elastic modelling}{44}{subsection.2.4.1}
+\contentsline {subsubsection}{Stiffness in orthotropic materials}{44}{subsection.2.4.1}
+\contentsline {subsubsection}{Mechanics of Materials}{45}{equation.2.4.23}
+\contentsline {subsubsection}{Rule of mixtures}{45}{equation.2.4.23}
+\contentsline {subsubsection}{Classical Laminate Theory}{46}{equation.2.4.28}
+\contentsline {subsubsection}{Finite Element Method}{46}{figure.caption.67}
+\contentsline {subsubsection}{Homogenization approach}{47}{figure.caption.67}
+\contentsline {section}{\numberline {2.5}Summary}{48}{section.2.5}
+\contentsline {chapter}{\numberline {3}Hypothesis and research questions}{51}{chapter.3}
+\contentsline {section}{\numberline {3.1}Knowledge gap in the current state of the art}{51}{section.3.1}
+\contentsline {section}{\numberline {3.2}Hypothesis}{52}{section.3.2}
+\contentsline {section}{\numberline {3.3}Research questions}{52}{section.3.3}
+\contentsline {section}{\numberline {3.4}Research methodology}{53}{section.3.4}
+\contentsline {chapter}{\numberline {4}RVE Definition}{55}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{55}{section.4.1}
+\contentsline {section}{\numberline {4.2}Methods and procedures}{55}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Cross sectional Analysis}{55}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Production strategy}{57}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Microscopy}{58}{section.4.3}
+\contentsline {section}{\numberline {4.4}Results}{58}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Optical micrographs mesostructure regular analysis}{58}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Optical micrographs mesostructure colored analysis}{60}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Digital micrographs mesostructure colored analysis}{62}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Discussion}{62}{section.4.5}
+\contentsline {section}{\numberline {4.6}Conclusion}{67}{section.4.6}
+\contentsline {chapter}{\numberline {5}Experimental testing}{69}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{69}{section.5.1}
+\contentsline {section}{\numberline {5.2}Methods and procedures}{69}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}ISO 527}{70}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}ASTM D 3039}{70}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Ultimaker ABS Filament}{71}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Results}{71}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}ISO 527}{71}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}ASTM D 3039}{73}{subsection.5.3.2}
+\contentsline {subsubsection}{No wall layers }{73}{subsection.5.3.2}
+\contentsline {subsubsection}{Additional}{74}{figure.caption.90}
+\contentsline {subsection}{\numberline {5.3.3}Ultimaker ABS Filament}{75}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Discussion}{77}{section.5.4}
+\contentsline {section}{\numberline {5.5}Conclusion}{79}{section.5.5}
+\contentsline {chapter}{\numberline {6}Elastic modelling}{81}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{81}{section.6.1}
+\contentsline {section}{\numberline {6.2}Methods and procedures}{81}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}RVE homogenization model}{81}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Mesh}{82}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Voigt model}{82}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Results}{83}{section.6.3}
+\contentsline {section}{\numberline {6.4}Discussion}{84}{section.6.4}
+\contentsline {section}{\numberline {6.5}Conclusion}{84}{section.6.5}
+\contentsline {chapter}{\numberline {7}Non-linear modelling}{85}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{85}{section.7.1}
+\contentsline {section}{\numberline {7.2}Methods and procedures}{85}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Finite Element Method}{85}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Convergence study}{88}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Stress Intensity approach}{89}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Results}{90}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Convergence study mesh}{90}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Convergence study RVEs}{91}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Simulations compared with empirical results }{91}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}Simulations with altering aspect ratio}{92}{subsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3.5}Contour plots of different aspect ratios }{94}{subsection.7.3.5}
+\contentsline {subsection}{\numberline {7.3.6}Comparison fracture stress}{94}{subsection.7.3.6}
+\contentsline {subsection}{\numberline {7.3.7}Cracktip plasticity}{97}{subsection.7.3.7}
+\contentsline {section}{\numberline {7.4}Discussion}{98}{section.7.4}
+\contentsline {section}{\numberline {7.5}Conclusion}{100}{section.7.5}
+\contentsline {chapter}{\numberline {8}Conclusion and recommendations}{103}{chapter.8}
+\contentsline {chapter}{\color {title}References}{105}{chapter*.117}
 \contentsfinish 
