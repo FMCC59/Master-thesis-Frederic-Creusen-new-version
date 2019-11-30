@@ -43,8 +43,8 @@
 \contentsline {subsubsection}{Mechanics of Materials}{45}{equation.2.4.23}
 \contentsline {subsubsection}{Rule of mixtures}{45}{equation.2.4.23}
 \contentsline {subsubsection}{Classical Laminate Theory}{46}{equation.2.4.28}
-\contentsline {subsubsection}{Finite Element Method}{46}{figure.caption.67}
-\contentsline {subsubsection}{Homogenization approach}{47}{figure.caption.67}
+\contentsline {subsubsection}{Finite Element Method}{46}{figure.caption.78}
+\contentsline {subsubsection}{Homogenization approach}{47}{figure.caption.78}
 \contentsline {section}{\numberline {2.5}Summary}{48}{section.2.5}
 \contentsline {chapter}{\numberline {3}Hypothesis and research questions}{51}{chapter.3}
 \contentsline {section}{\numberline {3.1}Knowledge gap in the current state of the art}{51}{section.3.1}
@@ -73,7 +73,7 @@
 \contentsline {subsection}{\numberline {5.3.1}ISO 527}{71}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}ASTM D 3039}{73}{subsection.5.3.2}
 \contentsline {subsubsection}{No wall layers }{73}{subsection.5.3.2}
-\contentsline {subsubsection}{Additional}{74}{figure.caption.90}
+\contentsline {subsubsection}{Additional}{74}{figure.caption.101}
 \contentsline {subsection}{\numberline {5.3.3}Ultimaker ABS Filament}{75}{subsection.5.3.3}
 \contentsline {section}{\numberline {5.4}Discussion}{77}{section.5.4}
 \contentsline {section}{\numberline {5.5}Conclusion}{79}{section.5.5}
@@ -103,5 +103,5 @@
 \contentsline {section}{\numberline {7.4}Discussion}{98}{section.7.4}
 \contentsline {section}{\numberline {7.5}Conclusion}{100}{section.7.5}
 \contentsline {chapter}{\numberline {8}Conclusion and recommendations}{103}{chapter.8}
-\contentsline {chapter}{\color {title}References}{105}{chapter*.117}
+\contentsline {chapter}{\color {title}References}{105}{chapter*.128}
 \contentsfinish 

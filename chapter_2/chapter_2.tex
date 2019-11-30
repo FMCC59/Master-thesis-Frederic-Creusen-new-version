@@ -461,22 +461,24 @@ Most common yield and failure criteria, like von Mises and Tresca \cite{Christen
 \end{equation}
 
 
-However, these do not include dependency on the hydro-static stress, which is most common for metals. Yield and failure criterion for polymers are generally dependant on the the hydrostatic stress ($\sigma_h$):
+However, these do not include dependency on the hydro-static stress, which is most common for metals. Yield and failure criterion for polymers are generally dependent on the the hydrostatic stress ($\sigma_h$):
 \begin{equation} \label{eqn:Me}
   \sigma_h=P=\frac{\sigma_x+\sigma_y+\sigma_z}{3}
 \end{equation}
-Additionally the yield and failure are criterion are a function of the the stress triaxiality ($\sigma_t$):
+Additionally the yield and failure criterion are a function of the stress triaxiality ($\sigma_t$):
 \begin{equation}\label{AzziTsai}
 \sigma_t=\frac{\sigma_h}{\sigma_v}
 \end{equation}
-The difference in yield and failure loci can be observed in figure \ref{fig:yieldloci}
-\begin{figure}[H]
+
+\begin{figure}[htb]
     \centering
     \includegraphics[width=0.7\textwidth]{chapter_2/figures/yieldloci.png}
-    \caption{Failure locus for metals (left), and for ductile polymers (right), with the axis corresponding to the principle directions \cite{Christensen2013TheFailure}}.
+    \caption{Common failure loci for metals defined by the von Mises criterion (left), and for ductile polymers (right), with the axis corresponding to the principle directions \cite{Christensen2013TheFailure}}.
     \label{fig:yieldloci}
 \end{figure}
-The axis in this figure represent the principle stress directions. The left surface is defined by a stress state of the von Mises stress. If a pure hydrostatic pressure is applied, the surface will not be crossed. For polymers there is also a dependency on the hydro static pressure, since it  will cross the surface at some point.  
+
+Figure \ref{fig:yieldloci} compares two common yield and failure loci for metals and polymers. \todo{We have to be more precise. Is it yield or failure? Looks like you used Christensen's book, so it's probably failure. I think it makes more sense to start talking about yield first. Show the figures, and then talk about failure.}
+The axis in this figure represent the principle stress directions. The left surface is defined by a stress state of the von Mises stress. If a pure hydrostatic pressure is applied, the surface will not be crossed. For polymers there is also a dependency on the hydrostatic pressure, since it  will cross the surface at some point.  
 It should me mentioned that the yield and failure surface for polymers is in reality not symmetric for tension and compression, as can be seen in figure \ref{fig:SStensioncompression}. It has been concluded by several book on fracture mechanics \cite{Janssen2014Co_magmeasurewD.pdf} that polymers have a higher compressive yield strength than in tension. 
 For ductile polymers also failure criteria are used based on the equivalent strain. This strain is calculated in a similar way as the equivalent stress. The failure surface might differ from the conventional von Mises or Tresca surfaces. 
 \begin{figure}[htb]
@@ -486,8 +488,8 @@ For ductile polymers also failure criteria are used based on the equivalent stra
     \label{fig:SStensioncompression}
 \end{figure}
 
-Assuming a isotropic polymer blend of ABS, we need to define a yield function based on the principal stress state of the material, $f(\sigma_1,\sigma_2,\sigma_3)$ that is also dependant on the on the hydrostatic pressure. 
-Claiming that a material has hydrostatic pressure sensitivity permits us to write the stress tensor as the sum of its deviatoric $\sigma_p$, and volumetric stress (the identity matrix multiplied with the hydrostatic stress) components, as expressed in equation \ref{eqn:deviatoric}:
+Assuming a isotropic polymer blend of ABS, we need to define a yield function based on the principal stress state of the material, $f(\sigma_1,\sigma_2,\sigma_3)$ that is also dependent on the on the hydrostatic pressure. 
+Claiming that a material has hydrostatic pressure sensitivity permits us to write the stress tensor as the sum of its deviatoric $\sigma_d$, and volumetric stress (the identity matrix multiplied with the hydrostatic stress $\sigma_h$), as expressed in equation \ref{eqn:deviatoric}:
 \begin{equation}\label{eqn:deviatoric}
 \begin{vmatrix}
 \sigma_{1}&0&0\\
@@ -507,12 +509,18 @@ P&0&0\\
 0&0&P\\
 \end{vmatrix}
 = \sigma_d+\sigma_h*I
-\end{equation}Where $I$ is the identity matrix.  
+\end{equation}
+\noindent where $I$ is the identity matrix.  
+
+\todo{after an equation, if you want to continue the text you have to use ``noindent''}
+
 An enhanced form of the von Mises criterion can then be applied to polymers in the following way:
 \begin{equation} \label{eqn:yieldpolymers}
   (\sigma_{11}-\sigma_{22})^2+(\sigma_{22}-\sigma_{33})^2+(\sigma_{33}-\sigma_{11})^2=(2\sigma_y+\mu_{vM}*\sigma_h)^2
 \end{equation}
-Where $\mu_{vM}$ is an internal friction coefficient. The corresponding plasticity envelope is a cone whose axis is the hydrostatic pressure axis, and whose axis increases with hyrdrostatic pressure, similar to the yield locus for polymers in figure \ref{fig:yieldloci}. A similar procedure can be applied to the tresca criterion. 
+\noindent where $\mu_{vM}$ is an internal friction coefficient.
+
+The corresponding yield criterion is a cone whose axis is the hydrostatic pressure axis, and whose axis increases with hyrdrostatic pressure, similar to the yield locus for polymers in figure \ref{fig:yieldloci}. A similar procedure can be applied to the Tresca criterion. 
 
 \begin{figure}[htb]
     \centering
@@ -522,7 +530,7 @@ Where $\mu_{vM}$ is an internal friction coefficient. The corresponding plastici
 \end{figure}
 
 %Ree-Eyring
-The Ree-Eyring model explains the yield behaviour on a molecular scale, according to this model, the sliding of molecules with respect to each other is achieved by passing through a transition state, called activated state, overcoming an energy barrier depending on both temperature and applied stress. This models assumes plastic deformation of amorphous polymers is occurs as the displacement of chain segments from a site A to a site B due to an activation state, related to energy $\Delta G$, both located in a sliding plane resulting from the presence of a shear component. The principle of the model can be seen in figure \ref{fig:Ree-Eyring}. In the anelastic range the chains are merely "stretched" and will not permanently displaced with respect to the other chains in the blend. In comparison with the theory presented by Apselveld, one could argue that the "activation energy" for permanent displacement is analogous to the breaking of the van der Waals bonds.
+The Ree-Eyring model explains the yield behaviour on a molecular scale, according to this model, the sliding of molecules with respect to each other is achieved by passing through a transition state, called activated state, overcoming an energy barrier depending on both temperature and applied stress. This models assumes plastic deformation of amorphous polymers occurs as the displacement of chain segments from a site A to a site B once an activation state related to energy $\Delta G$ is overcome, both located in a sliding plane resulting from the presence of a shear component \todo{Rewrite previous sentence; not clear}. The principle of the model can be seen in figure \ref{fig:Ree-Eyring}. In the anelastic range the chains are merely "stretched" and will not be permanently displaced with respect to the other chains in the blend \todo{I think you are using anelestic as ``elastic'', but I would prefer if you just write elastic or plastic. It's just simpler. Please update everywhere}. In comparison with the theory presented by Apselveld, one could argue that the "activation energy" for permanent displacement is analogous to the breaking of the van der Waals bonds.
 
 \begin{figure}[htb]
     \centering
@@ -531,33 +539,39 @@ The Ree-Eyring model explains the yield behaviour on a molecular scale, accordin
     \label{fig:Ree-Eyring}
 \end{figure}
 %plastic instability
-During tensile tests beyond the yield point many polymers, including amorphous polymers, undergo a plastic instability, the necking phenomenon. In this plastic region, chains have reached their extensibility limit, further neck propagation occurs through neighboring regions. After development of the whole neck propagation a uniform strain occurs again, until the sample breaks as can be seen in figure \ref{fig:Necking}. In figure stable necking is observed, while in figure b unstable necking leads to quick fracture. This behaviour depends on the considered polymer, possible defects, temperature and strain rate conditions. 
+During tensile tests beyond the yield point many polymers, including amorphous polymers, undergo a plastic instability, the necking phenomenon. In this plastic region, chains have reached their extensibility limit, further neck propagation occurs through neighboring regions. After development of the whole neck, propagation with a uniform strain occurs again, until the sample breaks as can be seen in figure \ref{fig:Necking}. In figure (a) stable necking is observed, while in figure (b) unstable necking leads to quick fracture. This behaviour depends on the considered polymer, possible defects, temperature and strain rate conditions. 
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.7\textwidth]{chapter_2/figures/Necking.png}
     \caption{Schematic drawing of the necking phenomenon \cite{Halary2011PolymerMaterials}}
     \label{fig:Necking}
 \end{figure}
-There exists several yield and failure criteria for thermosets and composites. Since thermpolastics have a more complex behaviour due to their viscoeleasticity in this section the different models will be discussed. 
-Lin\cite{Lin2013StressLoading} confirms the lack of accurate yielding and failure criteria for thermoplastics. Additionally, the PhD. thesis of Melick \cite{Melick2002DeformationGlasses} on the deformation and fracture of polymer glasses also mention the lack of failure criterion, and does not produce a satisfying solution for tis issue. Different  models (brittle or ductile) are implemented in commercial software sucha as the equivalent strain criterion, von Mises, Johnson-Cook, Hill and Drucker-Prager. The main drawback in these fracture models is that accurate predictions of failure can only be achieved for limited stress state and strain rate, which cannot be applied for thermoplastics. One of the currently popular material models for polymer plasticity  in LS-DYNA is SAMP-1 (semi analytical model for polymers)
+
+There exist many other yield and failure criteria for thermoplastics, thermosets and composite mateirals. Lin\cite{Lin2013StressLoading} confirms the lack of accurate yielding and failure criteria for thermoplastics. Additionally, the PhD thesis of Melick \cite{Melick2002DeformationGlasses} on the deformation and fracture of polymer glasses also mention the lack of failure criterion, and does not produce a satisfying solution for this issue. Different  models (brittle or ductile) are implemented in commercial software such as the equivalent strain criterion, von Mises, Johnson-Cook, Hill and Drucker-Prager \todo{references?}. The main drawback in these fracture models is that accurate predictions of failure can only be achieved for limited stress state and strain rate, which cannot be applied for thermoplastics. One of the currently popular material models for polymer plasticity  in LS-DYNA is SAMP-1 (semi analytical model for polymers).
 
 Melro \cite{Melro2013MicromechanicalModelling} proposes a paraboloidal yield criterion for epoxies defined by Tschoegl, which can be defined as:
 \begin{equation}\label{eqn:Tschoegl}
 \Phi=6J_2+2I_1(\sigma_c-\sigma_t)-2\sigma_c\sigma_t
-\end{equation}Where $J_2$ is the second invariant of the deviatoric stress tensor, and $I_1$ = tr(\textbf{$\sigma$}). This is a variation of the general yield criterion shown in equation \ref{eqn:yieldpolymers}
+\end{equation}
+
+\noindent where $J_2$ is the second invariant of the deviatoric stress tensor, and $I_1$ = tr(\textbf{$\sigma$}). This is a variation of the general yield criterion shown in equation \ref{eqn:yieldpolymers}.
 
 Du Bois \cite{DuBois2006APolymers} implemented a seminanalytical model for the simulation of polymers (SAMP-1) in LS-DYNA under MAT187. 
 \begin{equation}\label{AzziTsai}
 f=\sigma_v^2-A_0-A_1*\sigma_h-A_2*p^2<0
-\end{equation}For further details the reader is referred to the mentioned article. 
+\end{equation}
 
-Another popular yield criterion that is used by the SAMP-1 material model in LS-DYNA is that Drucker-Prager yield criterion. 
+For further details the reader is referred to the mentioned article. 
+
+Another popular yield criterion that is used by the SAMP-1 material model in LS-DYNA is the Drucker-Prager yield criterion. 
 
 \subsubsection{Damage and failure}
-Damage and fracture are important to investigate to identify the failure mechanism of the polymer, both concepts cannot be dealt with separately, since fracture, which results in the sample breakdown, usually comes after damage. Depending on the deformation conditions (stress field, temperature, strain rate) and characteristics of the polymer chains (chemical structure, molecular weight), two types of deformations may occur: shear bands and crazes. Shear bands are deformations in shear direction (45 degrees for uniaxial compression tension), important to note is that they do not create any voids inside the material, and therefore will not induce and volume change. Shear band growth is controlled by plastic sliding only, therefore, stress associated with shear band formation is assumed to be equal to the yield stress. 
+Damage and fracture are important to investigate to identify the failure mechanism of the polymer, both concepts cannot be dealt with separately, since fracture, which results in the sample breakdown, usually comes after damage. Depending on the deformation conditions (stress field, temperature, strain rate) and characteristics of the polymer chains (chemical structure, molecular weight), two types of deformations may occur: shear bands and crazes.
+
+Shear bands are deformations in shear direction (45 degrees for uniaxial compression tension). Important to note is that they do not create any voids inside the material, and therefore will not induce volume change. Shear band growth is controlled by plastic sliding only, therefore, stress associated with shear band formation is assumed to be equal to the yield stress. 
 
 %crazes
-Crazes are small microvoids containing fibrils bridging the two craze faces. Such fibrils play a major role in the ability of the craze to sustain loading in the direction perpendicular to its faces. These microvoids are ellipsoidal heterogeneities with a size ranging from 10 $\mu$m to 10 mm along the major axis and from 1 to 10 $\mu$m in along the minor axis. In figure \ref{fig:Craze} a schematically image is shown of crazes. The ratio between crazes an fibrils are approximately equal.  
+Crazes are small microvoids containing fibrils bridging the two craze faces. Such fibrils play a major role in the ability of the craze to sustain loading in the direction perpendicular to its faces. These microvoids are ellipsoidal heterogeneities with a size ranging from 10 $\mu$m to 10 mm along the major axis and from 1 to 10 $\mu$m along the minor axis. In figure \ref{fig:Craze} a schematic of crazes is shown. The ratio between crazes and fibrils are approximately equal.  
 
 \begin{figure}[htb]
     \centering
@@ -565,15 +579,22 @@ Crazes are small microvoids containing fibrils bridging the two craze faces. Suc
     \caption{Schematic drawing of a craze a) Microvoids b) conformations of chains within a craze \cite{Halary2011PolymerMaterials}}
     \label{fig:Craze}
 \end{figure}
-A crack systematically initiates from a sample "defect". Despite a crack being inherently different from a craze, a craze initiates from microvoids. These defect lead to stress concentrations allowing the craze to grow, but only at temperatures under the glass transition temperature. These stress concentrations can be predicted by conventional fracture mechanics, but are outside the scope of this thesis. Fibrils in the crazes may either break, which requires to break high energy covalent bonds, or when undergoing higher mobility, may slide with respect to each other. The first results when high strain rate is applied at low temperature, and the latter occurs at a  temperature near $T_g$. These mechanisms occur under tension at a stress lower than yield stress, and grow perpendicularly to the direction of the highest principle stress.
+
+A crack systematically initiates from a sample ``defect''. Despite a crack being inherently different from a craze, a craze initiates from microvoids. These defects lead to stress concentrations allowing the craze to grow, but only at temperatures under the glass transition temperature. These stress concentrations can be predicted by conventional fracture mechanics, but are outside the scope of this thesis. Fibrils in the crazes may either break, which requires to break high energy covalent bonds, or when undergoing higher mobility, may slide with respect to each other. The first results when high strain rate is applied at low temperature, and the latter occurs at a  temperature near $T_g$. These mechanisms occur under tension at a stress lower than yield stress, and grow perpendicularly to the direction of the highest principle stress.
+
 A craze criterion is proposed based on two arguments:
-- Crazes are formed when strain reaches a critical value, $\epsilon_c$, along one direction.
-- This strain craze value, which varies with temperature and strain rate, depends on the hydrostatic component of the stress tensor according to:
-\begin{equation} \label{eqn:crazecriterion}
- \epsilon_c=Y+\frac{X}{\sigma_1+\sigma_2+\sigma_3}
-\end{equation}
-%adding strain surface??
-Where X an Y are experimental parameters. From this criterion a envelope can be made to compare it with the von Mises yield criterion as can be seen in figure \ref{fig:crazecrit}. 
+
+\begin{itemize}
+	\item Crazes are formed when strain reaches a critical value, $\epsilon_c$, along one direction.
+	\item The strain craze value, which varies with temperature and strain rate, depends on the hydrostatic component of the stress tensor according to:
+	\begin{equation} \label{eqn:crazecriterion}
+	\epsilon_c=Y+\frac{X}{\sigma_1+\sigma_2+\sigma_3}
+	\end{equation}
+	%adding strain surface??
+	where X an Y are experimental parameters. From this criterion a envelope can be made to compare it with the von Mises yield criterion as can be seen in figure \ref{fig:crazecrit}.
+\end{itemize}
+
+ 
 
 \begin{figure}[htb]
     \centering
@@ -582,13 +603,13 @@ Where X an Y are experimental parameters. From this criterion a envelope can be 
     \label{fig:crazecrit}
 \end{figure}
 
-The craze strain criterion can occur before yielding and plasticity, whereas shear bands only occur beyond the plasticity threshold. This result implies that any combination of two tensile stresses generates crazes instead of shear bands. A combination of a tenisle and compressive stress might lead to both, pure compression always generates shear bands.
-To discriminate between shear bands and crazes, one could perform optical microscopy. Extensive research was conducted on this topic, the general conclusions are that the type of damage (crazing or shear bands) are dependant on the polymer, stress state, and temperature. In amorphous thermoplastics, both can be identified by the whitish color due to the scattering of light through polymer alignment. This effect is more intense for crazing, as a result of the higher density, and is more localized for shear banding.
-Additionally interactions may exist between these two types of damage. Initiation of shear deformation zones at the craze tip can occur when the craze propagation rate and widening are small. 
+The craze strain criterion can occur before yielding and plasticity, whereas shear bands only occur beyond the plasticity threshold. This result implies that any combination of two tensile stresses generates crazes instead of shear bands. A combination of a tensile and compressive stress might lead to both. Pure compression always generates shear bands.
 
-Halary et al. concluded that despite the issues with microvoids, the uniaxial tensile test and uniaxial compressive tensile have a generally identical shape and domains. Fracture occurs in the viscoplastic domain, it is a ductile fracture with a specific angle of about 45 degrees between the fracture line and stretching direction. At lower temperatures, fracture generally takes place in the anelastic domain, there might be overlap with theory concerning brittle fracture of metals at low temperatures.  
+To discriminate between shear bands and crazes, one could perform optical microscopy. Extensive research was conducted on this topic, the general conclusions are that the type of damage (crazing or shear bands) are dependent on the polymer, stress state, and temperature. In amorphous thermoplastics, both can be identified by a whitening phenomenon due to the scattering of light through polymer alignment. This effect is more intense for crazing, as a result of the higher density, and is more localized for shear banding. Additionally interactions may exist between these two types of damage. Initiation of shear deformation zones at the craze tip can occur when the craze propagation rate and widening are small. 
 
-In FEM modelling software different damage and failure models are implemented. The damage initiation point defines start of degradation of stiffness, it only leads to effective damage if damage evolution is specified \cite{ABAQUS2006MaterialFailure}. In case of ductile damage, D is a function of plastic straining and affect the yield stress rather than the elastic modulus. This is equivalent to plastic softening. The material point is assumed to fail when the overall damage variable D reaches a critical value $D_{max}$.
+Halary et al. concluded that despite the issues with microvoids, the uniaxial tensile test and uniaxial compressive tensile have, generally, identical shape and domains. Fracture occurs in the viscoplastic domain, and is usually ductile fracture with a specific angle of about 45 degrees between the fracture line and stretching direction \todo{For tension too? That sounds very odd}. At lower temperatures, fracture generally takes place in the anelastic \todo{elastic?} domain, there might be overlap with theory concerning brittle fracture of metals at low temperatures.  
+
+In FEM modelling software different damage and failure models are implemented. The damage initiation point defines the start of degradation of stiffness, it only leads to effective damage if damage evolution is specified \cite{ABAQUS2006MaterialFailure}. In case of ductile damage, the damage variable $D$ is a function of plastic straining and affects the yield stress rather than the elastic modulus. This is equivalent to plastic softening. The material point is assumed to fail when the overall damage variable $D$ reaches a critical value $D_{max}$.
 A general form of the strain based fracture loci for thermoplastics can be written as follows
 \begin{equation}\label{AzziTsai}
 \bar{\epsilon_f}=f(\eta)=f(\frac{\sigma_h}{\sigma_v})
@@ -596,39 +617,47 @@ A general form of the strain based fracture loci for thermoplastics can be writt
 %In the SAMP-1 a simple damage model was added where the damage parameter D is a function of plastic strain only. In this model a load cuve must be provided by the user giving D as a function of the plastic strain under uniaxial tension. The value of the critical damage $D_c$ leading to rupture is then the only other required additional input, this model behaves istropically. Furthermore the model uses the notion of the effective cross section, which is the true cross section of the material minus the cracks that have happened. 
 %This models assumes the start of damage from the yield point, and fails when the damage parameter D drops to 0.   
 
-Where $\bar\epsilon_f$ is the equivalent strain at failure. 
+\noindent where $\bar\epsilon_f$ is the equivalent strain at failure. 
 %maybe implement equivalent strain here
-One of the most popular fracture and damage models for polymers is the Johnson Cook model, widely implemented in ABAQUS and LS-DYNA softaware:
+One of the most popular fracture and damage models for polymers is the Johnson Cook model, widely implemented in ABAQUS and LS-DYNA software:
 
 \begin{equation}\label{AzziTsai}
 \bar\epsilon_f=(D_1+D_2*exp{(D_3*\frac{\sigma_h}{\sigma_v})}*(1+D_4*\frac{\dot{\epsilon}}{\dot{\epsilon}})
 \end{equation}
-Where $d_i$ are material parameters\cite{BoisA:}, the Hancock-McKenzie approach defines the following parameters: $d_1=0, d_2=3/2, d_3=\epsilon_{1f}*exp(-1/2)$. Additionally, a paper by Gao \cite{Gao2013CriticalPipelines} proposes a different variant of the Johnson Cook criterion:
+
+\noindent where $D_i$ are material parameters \cite{BoisA:} that can be defined by the Hancock-McKenzie approach defines the following parameters: $D_1=0, D_2=3/2, D_3=\epsilon_{1f}*exp(-1/2)$ \todo{What about $D_4$?}. There are different variants of the Johnson Cook criterion, as proposed for example by Gao \cite{Gao2013CriticalPipelines}:
 
 \begin{equation}\label{eqn:JC}
 \bar\epsilon_{f}=1.65\epsilon_{1f}{(-\frac{3}{2}*\frac{\sigma_h}{\sigma_v})}
-\end{equation}Where $\epsilon_{1f}$ is the critical strain for ductile materials at which crack are initiated under tension in one direction. Different strain based failure criteria are proposed in LS-DYNA and abaqus. Most implement a simple plastic strain at failure ($\epsilon_p<\epsilon_{pf}$) or a major strain failure ($\epsilon_1<\epsilon_{1f}$), and others use the Johnson-Cook criterion as is described.  
+\end{equation}
+
+\noindent where $\epsilon_{1f}$ is the critical strain for ductile materials at which cracks are initiated under tension in one direction.
+
+Different strain based failure criteria are proposed in LS-DYNA and Abaqus. Most implement a simple plastic strain at failure ($\epsilon_p<\epsilon_{pf}$) or a major strain failure ($\epsilon_1<\epsilon_{1f}$), and others use the Johnson-Cook criterion as is described.  
 
 Damage in combination with the Johnson Cook model is defined in material model SAMP-1 in LS-DYNA as:
 
 \begin{equation}\label{AzziTsai}
 D=\epsilon_p/\epsilon_f\Rightarrow D<D_c\Rightarrow\epsilon_p<\epsilon_{pf}=D_c*\epsilon_f
-\end{equation}The influence of stress triaxiality in a strain based failure criterion is important because different states of stress would result in a different equivalent strain at failure\cite{BoisA:}. 
+\end{equation}
+
+The influence of stress triaxiality in a strain based failure criterion is important because different states of stress would result in a different equivalent strain at failure\cite{BoisA:}. 
+
 %damage in polymers
-A damage variable, denoted as D, quantifies the part of the material cross section that no longer transmits forces (cracks or voids). In the following, only isotropic damage is considered. Elastic damage affects material stiffness, ductile damage affects material strenght or both material strength and stiffness. This depends on the chosen formulation where two different approaches may be postulated: strain equivalence or energy equivalence. We will be discussing strain equivalence in this section. 
+A damage variable, denoted as $D$, quantifies the part of the material cross section that no longer transmits forces (cracks or voids). In the following, only isotropic damage is considered. Elastic damage affects material stiffness, ductile damage affects material strength or both material strength and stiffness. This depends on the chosen formulation where two different approaches may be postulated: strain equivalence or energy equivalence. We will be discussing strain equivalence in this section. 
 
 Damage in polymers is relatively hard to model, since different mechanisms play a large role in the determination of damage. A study on the damage behaviour of polymers \cite{Gu2013ExperimentalThermoplastics}, Gu et al. presents different damage functions based on literature and proposes damage functions based on experimental data. 
-The general stiffness damage as function of plastic strain is defined as
+The general stiffness damage as function of plastic strain is defined as:
 
 \begin{equation}\label{stiffnessdamage}
 E_{eff}=E_0*(1-D)
-\end{equation}Where Nutini and Vitali proposed a simple definition of the damage parameter calculated from the volume strain, since an important characteristic of thermoplastics is the generation of damage (voids and crazes) during plastic volumetric deformation $\epsilon_v$, which is defined as the sum of the principle strains.
+\end{equation}
+
+\noindent where Nutini and Vitali \todo{reference} proposed a simple definition of the damage parameter calculated from the volume strain, since an important characteristic of thermoplastics is the generation of damage (voids and crazes) during plastic volumetric deformation $\epsilon_v$, which is defined as the sum of the principle strains.
 
 \begin{equation}\label{eqn:stiffnessdamage}
 D=1-exp(-\epsilon_v)
 \end{equation}
-
-In figure \ref{fig:damagepolymer} the results from a loading/unloading experiment was carried out on a polypropylene sample to get more insight on the damage behaviour. 
 
 \begin{figure}[htb]
     \centering
@@ -636,45 +665,56 @@ In figure \ref{fig:damagepolymer} the results from a loading/unloading experimen
     \caption{Sample of trues stress-strain curve of polypropylene\cite{Gu2013ExperimentalThermoplastics} }
     \label{fig:damagepolymer}
 \end{figure}
-As can be seen, the Youngs modulus slightly decreases with plastic strain. However, after the first cycle (just after the softening region) the change in stiffness seems minimal.  Unfortunately, no absolute values of the Youngs moduli are presented in this study. 
-Following the results, this study proposed a damage function that follows the equation \ref{eqn:stiffnessdamage} fitting the experimental results. Since the damage only occurs in the plastic region for polymers, the result is a function of plastic strain ($\epsilon_p$), and is fitted with a double term exponential function:
+
+In figure \ref{fig:damagepolymer} the results from a loading/unloading experiment was carried out on a polypropylene sample to get more insight on the damage behaviour. As can be seen, the Young's modulus slightly decreases with plastic strain. However, after the first cycle (just after the softening region) the change in stiffness seems minimal \todo{This can be a bit misleading. Stiffness in this context is the same as Young's modulus. Rewrite?}. Unfortunately, no absolute values of the Young's moduli are presented in this study.
+
+Following the results of the above experiment, this study proposed a damage function according to equation \ref{eqn:stiffnessdamage} that can be fitted to the experimental results. Since the damage only occurs in the plastic region for polymers, the result is a function of plastic strain ($\epsilon_p$), and is fitted with a double term exponential function:
 
 \begin{equation}%\label{AzziTsai}
 D=A*(exp(B*\epsilon_p)-exp(D*\epsilon_p))
-\end{equation}The study concludes that the damage parameter calcultated with the volumetric deformation underpredicts the damage occurring. A possible reason is that besides voids and crack that might be captured with the volumetric strain, microscracks that do not lead to macroscopic volume change also contribute to damage. 
+\end{equation}
 
-Christensen \cite{Christensen2013TheFailure}  published a detailed book on failure criteria, but did not take into account materials that exhibit strain softening, therefore his extensive work can unfortunately not be used. 
+The study concludes that the damage parameter calculated with the volumetric deformation underpredicts the damage occurring. A possible reason is that besides voids and crack that might be captured with the volumetric strain, microcracks that do not lead to macroscopic volume change also contribute to damage. 
 
-Rodriguez \cite{Rodriguez2003MechanicalModeling} investigated yield modelling for composite materials under multi-axial loading. He implemented a theory proposed by Tsai-Hill for composites, which is an extension of the von-mises yield criterion, which defines failure for composites. Originally the Hill theory was developed for anisotropic ductile and brittle materials. Different variations are used for either failure or yield criteria. The  surface is assumed to be quadratic in the stress components. Details on these yield criteria can be found in books on composite mechanical behaviour \cite{Daniel2006EngineeringMaterials}, \cite{Mallick2007Fiber-Composites}.
+Christensen \cite{Christensen2013TheFailure} published a detailed book on failure criteria, but did not take into account materials that exhibit strain softening, therefore his extensive work does not discuss this behaviour. 
+
+Rodriguez \cite{Rodriguez2003MechanicalModeling} investigated yield modelling for composite materials under multi-axial loading. He implemented a theory proposed by Tsai-Hill for composites that defines failure for composites. Originally the Hill theory was developed for anisotropic ductile and brittle materials. Different variations are used for either failure or yield criteria. The  surface is assumed to be quadratic in the stress components. Details on these yield criteria can be found in books on composite mechanical behaviour \cite{Daniel2006EngineeringMaterials,Mallick2007Fiber-Composites}.
 
 \subsubsection{Fracture}
-Another failure approach is the study of fracture in cracked surfaces. Among the three opening modes, I requires the smallest stress to propagate the notch, therefore, it is considered as the most destructive mode and is often used to estimate the material toughness. A sample weakened by a notch and or crazes will exhibit a lower Youngs modulus, therefore, the stress at break, $\sigma_b$ is lowered. On the opposite $\sigma_y$ is only slightly modified. Classical fracture theories can be implemented for crack growth and fracture, these assume a thick plate with a crack of length $2a$. An approach that combines Irwin Criterion and  the approach of Griffith is that a sharp crack can propagate within an finite sample under a critical stress:
+Another failure approach is the study of fracture in cracked surfaces. Among the three opening modes, mode I requires the smallest stress to propagate the notch. Therefore, it is considered as the most destructive mode and is often used to estimate the material toughness. A sample weakened by a notch and or crazes will exhibit a lower Youngs modulus, therefore, the stress at break, $\sigma_b$ is lowered. On the opposite $\sigma_y$ is only slightly modified. Classical fracture theories can be implemented for crack growth and fracture, these assume a thick plate with a crack of length $2a$. An approach that combines Irwin criterion and the approach of Griffith is that a sharp crack can propagate within an finite sample under a critical stress:
 
 \begin{equation} \label{eqn:criticalstress}
  \sigma_{cc}=\frac{K_{Ic}}{\sqrt{(\pi*a)}}
 \end{equation}
-Where $K_{Ic}$ is the critical stress intensity for mode 1 loading. This relates the value of the local stress intensity in the surroundings of the crack tip to the applied loading and is dependant on the material and geometry of the crack. 
 
-The  $K_{Ic}$ has a correlation with the material energy release rate, $G_{Ic}$ under plane strain state, involving the Young modulus and the poisson ratio according to: 
+\noindent where $K_{Ic}$ is the critical stress intensity for mode I loading. This relates the value of the local stress intensity in the surroundings of the crack tip to the applied loading and is dependent on the material and geometry of the crack. 
+
+The $K_{Ic}$ has a correlation with the material energy release rate, $G_{Ic}$ under plane strain state, involving the Young's modulus and the Poisson ratio according to: 
 
 \begin{equation} \label{eqn:crazecriterion}
 K_{Ic}=\frac{E*G_{Ic}}{\sqrt{1-v^2_p}}
 \end{equation}
-Irwin was the first to take into account that stress concentrations at the crack tip may be large enough to move from a local elastic to a plastic response. 
 
 \begin{figure}[htb]
-    \centering
-    \includegraphics[width=0.4\textwidth]{chapter_2/figures/Crackstress.png}
-    \caption{Geometry of the plastic zone a crack tip a) Irwin model b) analysis using von Mises stress\cite{Halary2011PolymerMaterials}}
-    \label{fig:stresscrack}
+	\centering
+	\includegraphics[width=0.4\textwidth]{chapter_2/figures/Crackstress.png}
+	\caption{Geometry of the plastic zone a crack tip a) Irwin model b) analysis using von Mises stress\cite{Halary2011PolymerMaterials}}
+	\label{fig:stresscrack}
 \end{figure}
-The radius of the plastic region, $r_y$, as is shown in figure \ref{fig:stresscrack} has been modeled by Irwin under plane strain with the following dependency:
+
+Irwin was the first to take into account that stress concentrations at the crack tip may be large enough to move from a local elastic to a plastic response. The radius of the plastic region, $r_y$, as is shown in figure \ref{fig:stresscrack} has been modeled by Irwin under plane strain with the following dependency:
 
 \begin{equation} \label{eqn:cracktip}
 r_y=\frac{1}{6\pi}*\left(\frac{K_I}{\sigma_y}\right)^2
-\end{equation}There are different ways to calculate $K_{Ic}$ and  $G_{Ic}$, this thesis will not go into detail to determining these values. These values are dependant on numerous polymer characteristics, such as chemical structure, molecular weight, glass transition temperature, etc. It should be noted that the values shift with the thickness of the specimen and is significantly higher for plane stress than for plane strain. Therefore, this method is less appropriate for parts not consisting of plates. 
+\end{equation}
+
+There are different ways to calculate $K_{Ic}$ and  $G_{Ic}$, but this thesis will not go into the details of determining these values. These values are dependent on numerous polymer characteristics, such as chemical structure, molecular weight, glass transition temperature, etc. It should be noted that the values shift with the thickness of the specimen and is significantly higher for plane stress than for plane strain. Therefore, this method is less appropriate for parts not consisting of plates. 
 %Molecular approach of fracture behviour.
-Chain entanglements play a fundamental role in fracture properties. Correlations between the fracture properties of polymers and their entanglement density, $v_e$ where found by Halaray et al., as can be seen in figure \ref{ref:KIc}.  
+Chain entanglements play a fundamental role in fracture properties. Correlations between the fracture properties of polymers and their entanglement density, $v_e$ were found by Halaray et al. \cite{Halary2011PolymerMaterials}, as can be seen in figure \ref{ref:KIc}. These empirical results show that there is a linear dependence  between the two factors as would be predicted by theory. Unfortunately, the work of Halary et al. does not include investigations on ABS polymers. 
+%Hergenhahn \cite{Hergenhahn2002FractureABS} has investigated the fracture toughness of ABS for different thicknesses. Following the Izod procedure, the fracture toughness of ABS was found to be 2.8 $MPa*m^{-3/2}$ and for a thickness of 15 mm 2.77. 
+Oskui \cite{Oskui2014ExperimentalDevice} determined a fracture toughness of 4.32~MPa m$^{-3/2}$ for a 10 mm thick specimen. %others also had 4. 
+
+%these analytical models might be appropriate for our problem, but the goal of this thesis is to implement and validate a numerical model, therefore they will not be researched further. 
 
 \begin{figure}[htb]
     \centering
@@ -682,32 +722,26 @@ Chain entanglements play a fundamental role in fracture properties. Correlations
     \caption{Correlation between toughness, $K_{Ic}$, and entanglement density, $v_e$  \cite{Halary2011PolymerMaterials}}
     \label{ref:KIc}
 \end{figure}
-These empirical results shows that there is a linear dependence  between the two factors as would be predicted by theory. 
 
-Unfortunately, the work of Halary et al. does not include investigations on ABS polymers. 
-%Hergenhahn \cite{Hergenhahn2002FractureABS} has investigated the fracture toughness of ABS for different thicknesses. Following the Izod procedure, the fracture toughness of ABS was found to be 2.8 $MPa*m^{-3/2}$ and for a thickness of 15 mm 2.77. 
-Oskui \cite{Oskui2014ExperimentalDevice} determined a fracture toughness of 4.32~MPa m$^{-3/2}$ for a 10 mm thick specimen. %others also had 4. 
-
-%these analytical models might be appropriate for our problem, but the goal of this thesis is to implement and validate a numerical model, therefore they will not be researched further. 
 
 \subsection{Application of ABS for FFF}
 \label{Application of ABS for FFF}
-Due to its low glass transition temperature, it's ease of processability, low cost and decent mechanical properties, ABS is a popular polymer to be used for FFF printing of functional parts. Since PLA is even cheaper and easier to use, this polymer is generally used for prototyping and aehstetical parts. Polymers such as PETG, PC and PA are generally used for functional parts. When printing without a heated chamber, polymers with high $T_g$ (for PC 147$^\circ C$) will loose a significant part of their properties due to bad bonding. ABS has a relatively high glass transition temperature ($T_g$ 105), PETG ($T_g$ 80$^\circ C$) and PA ($T_g$ 60$^\circ C$) will have less issues with this. What causes difficulty for the use of ABS with FFF is warping. Coating the build surface with an adhesive will significantly reduce warping.
+Due to its low glass transition temperature, it's ease of processability, low cost and decent mechanical properties, ABS is a popular polymer to be used for FFF printing of functional parts. Since PLA is even cheaper and easier to use, this polymer is generally used for prototyping and aehstetical parts. Polymers such as PETG, PC and PA are generally used for functional parts. When printing without a heated chamber, polymers with high $T_g$ (for PC $T_g\approx 147~^\circ$C) will loose a significant part of their properties due to bad bonding. ABS has a relatively high glass transition temperature ($T_g\approx 105~^\circ$C), PETG ($T_g \approx 80~^\circ$C) and PA ($T_g \approx 60~^\circ$C) will have less issues with this. What causes difficulty for the use of ABS with FFF is warping. Coating the build surface with an adhesive will significantly reduce warping.
 
 
 %the curling of the part (which especially happens for large areas touching the buildplate). This is due to the shrinkage of the first layers that are attached to the bottom layer, this causes the bottom layer to be pulled from the buildplate. To ensure that the part adheres well to buildplate it is essential to have a calibrated "leveled" bed (which determines the distance between the extruder and the buildplate). Also a heated build plate can be incorporated, which drastically limits the thermal gradient between the first layers, reducing thermal stresses. Over cooling the parts with the fans or convection will make your part more prone to warping. A brim (a small entourage of extra roads around the part) is also helpful to stop the part from warping. 
 %The extent of warpage is mostly related to the thermal expansion coefficient, $\alpha$, which is around 120 $\mu m/(m C^{\circ}$) according to CES edupack. Even though warpage is an essential part of producing functionally viable parts, it will not be part of this thesis. In future work in this thesis, warpage will not be taken into account. 
-It is important to note that the parts produced with FFF are weakest at the inter-laminar interface, and that in different loading conditions the parts most certainly will fail at the laminar interface \cite{Hart2018IncreasedAnnealing} \cite{Popescu2018FDMReview}
+It is important to note that the parts produced with FFF are weakest at the inter-laminar interface, and that in different loading conditions the parts most certainly will fail at the laminar interface \cite{Hart2018IncreasedAnnealing,Popescu2018FDMReview}
 
 \subsection{Standard parameters for ABS}
     \label{standard parameters for ABS}
-The technical data sheet of ABS produced by Ultimaker \cite{Ultimaker2018TechnicalABS} assumes the "fine" settings in Cura. These include a 0.4mm nozzle printed at 240-250 C and has a build plate temperature of 85 C, additionally it has a printing speed of 55 mm/s. These settings are recommended for an optimal print, the amount of infill orientation and shell architecture is up to the judgment of the producer. Automatically the slicer produces a shell of about 3 roads thick and applies an infill of 20-50\% filled with a triangle structure. Due to differences in parameters, difference in material and system, lack of standardization, qualification and characterization of results, the produced parts by different researchers will differ widely. Therefor it is difficult to compare the different empirical results from different researchers and datasheets. E.g., the UM datatsheet only states that the printed test specimen are printed in 90\% infill, but the orientation, geometry of the infill and additional parameters have a crucial influence on the mechanical properties of the part. 
+The technical data sheet of ABS produced by Ultimaker \cite{Ultimaker2018TechnicalABS} assumes the "fine" settings in Cura. These include a 0.4mm nozzle printed at $240-250~^\circ$C and has a build plate temperature of $85~^\circ$C, additionally it has a printing speed of 55 mm/s. These settings are recommended for an optimal print, the amount of infill orientation and shell architecture is up to the judgment of the producer. Automatically the slicer produces a shell of about 3 roads thick and applies an infill of 20-50\% filled with a triangle structure. Due to differences in parameters, difference in material and system, lack of standardization, qualification and characterization of results, the produced parts by different researchers will differ widely. Therefore it is difficult to compare the different empirical results from different researchers and datasheets; e.g. the UM datatsheet only states that the test specimen are printed with 90\% infill, but the orientation, geometry of the infill and additional parameters have a crucial influence on the mechanical properties of the part. 
 
 \subsection{Standardization}
     \label{Standarization}
-In the prior sections it has been made clear that there are a wide range of parameters that can be adjusted. However, there is limited guidance in the standardization of the production process to produce a procedure that can be reproduced. Different researchers have tried to create standardization for their work, generating a multitude of different parameters that are being used, this is well portrayed by review studies such as \cite{Peterson2019ReviewPerspective} and \cite{Popescu2018FDMReview}.  Most plastic producers give relatively little to no information on the process parameters used to test their filament, as can be observed in the Ultimaker ABS datasheet \cite{Ultimaker2018TechnicalABS}. One of the most important characteristics that fluctuate in parts being produced (even if the same process parameters are used), is the healing, wetting and porosity in parts. Although the wetting and porosity can be analyzed by observing the mesostructure, it is extremely hard to characterize the extent of polymer entanglement that will result in road bonding. Employing good hardware (such as a constant envelope heater), reliable sensors and thermocouples and high quality robotics and stepper-motors will generate more consistent results. After a part is produced it can be checked through some relatively easy steps to determine the quality as described by Tanikella et al. \cite{Tanikella2017TensilePrinting}, e.g. one can weight the produced part to create an estimation for the porosity, and to determine the fluctuation in extrusion by comparing it with the calculated weight by the slicer. Additionally, one could perform a density test by applying the Archimedes principle.
+In the prior sections it has been made clear that there are a wide range of parameters that can be adjusted. However, there is limited guidance in the standardization of the production process to produce a procedure that can be reproduced. Different researchers have tried to create standardization for their work, generating a multitude of different parameters that are being used, this is well portrayed by review studies such as \cite{Peterson2019ReviewPerspective} and \cite{Popescu2018FDMReview}.  Most plastic producers give relatively little to no information on the process parameters used to test their filament, as can be observed in the Ultimaker ABS datasheet \cite{Ultimaker2018TechnicalABS}. One of the most important characteristics that fluctuate in parts being produced (even if the same process parameters are used), is the healing, wetting and porosity in parts. Although the wetting and porosity can be analyzed by observing the mesostructure, it is extremely hard to characterize the extent of polymer entanglement that will result in road bonding. Employing good hardware (such as a constant envelope heater), reliable sensors and thermocouples and high quality robotics and stepper-motors will generate more consistent results. After a part is produced it can be checked through some relatively easy steps to determine the quality as described by Tanikella et al. \cite{Tanikella2017TensilePrinting}, e.g. one can weigh the produced part to create an estimation for the porosity, and to determine the fluctuation in extrusion by comparing it with the calculated weight by the slicer. Additionally, one could perform a density test by applying the Archimedes principle.
 
-In the past years efforts have been made to use standard printing processes and test procedures.. Nist \cite{Forster2015NISTApplicability} published a standard for testing additively manufactured polymer materials, including FFF thermoplastic testing. These test methods advise using either ISO 527-2 \cite{Afd2016NEN-EN-ISO527-2} or ASTM D638 \cite{Materials2015ASTMD638-14} for tensile test, which both describe the tensile test for a thermoplastic polymers. They are similar on most points, indicating a geometry and test conditions for the experiments, including a sample size of 5 specimen per test. In general this seems like a decent test method, however, in some cases (due to the large in-isotropic behaviour and nonuniform bonding between roads) the test specimen fails in unexpected ways, often failing at the clamps or the fillets due to stress concentrations\cite{Alaimo2017InfluenceParts}, or having consecutive roads failing due to bad layer bonding and surface roughness \cite{Ahn2002AnisotropicABS} \cite{Bertoldi1998MechanicalDeposition}. 
+In the past years efforts have been made to use standard printing processes and test procedures. NIST \cite{Forster2015NISTApplicability} published a standard for testing additively manufactured polymer materials, including FFF thermoplastic testing. These test methods advise using either ISO 527-2 \cite{Afd2016NEN-EN-ISO527-2} or ASTM D638 \cite{Materials2015ASTMD638-14} for tensile test, which both describe the tensile test for thermoplastic polymers. They are similar on most points, indicating a geometry and test conditions for the experiments, including a sample size of 5 specimen per test. In general this seems like a decent test method, however, in some cases (due to the large anisotropic behaviour and nonuniform bonding between roads) the test specimen fails in unexpected ways, often failing at the clamps or the fillets due to stress concentrations \cite{Alaimo2017InfluenceParts}, or having consecutive roads failing due to bad layer bonding and surface roughness \cite{Ahn2002AnisotropicABS,Bertoldi1998MechanicalDeposition}. 
 
 As an alternative to the ISO 527 or ASTM D638 standard, a composite alternative is proposed by Rodriguez \cite{Rodriguez2001MechanicalInvestigation}, which applies the ASTM D3039 on his tests, which are normally used for long fiber samples. The advantage of this standard is the fact that it does not have fillets at the end of the sample, reducing the stress concentration and possibility for defects.
 
@@ -724,30 +758,30 @@ Rodriguez \cite{Rodriguez2003MechanicalModeling} has assumed three normal materi
 If one were to produce test specimens, the convention states that the orientation of the test specimen has two directions which define the orientation of the test specimen, the first being the direction of the longest side of the specimen, the second being the smaller side. In figure \ref{fig:coordinates} the coordinates for sample production are defined. 
 To define the direction of the roads (the raster orientation) one could look at the slicer software used (in this case Cura) which defines the deposited road orientation at the angle [0] to be in the Y direction (therefor [90] is in the X direction). Multiple papers use different orientation systems which can be quite confusing and ambiguous. To be consistent and easily comprehensible, this convention will be used throughout this thesis. This will be important when referring to orientations and tested samples in rest of the report. 
 
-After damage or delamination of a layer or a set roads, the properties of the part change, which create a difficult situation to model. H.Li et al. \cite{Li2002CompositeProperties} have developed numerical approaches that uses composite theories including multi-state of elastic, softened and de-bonded state.  Since these are complicated and strongly dependant on the process parameters, these will not be further discussed here. 
+After damage or delamination of a layer or a set roads, the properties of the part change, which create a difficult situation to model. Li et al. \cite{Li2002CompositeProperties} have developed numerical approaches that use composite theories including elasticity, softening and debonding.  Since these are complicated and strongly dependent on the process parameters, these will not be further discussed here. 
 
 %Tanikella, Nagendra G Interesting graph here
 %TNO rapport Julius Berens
 
 \section{FFF properties}
     \label{chp:FFF properties}
-We have concluded that the process parameters largely influence the properties of FFF produced parts and are dissimilar from conventional produced counterparts. It is made clear that the products from this process create significant anistropy resulting in orthotropic parts (three mutually perpendicular planes of symmetry), porosity, weak layer/road interfaces and surface roughness and inconsistencies. The benefits from FFF produced parts are the geometrical freedom, almost negligible start-up cost due to the absence of a mall or expensive machinery, relatively fast production, integration of different parts without the need of joining and for Defence applications; the large logistic freedom to create parts in remote area's.
+We have concluded that the process parameters largely influence the properties of FFF produced parts and are dissimilar from conventional produced counterparts. It is made clear that the products from this process create significant anistropy resulting in orthotropic parts (three mutually perpendicular planes of symmetry), porosity, weak layer/road interfaces and surface roughness and inconsistencies. The benefits from FFF produced parts are the geometrical freedom, almost negligible start-up cost due to the absence of a mill or expensive machinery, relatively fast production, integration of different parts without the need of joining and for, Defense applications, the large logistic freedom to create parts in remote areas.
 
 \subsection{Experimental mechanical characterization}
-Conducting experimental tests with constant process parameters and 100\% infill in the three general directions (as is shown in figure \ref{fig:Principlematerial}) will give more insight in the mechanical behaviour of FFF products. The notation of the produced samples in the 3 directions are respectively; YX[0] direction 1, XY[0] direction 2 and ZY[0] direction 3. The properties that will govern their behaviour will be consecutively; the axial road properties (intra fiber properties), the horizontal (adjacent, inter fiber properties) road bonding, the vertical (stacked, inter fiber properties) layer bonding. This theory is supported by different papers including work done by Alaimo \cite{Alaimo2017InfluenceParts}
+Conducting experimental tests with constant process parameters and 100\% infill in the three general directions (as is shown in figure \ref{fig:Principlematerial}) will give more insight in the mechanical behaviour of FFF products. The notation of the produced samples in the 3 directions are respectively; YX[0] direction 1, XY[0] direction 2 and ZY[0] direction 3 \todo{I am not sure if this is still clear...}. The properties that govern their behaviour are: the axial road properties (intra fiber properties), the horizontal (adjacent, inter fiber properties) road bonding, the vertical (stacked, inter fiber properties) layer bonding. This theory is supported by different papers including work done by Alaimo \cite{Alaimo2017InfluenceParts}.
 
 Intuitively, the YX[0] specimen would generate the best behaviour, since there are no bonds in the direction of the load. Montero \cite{Montero2001MaterialExperiments} concluded that the bond between layers in shear is stronger and stiffer  than between roads. They also did a tensile test including horizontal specimen with transverse and axially aligned rasters, the results of his stress strain graphs are shown in figure \ref{fig:Transverseraster}. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
     \includegraphics[width=0.9\textwidth]{chapter_2/figures/Transverseraster.PNG}
     \caption{a) (YX)[0] b) (XY)[0] \cite{Montero2001MaterialExperiments}}
     \label{fig:Transverseraster}
 \end{figure}
 
-Multiple researchers did similar research, which is limited to the research of the raster orientation in the horizontal plane. This lacks to obtain the information concerning the layer bonding ZY[0]. Roderiguez et al. were probably one of the first to analyze the mechanical behaviour of different FFF orientations, they provide a clear graph (figure \ref{fig:Rodriguezgraph}) comparing the results with bulk ABS \cite{Rodriguez2001MechanicalInvestigation}. This graph clearly suggests an almost linear elastic region with a perfect plastic response for the longitudinal direction and a linear elastic brittle behaviour for the transverse directions. 
+Multiple researchers did similar research, which is limited to the research of the raster orientation in the horizontal plane. This lacks information concerning the layer bonding ZY[0]. Rodriguez et al. were probably one of the first to analyze the mechanical behaviour of different FFF orientations, they provide a clear graph (figure \ref{fig:Rodriguezgraph}) comparing the results with bulk ABS \cite{Rodriguez2001MechanicalInvestigation}. This graph clearly suggests an almost linear elastic region with a perfect plastic response for the longitudinal direction and a linear elastic brittle behaviour for the transverse directions. 
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
     \includegraphics[width=0.7\textwidth]{chapter_2/figures/Rodriguezgraph.jpg}
     \caption{stress strain graph for (YX)[0] (long.dir.) and (XY)[0] \cite{Rodriguez2001MechanicalInvestigation}}
@@ -778,12 +812,12 @@ Annealing and post processing has been discussed to some extent in academic lite
 
 \subsection{Mesostructure}
 \label{mesostructure}
-The mesostructure of a FFF part (the road structure on 0.1 to 1 millimeter scale) characterizes a significant amount of the mechanical properties of the FFF produced part. It was already discussed that the laminate-like nature of the FFF parts resembles composites. Multiple studies \cite{Somireddy2017MechanicalMesostructure} \cite{Somireddy2018DevelopmentFDM} \cite{Rodriguez2001MechanicalInvestigation} were conducted to characterize the mesostructure by microtoming, a process to cut micrometer thick slices of a specimen, this procedure will be further discussed in chapter 4. Afterwards the sample is inspected with optical microscopy and a digital image is produced. This procedure is used in different scientific fields and has been adopted for the inspection of the cross section of FFF samples. A few, among which Enrique Cuan-Urquizo \cite{Cuan-Urquizo2019CharacterizationApproaches} (\ref{fig:SEMmesostructure}) and Ahn \cite{Ahn2002AnisotropicABS} \ref{fig:AhnMeso}observed the mesostructure (\ref{fig:SEMmesostructure}) with SEM (scanning electron microscope) which gives a more detailed perspective on the mesostrucure, but might be too expensive and time-consuming for multiple investigations.
+The mesostructure of a FFF part (the road structure on 0.1 to 1 millimeter scale) characterizes a significant amount of the mechanical properties of the FFF produced part. It was already discussed that the laminate-like nature of the FFF parts resembles composites. Multiple studies \cite{Somireddy2017MechanicalMesostructure,Somireddy2018DevelopmentFDM,Rodriguez2001MechanicalInvestigation} were conducted to characterize the mesostructure by microtoming, a process to cut micrometer thick slices of a specimen, this procedure will be further discussed in chapter 4. Afterwards the sample is inspected with optical microscopy and a digital image is produced. This procedure is used in different scientific fields and has been adopted for the inspection of the cross section of FFF samples. A few, among which Enrique Cuan-Urquizo \cite{Cuan-Urquizo2019CharacterizationApproaches} (figure \ref{fig:SEMmesostructure}) and Ahn \cite{Ahn2002AnisotropicABS}  (figure \ref{fig:AhnMeso}) observed the mesostructure with SEM (scanning electron microscope). This gives a more detailed perspective on the mesostrucure, but might be too expensive and time-consuming for multiple investigations.
 
 % extra citations \cite{Rodriguez2003MechanicalModeling} \cite{Rodrguez2003DesignStrength} \cite{Sun2008} \cite{Patanwala2018TheComposites} \cite{Li2017TheProperties} \cite{Sheth2017NumericalOrientation} \cite{Li2002CompositeProperties}
 
 
-The fundamental mesostructure (cross section of XY[0] specimen) is a structured stacking of multiple roads in a rectilinear cadence. If standard extrusion settings are implemented with a well calibrated system, the FFF system should deposit a road structure similar to the one seen in figure \ref{fig:Meso10&20} b. As has been discussed in the section \ref{Process parameters}, the process parameters have a large influence on the result on the mesostructure.  The mesostructure could be optimized (meaning a decrease in porosity) by increasing the flow multiplier.
+The fundamental mesostructure (cross section of XY[0] specimen) is a structured stacking of multiple roads in a rectilinear cadence. If standard extrusion settings are implemented with a well calibrated system, the FFF system should deposit a road structure similar to the one seen in figure \ref{fig:Meso10&20}b. As has been discussed in the section \ref{Process parameters}, the process parameters have a large influence on the result on the mesostructure.  The mesostructure could be optimized (meaning a decrease in porosity) by increasing the flow multiplier.
 
 \begin{figure}[htb]
     \centering
@@ -799,8 +833,9 @@ The fundamental mesostructure (cross section of XY[0] specimen) is a structured 
     \label{fig:AhnMeso}
 \end{figure}
 
-These micrographs give an abundant amount of information on the road structure, wetting, necking and the amount of porosity in a part. This type of characterization is essential to determine the quality of the parts and the consistency of the process. Different systems, parameters and materials have influence on the results of the mesostructure. There is also a common consensus in these studies that the degree of polymer bonding (and consequently weld strength) are a function of the temperature and time of the contact area between two roads. Although, there is not a common agreement on the form of the roads nor the connection to the process parameters and the degree of overlap. The roads are interpreted as different forms by different academici, including ellipses, ovals and oblongs. Someriddy \cite{Somireddy2018DevelopmentFDM} and Sun \cite{Sun2008} assume ellipses in their work, the disadvantage is that the overlapped material is not accounted for. 
-It is difficult to make a good assumption concerning the form of the roads in the mesostructure, since the form is largely influenced by the process parameters and other non-controllable process phenomena which  result in a relatively complex form. The reason of characterizing the road form is to be able to model the geometry of the mesostructure in a FEA for the prediction of mechanical properties. This will be further discussed in chapter 5. 
+These micrographs give an abundant amount of information on the road structure, wetting, necking and the amount of porosity in a part. This type of characterization is essential to determine the quality of the parts and the consistency of the process. Different systems, parameters and materials have influence on the results of the mesostructure. There is also a common consensus in these studies that the degree of polymer bonding (and consequently weld strength) are a function of the temperature and time of the contact area between two roads. Although, there is not a common agreement on the form of the roads nor the connection to the process parameters and the degree of overlap. The roads are interpreted as different forms by different academics, including ellipses, ovals and oblongs. Someriddy \cite{Somireddy2018DevelopmentFDM} and Sun \cite{Sun2008} assume ellipses in their work, the disadvantage is that the overlapped material is not accounted for. 
+
+It is difficult to make a good assumption concerning the form of the roads in the mesostructure, since the form is largely influenced by the process parameters and other non-controllable process phenomena which  result in a relatively complex form. However, characterizing the road forms is relevant because it enables to model the geometry of the mesostructure in FEA for the prediction of mechanical properties. This will be further discussed in chapter 5. 
 %this is good
 
 %A different approach is followed by the Slic3r manual written by Hodgson \cite{GaryHodgsonSlic3rMath} where he explains how the extruded material of the roads is calculated. In his model he assumes a stadium shaped road, which is also supported by Patanwala \cite{Patanwala2018TheComposites} Additionally to the conclusions found in the section about road width, Hodgson claims that with a higher line width the bonding in the z direction would be better due to a larger contact area and consequently a lower amount of porosity. He explains how the Slic3r software assumes stadium shapes instead of ellipses as is shown in figure \ref{fig:Slic3rshape.png}. 
@@ -850,11 +885,11 @@ It is difficult to make a good assumption concerning the form of the roads in th
 
 \section{Composite theory}
     \label{Modelling of FFF parts}
-Since it was concluded that FFF parts are an-isotropic and have particular mechanical behaviour due to it's process, it is difficult to predict the properties of such parts. Therefore, it would be beneficial if these properties were possible to model, so the parts could be implemented based on the prediction from the models. 
+Since it was concluded that FFF parts are anisotropic and have particular mechanical behaviour due to the processing conditions, it is difficult to predict the properties of such parts. Therefore, it would be beneficial if these properties were possible to model, so the parts could be implemented based on the prediction from the models. 
 
 \subsection{Elastic modelling}
 \subsubsection{Stiffness in orthotropic materials}
-As has been discussed in the section \ref{chp:FFF properties} we can conclude that the layers are thin and behave as orthotropic material, and therefor, orthotropic constitutive relation for plane stress case can be considered, a similar approach has been found in multiple papers \cite{Rodriguez2003DesignStrength,Rodriguez2003MechanicalModeling,Somireddy2018DevelopmentFDM} 
+As has been discussed in section \ref{chp:FFF properties} we can conclude that the layers are thin and behave as orthotropic materials. Therefore, orthotropic constitutive relation for plane stress can be considered, a similar approach has been found in multiple papers \cite{Rodriguez2003DesignStrength,Rodriguez2003MechanicalModeling,Somireddy2018DevelopmentFDM} 
 %\cite{Somireddy2017FlexuralStudy} \cite{Somireddy2017MechanicalMesostructure} \cite{Li2017TheProperties} \cite{Ahn2002AnisotropicABS} \cite{Alaimo2017InfluenceParts} \cite{Sheth2017NumericalOrientation} \cite{Patanwala2018TheComposites}. 
 
 The stress strain relation for an orthotropic body can be written in the contracted notation as
@@ -886,9 +921,7 @@ C_{31}&C_{32}&C_{33}&0&0&0\\
 \epsilon_{23}\\
 \epsilon_{13}\\
 \end{vmatrix}
-\end{equation}Since this matrix is diagonally symmetric, the amount of elastic constants is reduced to 9.
-
-Plane stress is achieved by defining $\sigma_{33}$=0 $\sigma_{23}$=0 $\sigma_{13}$=0. The compliance matrix $|C|$ written becomes:
+\end{equation}Since this matrix is diagonally symmetric, the amount of elastic constants is reduced to 9. Plane stress is achieved by defining $\sigma_{33}$=0 $\sigma_{23}$=0 $\sigma_{13}$=0. The compliance matrix $|C|$ written becomes:
 
 
 \begin{equation}\label{eqn:compliancematrix}
@@ -936,89 +969,86 @@ The stresses and the stiffness matrix $|Q|$ can be acquired by inverting equatio
 The resulting independent material constants, $E_1, E_2, v_{12}$ and $G_{12}$ are needed to determine what the mechanical response of a thin FFF product would be.
 
 \subsubsection{Mechanics of Materials}
-The mechanics of materials approach is based on simplifying assumptions of either uniform strain or uniform stress in the constituents. These predictions are adequate for longitudinal properties such as Young's modulus $E_1$ and major poisson's ratio $v_{12}$. These properties are not sensitive to fiber shape and distribution, this approach underestimates the transverse and shear properties\cite{Daniel2006EngineeringMaterials}
+The mechanics of materials approach is based on simplifying assumptions of either uniform strain or uniform stress in the constituents. These predictions are adequate for longitudinal properties such as Young's modulus $E_1$ and major poisson's ratio $v_{12}$. These properties are not sensitive to fiber shape and distribution, this approach underestimates the transverse and shear properties \cite{Daniel2006EngineeringMaterials}.
 
 \subsubsection{Rule of mixtures}
-The rule of mixture (ROM) is a commonly used principle in the application of composites, when two different materials are combined in a solid, the ROM can combine the different material properties to predict the new solid characteristics. When loading a composite ply in the 1 direction (along the fibre axis), the elastic properties can be predicted with the parallel or Voigt model\cite{Daniel2006EngineeringMaterials} 
+The rule of mixture (ROM) is a commonly used principle in the application of composites. When two different materials are combined in a solid, the ROM can combine different material properties to predict the new solid characteristics. When loading a composite ply in the 1 direction (along the fibre axis), the elastic properties can be predicted by this rule, which is also called the parallel or Voigt micromechanical model \cite{Daniel2006EngineeringMaterials}:
 
 \begin{equation} \label{eqn:Voigt}
 E_1=V_f*E_{1f}+(1-V_f)*E_{1m}
 \end{equation}
 
-Where $E_1$ is the elastic modulus of the ply in direction 1, $V_f$ is the fibre volume and $V_m$ is the matrix volume. Following this formula, and considering the ABS roads as $V_f$ and the porosity as $V_m$, one could predict the elastic properties in the 1 direction by obtaining the void density in the 1 plane.
+\noindent where $E_1$ is the elastic modulus of the ply in direction 1, $V_f$ is the fibre volume and $V_m$ is the matrix volume. Following this formula, and considering the ABS roads as $V_f$ and the porosity as $V_m$, one could predict the elastic properties in the 1 direction by obtaining the void density in the 1 plane.
 
-The different approach can be used for loads in the transverse (2) and (3) directions. The model used for composites is called series of Reuss model \cite{Daniel2006EngineeringMaterials} 
+The different approach can be used for loads in the transverse (2) and (3) directions. The model used for composites is called series of Reuss model \cite{Daniel2006EngineeringMaterials}:
 
 \begin{equation} \label{eqn:Reuss}
 E_2=\frac{E_{2f}*E_{2m}}{(E_{2f}*V_m+E_{2m}*V_f)}
 \end{equation}
-However, this takes a few rough assumptions, since the cross section of the voids are not continuous in the 2 and 3 directions in contrast to the 1 direction, it will be more difficult to determine the void density in the 2 and 3 directions. 
 
-Li et al. \cite{Li2002CompositeProperties} proposes an equation to account for transverse stiffness:
+However, this takes a few strong simplifications, since the cross section of the voids are not continuous in the 2 and 3 directions in contrast to the 1 direction, it will be more difficult to determine the void density in the 2 and 3 directions. Li et al. \cite{Li2002CompositeProperties} proposed an equation to account for transverse stiffness:
 
 \begin{equation} \label{eqn:ROMseriesfactor}
 E_2=\zeta(1-\rho_2)*E
 \end{equation}
-where $\zeta$ is an empirical factor that takes into account the bonding strength. $\rho_2$ is a linear void fraction along the transverse direction. $1-\rho_2$  represents the relative contact area of the neck between roads. The void area density is determined according to empirical observations. 
 
-Rodriguez \cite{Rodriguez2003MechanicalModeling} proposed a method to obtain the the $E_1$ and $E_2$ where he calculates the cross sectional void density to be squared voids with perfect bonding. He additionally assumes the void density to be uniform in any given plane through the solid. 
+\noindent where $\zeta$ is an empirical factor that takes into account the bonding strength, $\rho_2$ is a linear void fraction along the transverse direction, so $1-\rho_2$  represents the relative contact area of the neck between roads. The void area density is determined according to empirical observations. 
+
+Rodriguez \cite{Rodriguez2003MechanicalModeling} proposed a method to obtain the $E_1$ and $E_2$ where he calculates the cross sectional void density to be squared voids with perfect bonding. He additionally assumes the void density to be uniform in any given plane through the solid.
+
 \begin{equation}\label{eqn:E_1}
 E_1=(1-\rho_1)*E
-\end{equation}The void area density in the 2 direction is assumed to be the square root (one side of the void) of the void area density in the 1 direction.
+\end{equation}
+
+The void area density in the 2 direction is assumed to be the square root (one side of the void) of the void area density in the 1 direction.
 \begin{equation}\label{eqn:E_2}
 E_2=E_3(1-\sqrt{\rho_1})*E
 \end{equation}
-\subsubsection{Classical Laminate Theory}
-It has been made clear that the FFF produced parts have a significant overlap with long fibre composites, due to the linear structure of the road in different layers a FFF produced part can be treated as a laminate with thick fibres and no matrix. The layer can be treated as a lamina or ply, and therefore the classical laminate theory can be employed to account its material behavior in the analysis of the plate. This approach has also been followed by different researchers including Somireddy \cite{Somireddy2018DevelopmentFDM}\cite{Somireddy2017FlexuralStudy}\cite{Somireddy2017MechanicalMesostructure}, Alaimo \cite{Alaimo2017InfluenceParts}, Li \cite{Li2002CompositeProperties} and Casavola \cite{Casavola2016OrthotropicTheory} most of them used it a bases and benchmark for the development of  models to predict the mechanical properties of different ply orientations.
 
-Once the material properties of a single ply are acquired one can predict the properties in different orientations and have them stacked as a composite and predict the properties of the laminate as is shown in figure \ref{fig:Transverseraster}
+\subsubsection{Classical Laminate Theory}
+It has been made clear that the FFF produced parts have a significant overlap with long fibre composites, due to the linear structure of the road in different layers a FFF produced part can be treated as a laminate with thick fibres and no matrix. The layer can be treated as a lamina or ply, and therefore the classical laminate theory can be employed to account its material behavior in the analysis of the plate. This approach has also been followed by different researchers including Somireddy \cite{Somireddy2018DevelopmentFDM,Somireddy2017FlexuralStudy,Somireddy2017MechanicalMesostructure}, Alaimo \cite{Alaimo2017InfluenceParts}, Li \cite{Li2002CompositeProperties} and Casavola \cite{Casavola2016OrthotropicTheory}. Most of them used it as a basis and benchmark for the development of models that predict the mechanical properties of different ply orientations.
+
+Once the material properties of a single ply are acquired one can predict the properties in different orientations and have them stacked as a composite and predict the properties of the laminate as is shown in figure \ref{fig:CLT}.
 
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.4\textwidth]{chapter_2/figures/CompositeTheory.PNG}
     \caption{Principle of the Classical Laminate Theory \cite{Daniel2006EngineeringMaterials}}
-    \label{fig:Transverseraster}
+    \label{fig:CLT}
 \end{figure}
+
 The analytical implementation of the Classical Laminate Theory is widely documented in composite books, and will not be discussed here in further detail. 
 
 \subsubsection{Finite Element Method}    
 \label{FiniteElementMethod}
-FEM (Finite Element Method), is a popular method to make a structural analysis of a geomtery including constitutive models. The homogenization methods make use of FEM to determine the stresses in the elements in a RVE, this can be applied for composites when combining materials with different properties.
+FEM (Finite Element Method), is a popular method to perform structural analysis according to discretization of the geometry in small elements. Critically important is the definition of the constitutive models of the materials involved. When used to predict the behavior of materials, the Finite Element Analyses (FEA) are conducted on Representative Volume Elements (RVEs) of the mesostructure and then the stress-strain relationship of the RVE is obtained by homogenization. This can be applied for composites when combining materials with different properties.
 
 Studies from Garg \cite{Garg2017AnStudy} and Gorski \cite{Gorski2015ComputationMethod}, modeled the road structure in a whole part instead of an RVE. Both Garg \cite{Garg2017AnStudy} and Groski meshed a whole  specimen with roads and performed a FE analyis for different loading conditions. Groski is one of the few that implemented plasticity and failure in his part. He implemented a standard model used by LS-DYNA.  
 
 
 \subsubsection{Homogenization approach}
 %Melro's paper.
-An RVE homgogenization approach in combination with the Finite Element Method (implemented with Abaqus software) was proposed by Melro et al. \cite{Melro2012InfluenceMaterials}. A composite consisting of long carbon fibres with an epoxy matrix was modeled on a micro level, with the use of periodic boundary conditions (PBC's), an RVE could be defined to be representative of the bulk properties of the composite. Periodic boundary conditions force such a deformation on the volume element that the displacement of one of the nodes belonging to one edge must be related to the displacement on the corresponding node in the opposite edge\cite{Melro2012InfluenceMaterials}. The volume average of strain in the RVE equals the apllied far-field strain.
+An RVE homogenization approach in combination with the Finite Element Method (implemented with Abaqus software) was proposed by Melro et al. \cite{Melro2012InfluenceMaterials}. A composite consisting of long carbon fibres with an epoxy matrix was modeled at the micro-scale level, with the use of periodic boundary conditions (PBC's), an RVE could be defined to be representative of the bulk properties of the composite. Periodic boundary conditions enforce such a deformation on the volume element that the displacement of one of the nodes belonging to one edge must be related to the displacement on the corresponding node in the opposite edge \cite{Melro2012InfluenceMaterials}. The volume average of strain in the RVE equals the applied far-field strain.
 
 \begin{equation}\label{Somireddy2}
 \bar{\epsilon}_{ij}=\frac{1}{V_{RVE}}\int_V \epsilon_{ij}dV=\epsilon_{ij}^0
 \end{equation}
 
-In order to determine the stiffness tensor, where afterwards the 9 elastic constants can be retrieved by inverting the stiffness tensor to the compliance tensor, an analysis for each column should be carried out. Therefore, through the average volume stress from the elements in the RVE for the 6 different loading conditions the stiffness tensor can be found
+In order to determine the stiffness tensor, where afterwards the 9 elastic constants can be retrieved by inverting the stiffness tensor to the compliance tensor, an analysis for each column should be carried out. Therefore, through the average volume stress from the elements in the RVE for the 6 different loading conditions the stiffness tensor can be found:
 
 \begin{equation}\label{eqn:homogenization}
 C_{ijkl}=\bar{\sigma}_{ij}=\frac{1}{V_{RVE}}\int_V \sigma_{ij}dV \\ 
 \bar{\epsilon}_{kl}^0=1
 \end{equation}
 
-%\todo{What's up with this equation?}
-
-Rodriguez \cite{Rodriguez2003MechanicalModeling} implements a method known as the the asymptotic theory of homogenization. He assumed in his FEM model a mesostructure based on empirically obtained micrographs. This method allowed hem to predict the Youngs moduli in the 1 and 2 direction with a overestimation of approximately 5 percent.  The reader is referred to his paper for further details.
-
-Apart from Rodriguez, Sheth \cite{Sheth2017NumericalOrientation} has investigated the homogenization method implemented in a damage prediction software, BSAM to predict the elastic properties of the RVE.
-
-Lui and Shapiro \cite{Liu2016HomogenizationStructures} proposed a new approach to find the elastic moduli for the part fabricated by FFF, using Green's function. 
-
-In the homogenization method used in Somireddy's work \cite{Somireddy2018DevelopmentFDM} a RVE is treated as a macroscopically homogeneous orthotropic material. He used a similar method to Melro to homogenize the RVE. Somireddy however, took different sizes of RVE's based on  elliptical road geometry in different directions.
+Rodriguez \cite{Rodriguez2003MechanicalModeling} implements a method known as the the asymptotic theory of homogenization. He assumed in his FEM model a mesostructure based on empirically obtained micrographs. This method allowed hem to predict the Young's moduli in the 1 and 2 direction with an overestimation of approximately 5 percent.  The reader is referred to his paper for further details. Apart from Rodriguez, Sheth \cite{Sheth2017NumericalOrientation} has investigated the homogenization method implemented in a damage prediction software, BSAM to predict the elastic properties of the RVE. Lui and Shapiro \cite{Liu2016HomogenizationStructures} used Green's functions to find the elastic moduli for a part fabricated by FFF. In the homogenization method used in Somireddy's work \cite{Somireddy2018DevelopmentFDM} a RVE is treated as a macroscopically homogeneous orthotropic material. He used a similar method to Melro to homogenize the RVE. Somireddy however, took different sizes of RVE's based on  elliptical road geometry in different directions.
 
 \section{Summary}
-From the literature review we can conclude that the process parameters largely influences the properties of FFF products. The three main contributors to the mechanical quality of the part are; the healing and wetting between the roads which is governed by the temperature history in the process; the mesostructure of the cross section which dictates the amount and geometry of porosity, this is mostly influenced by the quality of the process and the printing strategy; and finally the properties of the plastic blend that is used. 
+From the literature review we can conclude that the process parameters largely influences the properties of FFF products. The three main contributors to the mechanical quality of the part are: the healing and wetting between the roads which is governed by the temperature history in the process; the mesostructure of the cross section which dictates the amount and geometry of porosity, which is mostly influenced by the process quality and printing strategy; and finally the properties of the plastic blend that is used. 
 
 Some plastics have the tendency for better healing and increased entanglements between roads, this is respectively a matter of the material property called glass transition temperature $T_g$ and the entanglement density $v_e$. Due to the large amount of porosity in samples, the fracture toughness largely dominates the mechanical properties, which in turn is dominated by the entanglement density.
 
-Thermoplastics have complex mechanical behaviour. Since the polymer chains act like in-dependant molecules, the mechanical properties are highly dependant on the temperature and strain rate of the load. There are some constitutive models derived from thermosets that predict the yielding, damage and failure of polymers to a certain accuracy. There is some work done on predicting elasticity of FFF products, but very limited results are achieved on non-linear modelling. 
+Thermoplastics have complex mechanical behaviour. Since the polymer chains act like independent molecules, the mechanical properties are highly dependent on the temperature and strain rate of the load. There are some constitutive models derived from thermosets that predict the yielding, damage and failure of polymers to a certain accuracy. There is some work done on predicting elasticity of FFF products, but very limited results are achieved on non-linear modelling. 
 
 The standardization for production and testing of FFF products is very limited to this day, however, the experimental work done in this field is quite large. The lack of standardization makes it difficult to compare research. 
 
@@ -1026,7 +1056,7 @@ FFF products exhibit large orthotropy, behaving like a laminate of multiple laye
 
 Micrographs from different studies show some significant differences in mesostructure, researchers assume different shapes and models and there is not yet a consensus on the geometry of the mesostructure. 
 
-Since FFF products have large similarities with composites, different analytical and numerical composite theories have been applied successfully to predict the elastic behaviour of FFF products, these include the rule of mixture and the Classical Laminate Theory. There was no successful prediction on non-linear behaviour yet. 
+Since FFF products have large similarities with composites, different analytical and numerical composite theories have been applied successfully to predict the elastic behaviour of FFF products, these include the rule of mixture and the Classical Laminate Theory. There was no successful prediction on non-linear behaviour yet, to the best knowledge of the author. 
 
 
 %Homogenization old
