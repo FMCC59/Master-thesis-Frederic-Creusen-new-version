@@ -25,53 +25,49 @@
 \BOOKMARK [1][-]{section.3.3}{Research questions}{chapter.3}% 25
 \BOOKMARK [1][-]{section.3.4}{Research methodology}{chapter.3}% 26
 \BOOKMARK [0][-]{chapter.4}{Digital reconstruction of mesostructure: creating the RVE geometry}{}% 27
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.2}{Methods and procedures}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.2.1}{Cross sectional Analysis}{section.4.2}% 30
-\BOOKMARK [2][-]{subsection.4.2.2}{Production strategy}{section.4.2}% 31
-\BOOKMARK [1][-]{section.4.3}{Microscopy}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.4}{Results}{chapter.4}% 33
-\BOOKMARK [2][-]{subsection.4.4.1}{Optical micrographs mesostructure regular analysis}{section.4.4}% 34
-\BOOKMARK [2][-]{subsection.4.4.2}{Optical micrographs mesostructure colored analysis}{section.4.4}% 35
-\BOOKMARK [2][-]{subsection.4.4.3}{Digital micrographs mesostructure colored analysis}{section.4.4}% 36
-\BOOKMARK [1][-]{section.4.5}{Discussion}{chapter.4}% 37
-\BOOKMARK [1][-]{section.4.6}{Conclusion}{chapter.4}% 38
-\BOOKMARK [0][-]{chapter.5}{Experimental testing}{}% 39
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.2}{Methods and procedures}{chapter.5}% 41
-\BOOKMARK [2][-]{subsection.5.2.1}{ISO 527}{section.5.2}% 42
-\BOOKMARK [2][-]{subsection.5.2.2}{ASTM D 3039}{section.5.2}% 43
-\BOOKMARK [2][-]{subsection.5.2.3}{Ultimaker ABS Filament}{section.5.2}% 44
-\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 45
-\BOOKMARK [2][-]{subsection.5.3.1}{ISO 527}{section.5.3}% 46
-\BOOKMARK [2][-]{subsection.5.3.2}{ASTM D 3039}{section.5.3}% 47
-\BOOKMARK [2][-]{subsection.5.3.3}{Ultimaker ABS Filament}{section.5.3}% 48
-\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 50
-\BOOKMARK [0][-]{chapter.6}{Elastic modelling}{}% 51
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 52
-\BOOKMARK [1][-]{section.6.2}{Methods and procedures}{chapter.6}% 53
-\BOOKMARK [2][-]{subsection.6.2.1}{RVE homogenization model}{section.6.2}% 54
-\BOOKMARK [2][-]{subsection.6.2.2}{Mesh}{section.6.2}% 55
-\BOOKMARK [2][-]{subsection.6.2.3}{Voigt model}{section.6.2}% 56
-\BOOKMARK [1][-]{section.6.3}{Results}{chapter.6}% 57
-\BOOKMARK [1][-]{section.6.4}{Discussion}{chapter.6}% 58
-\BOOKMARK [1][-]{section.6.5}{Conclusion}{chapter.6}% 59
-\BOOKMARK [0][-]{chapter.7}{Non-linear modelling}{}% 60
-\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 61
-\BOOKMARK [1][-]{section.7.2}{Methods and procedures}{chapter.7}% 62
-\BOOKMARK [2][-]{subsection.7.2.1}{Finite Element Method}{section.7.2}% 63
-\BOOKMARK [2][-]{subsection.7.2.2}{Convergence study}{section.7.2}% 64
-\BOOKMARK [2][-]{subsection.7.2.3}{Stress Intensity approach}{section.7.2}% 65
-\BOOKMARK [1][-]{section.7.3}{Results}{chapter.7}% 66
-\BOOKMARK [2][-]{subsection.7.3.1}{Convergence study mesh}{section.7.3}% 67
-\BOOKMARK [2][-]{subsection.7.3.2}{Convergence study RVEs}{section.7.3}% 68
-\BOOKMARK [2][-]{subsection.7.3.3}{Simulations compared with empirical results }{section.7.3}% 69
-\BOOKMARK [2][-]{subsection.7.3.4}{Simulations with altering aspect ratio}{section.7.3}% 70
-\BOOKMARK [2][-]{subsection.7.3.5}{Contour plots of different aspect ratios }{section.7.3}% 71
-\BOOKMARK [2][-]{subsection.7.3.6}{Comparison fracture stress}{section.7.3}% 72
-\BOOKMARK [2][-]{subsection.7.3.7}{Cracktip plasticity}{section.7.3}% 73
-\BOOKMARK [1][-]{section.7.4}{Discussion}{chapter.7}% 74
-\BOOKMARK [1][-]{section.7.5}{Conclusion}{chapter.7}% 75
-\BOOKMARK [0][-]{chapter.8}{Conclusion and recommendations}{}% 76
-\BOOKMARK [0][-]{chapter*.135}{titleReferences}{}% 77
+\BOOKMARK [1][-]{section.4.1}{Methods and procedures}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.1.1}{Cross sectional Analysis}{section.4.1}% 29
+\BOOKMARK [2][-]{subsection.4.1.2}{Production strategy}{section.4.1}% 30
+\BOOKMARK [1][-]{section.4.2}{Microscopy}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.3.1}{Optical micrographs mesostructure regular analysis}{section.4.3}% 33
+\BOOKMARK [2][-]{subsection.4.3.2}{Optical micrographs mesostructure colored analysis}{section.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.3.3}{Digital micrographs mesostructure colored analysis}{section.4.3}% 35
+\BOOKMARK [1][-]{section.4.4}{Discussion}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.5}{Conclusion}{chapter.4}% 37
+\BOOKMARK [0][-]{chapter.5}{Experimental testing}{}% 38
+\BOOKMARK [1][-]{section.5.1}{Methods and procedures}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.1.1}{ISO 527}{section.5.1}% 40
+\BOOKMARK [2][-]{subsection.5.1.2}{ASTM D 3039}{section.5.1}% 41
+\BOOKMARK [2][-]{subsection.5.1.3}{Ultimaker ABS Filament}{section.5.1}% 42
+\BOOKMARK [1][-]{section.5.2}{Results}{chapter.5}% 43
+\BOOKMARK [2][-]{subsection.5.2.1}{ISO 527}{section.5.2}% 44
+\BOOKMARK [2][-]{subsection.5.2.2}{ASTM D 3039}{section.5.2}% 45
+\BOOKMARK [2][-]{subsection.5.2.3}{Ultimaker ABS Filament}{section.5.2}% 46
+\BOOKMARK [1][-]{section.5.3}{Discussion}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.4}{Conclusion}{chapter.5}% 48
+\BOOKMARK [0][-]{chapter.6}{Elastic modelling}{}% 49
+\BOOKMARK [1][-]{section.6.1}{Methods and procedures}{chapter.6}% 50
+\BOOKMARK [2][-]{subsection.6.1.1}{RVE homogenization model}{section.6.1}% 51
+\BOOKMARK [2][-]{subsection.6.1.2}{Mesh}{section.6.1}% 52
+\BOOKMARK [2][-]{subsection.6.1.3}{Voigt model}{section.6.1}% 53
+\BOOKMARK [1][-]{section.6.2}{Results}{chapter.6}% 54
+\BOOKMARK [1][-]{section.6.3}{Discussion}{chapter.6}% 55
+\BOOKMARK [1][-]{section.6.4}{Conclusion}{chapter.6}% 56
+\BOOKMARK [0][-]{chapter.7}{Non-linear modelling}{}% 57
+\BOOKMARK [1][-]{section.7.1}{Methods and procedures}{chapter.7}% 58
+\BOOKMARK [2][-]{subsection.7.1.1}{Finite Element Method}{section.7.1}% 59
+\BOOKMARK [2][-]{subsection.7.1.2}{Convergence study}{section.7.1}% 60
+\BOOKMARK [2][-]{subsection.7.1.3}{Stress Intensity approach}{section.7.1}% 61
+\BOOKMARK [1][-]{section.7.2}{Results}{chapter.7}% 62
+\BOOKMARK [2][-]{subsection.7.2.1}{Convergence study mesh}{section.7.2}% 63
+\BOOKMARK [2][-]{subsection.7.2.2}{Convergence study RVE's}{section.7.2}% 64
+\BOOKMARK [2][-]{subsection.7.2.3}{Simulations compared with empirical results }{section.7.2}% 65
+\BOOKMARK [2][-]{subsection.7.2.4}{Simulations with altering aspect ratio}{section.7.2}% 66
+\BOOKMARK [2][-]{subsection.7.2.5}{Contour plots }{section.7.2}% 67
+\BOOKMARK [2][-]{subsection.7.2.6}{Comparison fracture stress}{section.7.2}% 68
+\BOOKMARK [2][-]{subsection.7.2.7}{Cracktip plasticity}{section.7.2}% 69
+\BOOKMARK [1][-]{section.7.3}{Discussion}{chapter.7}% 70
+\BOOKMARK [1][-]{section.7.4}{Conclusion}{chapter.7}% 71
+\BOOKMARK [0][-]{chapter.8}{Conclusion and recommendations}{}% 72
+\BOOKMARK [0][-]{chapter*.139}{titleReferences}{}% 73
