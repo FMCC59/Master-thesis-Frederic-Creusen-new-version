@@ -5,40 +5,46 @@
 
 \section{Knowledge gap in the current state of the art}
 \label{Knowledge gap in the current state of the art}
-The current use and experimentation in the field of FFF tries to bridge the gap between simple consumer parts towards functional and mechanically reliable parts. For this a significant amount of effort has been put in the characterization of mechanical properties trough loading tests, including the effect process parameters have on the samples. It has been concluded that the properties are dramatically different from bulk material due to porosity and weak bonding area's. To be able to predict the properties of these anisotropic properties, different approaches have been proposed by multiple researchers, with considerable effort from  Rodriguez et al\cite{Rodriguez2003MechanicalModeling}. 
+The current use and experimentation in the field of FFF tries to bridge the gap between simple consumer parts towards functional and mechanically reliable parts. For this a significant amount of effort has been put in the characterization of mechanical properties through loading tests, including the effect that process parameters have on the samples. It has been concluded that the properties are dramatically different from bulk material due to porosity and weak bonding areas. To be able to predict these anisotropic properties, different approaches have been proposed by multiple researchers, with considerable effort from  Rodriguez et al \cite{Rodriguez2003MechanicalModeling}. 
 
-To determine the effect of the porosity on a FFF product the mesostructure is first analysed by using microtoming. The results from different systems can significantly alter in mesostructure, the quality and accuracy of the mechatronics are most likely the cause of this deviance. Due to the different observations no clear agreement was concluded between the researchers on the formation of this porosity. The UMS5 is currently one of the most advanced FFF systems that show promising results with a reproducible quality.
+To determine the effect of porosity on an FFF product the mesostructure is first analysed using microtoming. The results from different systems can significantly alter in mesostructure, where the quality and accuracy of the mechatronics are most likely the cause of this discrepancy. Due to the different observations no clear agreement was concluded between the researchers on the formation of this porosity. The Ultimaker S5 is a current FFF systems that shows promise to achieve reproducible quality.
 
-The empirical loading tests conducted by different researchers often used testing standards for isostropic polymers. The geometry of the samples used resulted in stress concentrations and crack initiation points, causing the samples to fail prematurely. Additionally, the production procedure is not yet standardized, meaning that the produced samples show significant difference between research methodologies and alter in quality.
+The empirical loading tests conducted by different researchers often used testing standards for isotropic polymers. The geometry of the samples used resulted in stress concentrations and crack initiation points, causing the samples to fail prematurely. Additionally, the production procedure is not yet standardized, meaning that the produced samples show significant difference between research methodologies.
 
-There have been several attempts to analyze and predict the degree of bonding of the road interface. Since this is a complex time dependant parameter, no exact prediction was made to this date on the bonding between roads. Most researchers assumed perfect healing (bulk properties) of the interface. 
+There have been several attempts to analyze and predict the degree of bonding of the road interface. Since this is a complex time dependent parameter, no exact prediction was made to this date on the bonding between roads. Most researchers assumed perfect healing (bulk properties) of the interface. 
 
 Multiple researchers found overlap between FFF products and composites, therefore they applied elasticity models such as the mechanics of materials approach and the Classical Laminate Theory to FFF products. Additionally, a few Finite Element Analysis where performed to determine the elastic properties of FFF products. The results of the elastic models are in accordance with the experimental results.
 
-Since the non-linear behaviour of polymers is complex and hard to predict, due to their molecular structure and strain rate dependency, the FEM knowledge on this topic is limited. For composites that incorporate an epoxy and long fibres, some validated models have been proposed on a micro-mechanical scale.  Epoxies have a more predictive non linear behaviour due to their cross-links. If the understanding of polymer molecular behaviour is sufficient, one could try to adjust the composite model to simulate the micro mechanical properties of FFF products. 
+Since the non-linear behaviour of polymers is complex and difficult to predict, due to their molecular structure and strain rate dependency, the FEM knowledge on this topic is limited. For composites that incorporate an epoxy and long fibres, some validated models have been proposed on a micro-mechanical scale. Epoxies have a more predictive non-linear behaviour due to their cross-links. If the understanding of polymer molecular behaviour is sufficient, one could try to adjust the composite model to simulate the micro mechanical properties of FFF products. 
 
 %The issue is that different FFF systems exhibit significant difference in produced quality.
 \section{Hypothesis}
-Based upon the knowledge gap defined in previous section the following hypothesis has been formulated.
+Based upon the knowledge gap defined in previous section the following hypothesis has been formulated:
 
-"FFF products show large anisotropy due to a limited degree of bonding between roads and significant amount of porosity. The porosity could be analyzed with mircrographs before implementing a composite RVE model to determine the elastic and non-linear properties of FFF products. These simulated results could be validated with empirical tensile tests."
+\todo{I updated the hypothesis}
+
+\begin{itemize}
+	\item High-fidelity FFF RVEs can be developed to predict non only the elastic beahviour, but also the complete non-linear elasto-plastic, damage and fracture behavior based on mesostructure characterization and elementary experimental tests of the base filament.
+\end{itemize}
+
 
 %"The characteristics involving the degree of bonding and the porosity are the main contributors to the decrease of mechanical properties with respect to the bulk material, these characteristics are strongly influenced by the process parameters and hardware used. By characterizing these properties for a particular combination of material, hardware and software, models could be made that makes a valid prediction of the mechanical properties of produced parts."
 
 \section{Research questions}
     \label{Research questions}
     %NALEZEN!!
-In order to verify this hypothesis a number of research questions has been formulated. These research questions are formulated as follow:
+Verification of the above mentioned hypothesis involves addressing different research questions:
 
-"What are the processes parameters that influence the mechanical properties most?
+\todo{I simplified the questions and made them more specific. Please check.}
 
-"How does the mesostructure from the system in use (Ultimaker S5) differ from the literature, and can a geometric model for this porosity be defined?"
+\begin{enumerate}
+	\item What are the processes parameters that influence the mechanical properties the most?
+	\item How does the mesostructure obtained from the system in use (Ultimaker S5) differ from the literature, and can a geometric model for this porosity be defined?
+	\item What are the elementary tests of the base filament that allow to predict the mechanical behavior of the FFF RVE via FEA?
+	\item What experimental tests of the FFF specimens appropriately validate the FEA of the RVE? 
+\end{enumerate}
 
-"What testing method for FFF tensile testing is most representative for the material behaviour, and what are the results?"
-
-"What is the effect of porosity on the mechanical behaviour of FFF products, and can this be quantified with an RVE model for different aspect ratios?
-
-"What composite or mechanical behaviour theory can be applied to predict the behaviour of FFF products?
+%"What composite or mechanical behaviour theory can be applied to predict the behaviour of FFF products?
 
 %--------------------------------------------------------------
 %"What are the process parameters influencing the characteristics,?"
@@ -64,15 +70,13 @@ In order to verify this hypothesis a number of research questions has been formu
 \section{Research methodology}
 To answer the research questions stated in the previous section a research methodology needs to be defined. This section will describe the steps necessary to answer the research questions. 
 
-First the literature should be studied to identify the process parameters that are influencing the mechanical properties. Additionally, it should be investigated if these parameters comply with the optimal parameters of the UMS5.
+First the system under analysis, Ultimaker S5 (UMS5), is compared with results available in the literature to identify the process parameters that are influencing the mechanical properties. 
 
-Subsequently, the mesostructure should be analyzed with micrographs to identify the form and amount of porosity in the UMS5 products.  A derivation should be searched to construct the mesostructure and consequently define the RVE, which is ideally dependant of the process parameters. 
+Subsequently, the mesostructure is analyzed with micrographs to identify the form and amount of porosity in the UMS5 products. Then, the mesostructure is reproduced digitally and an RVE is defined for further analysis via the FEM. Ideally, this analysis is dependent of the process parameters. 
 
-Consequently, different empirical tests should be conducted with these parameters for the UMS5. The different test procedures should be compared with each other to determine the optimal testing method that will result in most representative response for the bulk product. Also, filament should be tested to determine the bulk properties of the material.
+The ABS filament is then tested to determine the bulk properties of the material. Hence, the FEA of the RVE can be conducted considering the mesostructure and the elasto-plastic and damage models. These models need to be adequate for polymers used in FFF, so it is important to implement the correct constitutive equations in the RVE model. Besides the RVE model, other analytical models can be compared to determine it's effectiveness.  
 
-Furthermore, the RVE defined from the mesostructure can be used with the elasticity and non-linear composite models. First these models need to be adjusted to the FFF characteristics. Important here is to get a good understanding of the mechanical behaviour of thermoplastic polymers, and implement the correct constitutive equations in the RVE model. Besides the RVE model, other analytical models can be compared to determine it's effectiveness.  
-
-Finally, it is important to validate the adjusted RVE model to the empirical tests and verify it with the other analytical models. The RVE model can afterwards be validated for different process parameters when additional process parameters are empirically tested. 
+Finally, it is important to validate the developed RVE model with experimental tests of the FFF specimens and, perhaps include a comparison with other analytical models. The RVE model can afterwards be validated for different process parameters when additional process parameters are empirically tested. Note that different experimental tests may need to be considered for the FFF specimens because boundary effects that cause premature failure should not occur (otherwise, the RVE cannot be used to predict the mechanical behaviour).
 
 
 %The research methodology is based on the enhancement model that is based on a composite RVE model. To obtain data that can be implemented in the model and data that is needed to verify and validate the model and create iterations, empirical tests are done alongside the development of the model. 

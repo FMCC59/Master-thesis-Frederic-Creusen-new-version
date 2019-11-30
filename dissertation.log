@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  30 NOV 2019 12:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  30 NOV 2019 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1822,32 +1822,8 @@ LaTeX Warning: Label `eqn:crazecriterion' multiply defined.
 
 LaTeX Warning: Label `eqn:compliancematrix' multiply defined.
 
-) (./chapter_3/chapter_3.aux) (./chapter_4_RVE_Definition/chapter_4.aux
-
-LaTeX Warning: Label `fig:2' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:2' multiply defined.
-
-
-LaTeX Warning: Label `fig:3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:3' multiply defined.
-
-
-LaTeX Warning: Label `fig:4' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:4' multiply defined.
-
-
-LaTeX Warning: Label `eqn:crazecriterion' multiply defined.
-
-
-LaTeX Warning: Label `eqn:crazecriterion' multiply defined.
-
-) (./chapter_5_Experimentaltesting/Chapter_5_Results.aux
+) (./chapter_3/chapter_3.aux) (./chapter_4_RVE_Definition/chapter_4.aux)
+(./chapter_5_Experimentaltesting/Chapter_5_Results.aux
 
 LaTeX Warning: Label `tab:ISO527results' multiply defined.
 
@@ -2697,9 +2673,9 @@ Overfull \hbox (0.36479pt too wide) in paragraph at lines 6--6
  []
 
 [51]
-Overfull \hbox (9.06679pt too wide) in paragraph at lines 33--34
-[]\T1/futs/m/n/10 "What are the pro-cesses pa-ram-e-ters that in-flu-ence the m
-e-chan-i-cal prop-er-ties most? 
+Overfull \hbox (7.11691pt too wide) in paragraph at lines 27--28
+\T1/futs/m/n/10 but also the com-plete non-linear elasto-plastic, dam-age and f
+rac-ture be-hav-ior based
  []
 
 [52]) [53]
@@ -2712,25 +2688,25 @@ e-chan-i-cal prop-er-ties most?
 ]
 Chapter 4.
 [55]
-<chapter_4_RVE_Definition/figures/Microtomeprinciple.png, id=1308, 220.825pt x 
+<chapter_4_RVE_Definition/figures/Microtomeprinciple.png, id=1314, 220.825pt x 
 200.75pt>
 File: chapter_4_RVE_Definition/figures/Microtomeprinciple.png Graphic file (typ
 e png)
  <use chapter_4_RVE_Definition/figures/Microtomeprinciple.png>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/Microtomeprinciple.pn
-g used on input line 18.
+g used on input line 19.
 (pdftex.def)             Requested size: 145.10683pt x 131.91951pt.
 
 [56 <./chapter_4_RVE_Definition/figures/Microtomeprinciple.png>]
-<chapter_4_RVE_Definition/figures/CTOM.jpg, id=1323, 963.6pt x 542.025pt>
+<chapter_4_RVE_Definition/figures/CTOM.jpg, id=1329, 963.6pt x 542.025pt>
 File: chapter_4_RVE_Definition/figures/CTOM.jpg Graphic file (type jpg)
 
 <use chapter_4_RVE_Definition/figures/CTOM.jpg>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/CTOM.jpg used on inpu
-t line 34.
+t line 35.
 (pdftex.def)             Requested size: 145.10683pt x 81.62279pt.
 
-Overfull \hbox (31.90677pt too wide) in paragraph at lines 70--85
+Overfull \hbox (31.90677pt too wide) in paragraph at lines 71--86
  [][] 
  []
 
@@ -2738,223 +2714,214 @@ Overfull \hbox (31.90677pt too wide) in paragraph at lines 70--85
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<chapter_4_RVE_Definition/figures/colorroads.PNG, id=1329, 286.82156pt x 86.573
+<chapter_4_RVE_Definition/figures/colorroads.PNG, id=1335, 286.82156pt x 86.573
 44pt>
 File: chapter_4_RVE_Definition/figures/colorroads.PNG Graphic file (type png)
  <use chapter_4_RVE_Definition/figures/colorroads.PNG>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/colorroads.PNG used o
-n input line 91.
+n input line 92.
 (pdftex.def)             Requested size: 145.10683pt x 43.79915pt.
-
-Underfull \vbox (badness 2126) has occurred while \output is active []
-
  [57 <./chapter_4_RVE_Definition/figures/CTOM.jpg>]
-<chapter_4_RVE_Definition/figures/ABS100middle.png, id=1340, 2087.8pt x 1549.79
+<chapter_4_RVE_Definition/figures/ABS100middle.png, id=1345, 2087.8pt x 1549.79
 pt>
 File: chapter_4_RVE_Definition/figures/ABS100middle.png Graphic file (type png)
 
  <use chapter_4_RVE_Definition/figures/ABS100middle.png>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/ABS100middle.png used
- on input line 120.
+ on input line 121.
 (pdftex.def)             Requested size: 174.1293pt x 129.23555pt.
 
-<chapter_4_RVE_Definition/figures/ABS100bottomcorner.png, id=1341, 2087.8pt x 1
+<chapter_4_RVE_Definition/figures/ABS100bottomcorner.png, id=1346, 2087.8pt x 1
 549.79pt>
 File: chapter_4_RVE_Definition/figures/ABS100bottomcorner.png Graphic file (typ
 e png)
  <use chapter_4_RVE_Definition/figures/ABS100bottomcorner.png>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/ABS100bottomcorner.pn
-g used on input line 126.
+g used on input line 127.
 (pdftex.def)             Requested size: 174.1293pt x 129.23555pt.
 
-<chapter_4_RVE_Definition/figures/ABS100top.png, id=1342, 2087.8pt x 1549.79pt>
+<chapter_4_RVE_Definition/figures/ABS100top.png, id=1347, 2087.8pt x 1549.79pt>
 File: chapter_4_RVE_Definition/figures/ABS100top.png Graphic file (type png)
 <use chapter_4_RVE_Definition/figures/ABS100top.png>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/ABS100top.png used on
- input line 132.
+ input line 133.
 (pdftex.def)             Requested size: 174.1293pt x 129.23555pt.
 
-<chapter_4_RVE_Definition/figures/ABS100topcorner.png, id=1343, 2087.8pt x 1549
+<chapter_4_RVE_Definition/figures/ABS100topcorner.png, id=1348, 2087.8pt x 1549
 .79pt>
 File: chapter_4_RVE_Definition/figures/ABS100topcorner.png Graphic file (type p
 ng)
  <use chapter_4_RVE_Definition/figures/ABS100topcorner.png>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/ABS100topcorner.png u
-sed on input line 138.
+sed on input line 139.
 (pdftex.def)             Requested size: 174.1293pt x 129.23555pt.
 
-<chapter_4_RVE_Definition/figures/ABS100yxmiddle.png, id=1346, 2087.8pt x 1549.
+Underfull \vbox (badness 5475) has occurred while \output is active []
+
+ [58 <./chapter_4_RVE_Definition/figures/colorroads.PNG>]
+<chapter_4_RVE_Definition/figures/ABS100yxmiddle.png, id=1359, 2087.8pt x 1549.
 79pt>
 File: chapter_4_RVE_Definition/figures/ABS100yxmiddle.png Graphic file (type pn
 g)
  <use chapter_4_RVE_Definition/figures/ABS100yxmiddle.png>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/ABS100yxmiddle.png us
-ed on input line 152.
-(pdftex.def)             Requested size: 253.93973pt x 188.49709pt.
- [58 <./chapter_4_RVE_Definition/figures/colorroads.PNG>] [59 <./chapter_4_RVE_
-Definition/figures/ABS100middle.png> <./chapter_4_RVE_Definition/figures/ABS100
-bottomcorner.png> <./chapter_4_RVE_Definition/figures/ABS100top.png> <./chapter
-_4_RVE_Definition/figures/ABS100topcorner.png>]
-<chapter_4_RVE_Definition/figures/colored/Tv35_LI.jpg, id=1363, 2085.7925pt x 1
+ed on input line 150.
+(pdftex.def)             Requested size: 181.3863pt x 134.62726pt.
+ [59 <./chapter_4_RVE_Definition/figures/ABS100middle.png> <./chapter_4_RVE_Def
+inition/figures/ABS100bottomcorner.png> <./chapter_4_RVE_Definition/figures/ABS
+100top.png> <./chapter_4_RVE_Definition/figures/ABS100topcorner.png> <./chapter
+_4_RVE_Definition/figures/ABS100yxmiddle.png>]
+<chapter_4_RVE_Definition/figures/colored/Tv35_LI.jpg, id=1370, 2085.7925pt x 1
 549.79pt>
 File: chapter_4_RVE_Definition/figures/colored/Tv35_LI.jpg Graphic file (type j
 pg)
  <use chapter_4_RVE_Definition/figures/colored/Tv35_LI.jpg>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/colored/Tv35_LI.jpg u
-sed on input line 165.
+sed on input line 164.
 (pdftex.def)             Requested size: 174.1293pt x 129.37744pt.
 
-<chapter_4_RVE_Definition/figures/colored/Tv38_LI.jpg, id=1364, 2085.7925pt x 1
+<chapter_4_RVE_Definition/figures/colored/Tv38_LI.jpg, id=1371, 2085.7925pt x 1
 549.79pt>
 File: chapter_4_RVE_Definition/figures/colored/Tv38_LI.jpg Graphic file (type j
 pg)
  <use chapter_4_RVE_Definition/figures/colored/Tv38_LI.jpg>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/colored/Tv38_LI.jpg u
-sed on input line 171.
+sed on input line 170.
 (pdftex.def)             Requested size: 174.1293pt x 129.37744pt.
 
-<chapter_4_RVE_Definition/figures/colored/Tv42_LI.jpg, id=1365, 2085.7925pt x 1
+<chapter_4_RVE_Definition/figures/colored/Tv42_LI.jpg, id=1372, 2085.7925pt x 1
 549.79pt>
 File: chapter_4_RVE_Definition/figures/colored/Tv42_LI.jpg Graphic file (type j
 pg)
  <use chapter_4_RVE_Definition/figures/colored/Tv42_LI.jpg>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/colored/Tv42_LI.jpg u
-sed on input line 177.
+sed on input line 176.
 (pdftex.def)             Requested size: 174.1293pt x 129.37744pt.
 
-<chapter_4_RVE_Definition/figures/colored/Tv86a_LI.jpg, id=1366, 2085.7925pt x 
+<chapter_4_RVE_Definition/figures/colored/Tv86a_LI.jpg, id=1373, 2085.7925pt x 
 1549.79pt>
 File: chapter_4_RVE_Definition/figures/colored/Tv86a_LI.jpg Graphic file (type 
 jpg)
  <use chapter_4_RVE_Definition/figures/colored/Tv86a_LI.jpg>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/colored/Tv86a_LI.jpg 
-used on input line 183.
+used on input line 182.
 (pdftex.def)             Requested size: 174.1293pt x 129.37744pt.
 
-<chapter_4_RVE_Definition/figures/colored/Tv89_LI.jpg, id=1368, 2085.7925pt x 1
+<chapter_4_RVE_Definition/figures/colored/Tv89_LI.jpg, id=1374, 2085.7925pt x 1
 549.79pt>
 File: chapter_4_RVE_Definition/figures/colored/Tv89_LI.jpg Graphic file (type j
 pg)
  <use chapter_4_RVE_Definition/figures/colored/Tv89_LI.jpg>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/colored/Tv89_LI.jpg u
-sed on input line 196.
+sed on input line 194.
 (pdftex.def)             Requested size: 253.93973pt x 188.66263pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [60 <./chapter_4_RVE_Definition/figures/ABS100yxmiddle.png>] [61 <./chapter_4_
-RVE_Definition/figures/colored/Tv35_LI.jpg> <./chapter_4_RVE_Definition/figures
-/colored/Tv38_LI.jpg> <./chapter_4_RVE_Definition/figures/colored/Tv42_LI.jpg> 
-<./chapter_4_RVE_Definition/figures/colored/Tv86a_LI.jpg>]
-<chapter_4_RVE_Definition/figures/colored/Digitalcolored.jpg, id=1381, 481.8pt 
+<chapter_4_RVE_Definition/figures/colored/Digitalcolored.jpg, id=1376, 481.8pt 
 x 361.35pt>
 File: chapter_4_RVE_Definition/figures/colored/Digitalcolored.jpg Graphic file 
 (type jpg)
  <use chapter_4_RVE_Definition/figures/colored/Digitalcolored.jpg>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/colored/Digitalcolore
-d.jpg used on input line 206.
+d.jpg used on input line 204.
 (pdftex.def)             Requested size: 145.10683pt x 108.83038pt.
 
-[62 <./chapter_4_RVE_Definition/figures/colored/Tv89_LI.jpg> <./chapter_4_RVE_D
-efinition/figures/colored/Digitalcolored.jpg>]
-<chapter_2/figures/Slic3rshape.png, id=1405, 307.1475pt x 195.73125pt>
+Underfull \vbox (badness 7685) has occurred while \output is active []
+
+ [60 <./chapter_4_RVE_Definition/figures/colored/Tv35_LI.jpg> <./chapter_4_RVE_
+Definition/figures/colored/Tv38_LI.jpg> <./chapter_4_RVE_Definition/figures/col
+ored/Tv42_LI.jpg> <./chapter_4_RVE_Definition/figures/colored/Tv86a_LI.jpg>] [6
+1 <./chapter_4_RVE_Definition/figures/colored/Tv89_LI.jpg> <./chapter_4_RVE_Def
+inition/figures/colored/Digitalcolored.jpg>]
+<chapter_2/figures/Slic3rshape.png, id=1408, 307.1475pt x 195.73125pt>
 File: chapter_2/figures/Slic3rshape.png Graphic file (type png)
 
 <use chapter_2/figures/Slic3rshape.png>
 Package pdftex.def Info: chapter_2/figures/Slic3rshape.png used on input line 2
-34.
-(pdftex.def)             Requested size: 145.10683pt x 92.47154pt.
- [63 <./chapter_2/figures/Slic3rshape.png>]
-<chapter_4_RVE_Definition/figures/Roadoverlapslic3r.PNG, id=1418, 222.23026pt x
+32.
+(pdftex.def)             Requested size: 199.52605pt x 127.14912pt.
+ [62 <./chapter_2/figures/Slic3rshape.png>]
+<chapter_4_RVE_Definition/figures/Roadoverlapslic3r.PNG, id=1421, 222.23026pt x
  54.80475pt>
 File: chapter_4_RVE_Definition/figures/Roadoverlapslic3r.PNG Graphic file (type
  png)
  <use chapter_4_RVE_Definition/figures/Roadoverlapslic3r.PNG>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/Roadoverlapslic3r.PNG
  used on input line 251.
-(pdftex.def)             Requested size: 145.10683pt x 35.78654pt.
+(pdftex.def)             Requested size: 199.52605pt x 49.20755pt.
 
-<chapter_4_RVE_Definition/figures/Roadstructure2.PNG, id=1421, 644.4075pt x 237
+<chapter_4_RVE_Definition/figures/Roadstructure2.PNG, id=1424, 644.4075pt x 237
 .2865pt>
 File: chapter_4_RVE_Definition/figures/Roadstructure2.PNG Graphic file (type pn
 g)
  <use chapter_4_RVE_Definition/figures/Roadstructure2.PNG>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/Roadstructure2.PNG us
-ed on input line 273.
+ed on input line 274.
 (pdftex.def)             Requested size: 362.77263pt x 133.58556pt.
 
-Underfull \vbox (badness 2197) has occurred while \output is active []
-
- [64 <./chapter_4_RVE_Definition/figures/Roadoverlapslic3r.PNG>]
-Overfull \hbox (5.98631pt too wide) in paragraph at lines 281--283
-\T1/futs/m/n/10 And the area of the RVE with the sim-ple re-la-tion be-tween li
-ne width and line height: 
+Overfull \hbox (5.98631pt too wide) in paragraph at lines 284--285
+[]\T1/futs/m/n/10 And the area of the RVE with the sim-ple re-la-tion be-tween 
+line width and line height: 
  []
 
+[63 <./chapter_4_RVE_Definition/figures/Roadoverlapslic3r.PNG>]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 291.
+LaTeX Font Warning: Command \small invalid in math mode on input line 293.
 
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 293.
+(Font)              scaled to size 8.27998pt on input line 295.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 293.
-LaTeX Font Info:    Calculating math sizes for size <> on input line 297.
+(Font)              scaled to size 8.27998pt on input line 295.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 299.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 0.92pt on input line 297.
+(Font)              scaled to size 0.92pt on input line 299.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 0.69919pt on input line 297.
+(Font)              scaled to size 0.69919pt on input line 299.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 0.552pt on input line 297.
+(Font)              scaled to size 0.552pt on input line 299.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 0.92pt on input line 297.
+(Font)              scaled to size 0.92pt on input line 299.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 0.69919pt on input line 297.
+(Font)              scaled to size 0.69919pt on input line 299.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 0.552pt on input line 297.
+(Font)              scaled to size 0.552pt on input line 299.
 
-<chapter_4_RVE_Definition/figures/Surfacefraction.png, id=1433, 421.575pt x 316
+<chapter_4_RVE_Definition/figures/Surfacefraction.png, id=1440, 421.575pt x 316
 .0608pt>
 File: chapter_4_RVE_Definition/figures/Surfacefraction.png Graphic file (type p
 ng)
  <use chapter_4_RVE_Definition/figures/Surfacefraction.png>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/Surfacefraction.png u
-sed on input line 312.
-(pdftex.def)             Requested size: 181.3863pt x 135.9903pt.
+sed on input line 309.
+(pdftex.def)             Requested size: 326.49315pt x 244.78061pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [65 <./chapter_4_RVE_Definition/figures/Roadstructure2.PNG>]
-<chapter_4_RVE_Definition/figures/RVER1.png, id=1447, 814.04124pt x 532.99126pt
+<chapter_4_RVE_Definition/figures/RVER1.png, id=1441, 814.04124pt x 532.99126pt
 >
 File: chapter_4_RVE_Definition/figures/RVER1.png Graphic file (type png)
  <use chapter_4_RVE_Definition/figures/RVER1.png>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/RVER1.png used on inp
-ut line 320.
-(pdftex.def)             Requested size: 181.3863pt x 118.763pt.
+ut line 316.
+(pdftex.def)             Requested size: 253.93973pt x 166.26657pt.
 
-<chapter_4_RVE_Definition/figures/RVER8.png, id=1448, 1227.58624pt x 202.7575pt
+<chapter_4_RVE_Definition/figures/RVER8.png, id=1442, 1227.58624pt x 202.7575pt
 >
 File: chapter_4_RVE_Definition/figures/RVER8.png Graphic file (type png)
  <use chapter_4_RVE_Definition/figures/RVER8.png>
 Package pdftex.def Info: chapter_4_RVE_Definition/figures/RVER8.png used on inp
-ut line 327.
-(pdftex.def)             Requested size: 181.3863pt x 29.95752pt.
-
-Underfull \vbox (badness 1603) has occurred while \output is active []
-
- [66 <./chapter_4_RVE_Definition/figures/Surfacefraction.png (PNG copy)> <./cha
-pter_4_RVE_Definition/figures/RVER1.png> <./chapter_4_RVE_Definition/figures/RV
-ER8.png>])
-[67]
+ut line 323.
+(pdftex.def)             Requested size: 253.93973pt x 41.9399pt.
+ [64 <./chapter_4_RVE_Definition/figures/Roadstructure2.PNG>]) [65 <./chapter_4
+_RVE_Definition/figures/Surfacefraction.png (PNG copy)>] [66 <./chapter_4_RVE_D
+efinition/figures/RVER1.png> <./chapter_4_RVE_Definition/figures/RVER8.png>]
 \openout2 = `chapter_5_Experimentaltesting/Chapter_5_Results.aux'.
 
- (./chapter_5_Experimentaltesting/Chapter_5_Results.tex [68
+
+(./chapter_5_Experimentaltesting/Chapter_5_Results.tex
+Chapter 5.
+[67
 
 
 
 ]
-Chapter 5.
-[69]
 <chapter_5_Experimentaltesting/figures/ISO527specimen.png, id=1476, 326.21875pt
  x 155.58125pt>
 File: chapter_5_Experimentaltesting/figures/ISO527specimen.png Graphic file (ty
@@ -2964,7 +2931,7 @@ Package pdftex.def Info: chapter_5_Experimentaltesting/figures/ISO527specimen.p
 ng used on input line 22.
 (pdftex.def)             Requested size: 181.3863pt x 86.51003pt.
 
-[70 <./chapter_5_Experimentaltesting/figures/ISO527specimen.png>]
+[68 <./chapter_5_Experimentaltesting/figures/ISO527specimen.png>]
 <chapter_5_Experimentaltesting/figures/ISOTensiletests.png, id=1487, 421.575pt 
 x 316.0608pt>
 File: chapter_5_Experimentaltesting/figures/ISOTensiletests.png Graphic file (t
@@ -2976,7 +2943,7 @@ png used on input line 40.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71]
+ [69]
 Underfull \hbox (badness 1831) in paragraph at lines 51--51
 []|$\FML/futmi/m/it/10 E$ \T1/futs/m/n/10 avg.
  []
@@ -3000,9 +2967,9 @@ File: chapter_5_Experimentaltesting/figures/imageISO.jpg Graphic file (type jpg
 Package pdftex.def Info: chapter_5_Experimentaltesting/figures/imageISO.jpg use
 d on input line 65.
 (pdftex.def)             Requested size: 145.10683pt x 108.82819pt.
- [72 <./chapter_5_Experimentaltesting/figures/ISOTensiletests.png (PNG copy)> <
+ [70 <./chapter_5_Experimentaltesting/figures/ISOTensiletests.png (PNG copy)> <
 ./chapter_5_Experimentaltesting/figures/imageISO.jpg>]
-<chapter_5_Experimentaltesting/figures/ASTMnoTensiletests.png, id=1504, 421.575
+<chapter_5_Experimentaltesting/figures/ASTMnoTensiletests.png, id=1503, 421.575
 pt x 316.0608pt>
 File: chapter_5_Experimentaltesting/figures/ASTMnoTensiletests.png Graphic file
  (type png)
@@ -3027,7 +2994,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--88
  []
 
 
-<chapter_5_Experimentaltesting/figures/ImageASTM.jpg, id=1507, 4625.28pt x 3468
+<chapter_5_Experimentaltesting/figures/ImageASTM.jpg, id=1506, 4625.28pt x 3468
 .96pt>
 File: chapter_5_Experimentaltesting/figures/ImageASTM.jpg Graphic file (type jp
 g)
@@ -3035,7 +3002,7 @@ g)
 Package pdftex.def Info: chapter_5_Experimentaltesting/figures/ImageASTM.jpg us
 ed on input line 100.
 (pdftex.def)             Requested size: 145.10683pt x 108.82819pt.
- [73 <./chapter_5_Experimentaltesting/figures/ASTMnoTensiletests.png (PNG copy)
+ [71 <./chapter_5_Experimentaltesting/figures/ASTMnoTensiletests.png (PNG copy)
 >]
 <chapter_5_Experimentaltesting/figures/ASTMWLTensiletests.png, id=1516, 421.575
 pt x 316.0608pt>
@@ -3070,7 +3037,7 @@ File: chapter_5_Experimentaltesting/figures/imageASTMadd.jpg Graphic file (type
 Package pdftex.def Info: chapter_5_Experimentaltesting/figures/imageASTMadd.jpg
  used on input line 133.
 (pdftex.def)             Requested size: 145.10683pt x 108.82819pt.
- [74 <./chapter_5_Experimentaltesting/figures/ImageASTM.jpg> <./chapter_5_Exper
+ [72 <./chapter_5_Experimentaltesting/figures/ImageASTM.jpg> <./chapter_5_Exper
 imentaltesting/figures/ASTMWLTensiletests.png (PNG copy)>]
 <chapter_5_Experimentaltesting/figures/filamentdata.png, id=1527, 421.575pt x 3
 16.0608pt>
@@ -3083,7 +3050,7 @@ Package pdftex.def Info: chapter_5_Experimentaltesting/figures/filamentdata.png
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75 <./chapter_5_Experimentaltesting/figures/imageASTMadd.jpg>]
+ [73 <./chapter_5_Experimentaltesting/figures/imageASTMadd.jpg>]
 Underfull \hbox (badness 1831) in paragraph at lines 156--156
 []|$\FML/futmi/m/it/10 E$ \T1/futs/m/n/10 avg.
  []
@@ -3125,15 +3092,15 @@ g used on input line 169.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76 <./chapter_5_Experimentaltesting/figures/filamentdata.png (PNG copy)>] [77
+ [74 <./chapter_5_Experimentaltesting/figures/filamentdata.png (PNG copy)>] [75
  <./chapter_5_Experimentaltesting/figures/Imagefilament.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78])
-[79]
+ [76])
+[77]
 \openout2 = `chapter_6_Elasticmodelling/chapter_6.aux'.
 
- (./chapter_6_Elasticmodelling/chapter_6.tex [80
+ (./chapter_6_Elasticmodelling/chapter_6.tex [78
 
 
 
@@ -3147,7 +3114,7 @@ File: chapter_6_Elasticmodelling/figures/partition.png Graphic file (type png)
 Package pdftex.def Info: chapter_6_Elasticmodelling/figures/partition.png used 
 on input line 33.
 (pdftex.def)             Requested size: 217.66579pt x 81.95131pt.
- [81]
+ [79]
 <chapter_6_Elasticmodelling/figures/mesh.png, id=1580, 1572.87625pt x 592.2125p
 t>
 File: chapter_6_Elasticmodelling/figures/mesh.png Graphic file (type png)
@@ -3155,7 +3122,7 @@ File: chapter_6_Elasticmodelling/figures/mesh.png Graphic file (type png)
 Package pdftex.def Info: chapter_6_Elasticmodelling/figures/mesh.png used on in
 put line 42.
 (pdftex.def)             Requested size: 217.66579pt x 81.95131pt.
- [82 <./chapter_6_Elasticmodelling/figures/partition.png> <./chapter_6_Elasticm
+ [80 <./chapter_6_Elasticmodelling/figures/partition.png> <./chapter_6_Elasticm
 odelling/figures/mesh.png>]
 <chapter_6_Elasticmodelling/figures/Elasticproperties.png, id=1592, 429.2838pt 
 x 338.7054pt>
@@ -3173,15 +3140,15 @@ Overfull \hbox (10.20718pt too wide) in paragraph at lines 61--71
 
 Underfull \vbox (badness 6775) has occurred while \output is active []
 
- [83 <./chapter_6_Elasticmodelling/figures/Elasticproperties.png (PNG copy)>]) 
-[84]
+ [81 <./chapter_6_Elasticmodelling/figures/Elasticproperties.png (PNG copy)>]) 
+[82]
 \openout2 = `chapter_7_non-elasticmodelling/chapter_7_non-elasticmodelling.aux'
 .
 
 
 (./chapter_7_non-elasticmodelling/chapter_7_non-elasticmodelling.tex
 Chapter 7.
-[85
+[83
 
 
 
@@ -3194,7 +3161,7 @@ ng)
 Package pdftex.def Info: chapter_7_non-elasticmodelling/figures/Hardening.png u
 sed on input line 24.
 (pdftex.def)             Requested size: 217.66579pt x 154.31891pt.
- [86 <./chapter_7_non-elasticmodelling/figures/Hardening.png (PNG copy)>] [87]
+ [84 <./chapter_7_non-elasticmodelling/figures/Hardening.png (PNG copy)>] [85]
 <chapter_7_non-elasticmodelling/figures/mesh0004.png, id=1638, 1473.505pt x 592
 .2125pt>
 File: chapter_7_non-elasticmodelling/figures/mesh0004.png Graphic file (type pn
@@ -3242,7 +3209,7 @@ d on input line 83.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [88]
+ [86]
 Overfull \hbox (5.3402pt too wide) in paragraph at lines 88--89
 []\T1/futs/m/n/10 Additionally, a con-ver-gence study is con-ducted for mul-ti-
 ple con-nected RVEs. Four stacked
@@ -3273,11 +3240,11 @@ File: chapter_7_non-elasticmodelling/figures/RVEZYX.png Graphic file (type png)
 Package pdftex.def Info: chapter_7_non-elasticmodelling/figures/RVEZYX.png used
  on input line 103.
 (pdftex.def)             Requested size: 174.1293pt x 69.78828pt.
- [89 <./chapter_7_non-elasticmodelling/figures/mesh0004.png> <./chapter_7_non-e
+ [87 <./chapter_7_non-elasticmodelling/figures/mesh0004.png> <./chapter_7_non-e
 lasticmodelling/figures/mesh0006.png> <./chapter_7_non-elasticmodelling/figures
 /mesh0008.png> <./chapter_7_non-elasticmodelling/figures/mesh001.png> <./chapte
 r_7_non-elasticmodelling/figures/meshopt.png>]
-<chapter_7_non-elasticmodelling/figures/meshconv.png, id=1669, 429.2838pt x 338
+<chapter_7_non-elasticmodelling/figures/meshconv.png, id=1668, 429.2838pt x 338
 .7054pt>
 File: chapter_7_non-elasticmodelling/figures/meshconv.png Graphic file (type pn
 g)
@@ -3288,10 +3255,10 @@ ed on input line 123.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [90 <./chapter_7_non-elasticmodelling/figures/RVEXY.png> <./chapter_7_non-elas
+ [88 <./chapter_7_non-elasticmodelling/figures/RVEXY.png> <./chapter_7_non-elas
 ticmodelling/figures/RVEZX.png> <./chapter_7_non-elasticmodelling/figures/RVEZY
 X.png>]
-<chapter_7_non-elasticmodelling/figures/RVEconv.png, id=1679, 421.575pt x 316.0
+<chapter_7_non-elasticmodelling/figures/RVEconv.png, id=1678, 421.575pt x 316.0
 608pt>
 File: chapter_7_non-elasticmodelling/figures/RVEconv.png Graphic file (type png
 )
@@ -3299,7 +3266,7 @@ File: chapter_7_non-elasticmodelling/figures/RVEconv.png Graphic file (type png
 Package pdftex.def Info: chapter_7_non-elasticmodelling/figures/RVEconv.png use
 d on input line 133.
 (pdftex.def)             Requested size: 217.66579pt x 163.19029pt.
- [91 <./chapter_7_non-elasticmodelling/figures/meshconv.png (PNG copy)> <./chap
+ [89 <./chapter_7_non-elasticmodelling/figures/meshconv.png (PNG copy)> <./chap
 ter_7_non-elasticmodelling/figures/RVEconv.png (PNG copy)>]
 <chapter_7_non-elasticmodelling/figures/ComparisonSS.png, id=1687, 421.575pt x 
 316.0608pt>
@@ -3328,7 +3295,7 @@ Package pdftex.def Info: chapter_7_non-elasticmodelling/figures/AR2.png used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [92 <./chapter_7_non-elasticmodelling/figures/ComparisonSS.png (PNG copy)>]
+ [90 <./chapter_7_non-elasticmodelling/figures/ComparisonSS.png (PNG copy)>]
 <chapter_7_non-elasticmodelling/figures/AR3.png, id=1699, 429.2838pt x 338.7054
 pt>
 File: chapter_7_non-elasticmodelling/figures/AR3.png Graphic file (type png)
@@ -3339,7 +3306,7 @@ Package pdftex.def Info: chapter_7_non-elasticmodelling/figures/AR3.png used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [93 <./chapter_7_non-elasticmodelling/figures/AR1.png (PNG copy)> <./chapter_7
+ [91 <./chapter_7_non-elasticmodelling/figures/AR1.png (PNG copy)> <./chapter_7
 _non-elasticmodelling/figures/AR2.png (PNG copy)>]
 <chapter_7_non-elasticmodelling/figures/0125p1.png, id=1705, 1477.52pt x 592.21
 25pt>
@@ -3431,14 +3398,14 @@ Package pdftex.def Info: chapter_7_non-elasticmodelling/figures/yieldstress.png
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [94 <./chapter_7_non-elasticmodelling/figures/AR3.png (PNG copy)>] [95 <./chap
+ [92 <./chapter_7_non-elasticmodelling/figures/AR3.png (PNG copy)>] [93 <./chap
 ter_7_non-elasticmodelling/figures/0125p1.png> <./chapter_7_non-elasticmodellin
 g/figures/0125p2.png> <./chapter_7_non-elasticmodelling/figures/0125p3.png> <./
 chapter_7_non-elasticmodelling/figures/05p1.png> <./chapter_7_non-elasticmodell
-ing/figures/05p2.png>] [96 <./chapter_7_non-elasticmodelling/figures/05p3.png> 
+ing/figures/05p2.png>] [94 <./chapter_7_non-elasticmodelling/figures/05p3.png> 
 <./chapter_7_non-elasticmodelling/figures/1p1.png> <./chapter_7_non-elasticmode
 lling/figures/1p2.png> <./chapter_7_non-elasticmodelling/figures/1p3.png>]
-<chapter_7_non-elasticmodelling/figures/cracktip.png, id=1745, 429.2838pt x 338
+<chapter_7_non-elasticmodelling/figures/cracktip.png, id=1744, 429.2838pt x 338
 .7054pt>
 File: chapter_7_non-elasticmodelling/figures/cracktip.png Graphic file (type pn
 g)
@@ -3449,31 +3416,31 @@ ed on input line 241.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [97 <./chapter_7_non-elasticmodelling/figures/yieldstress.png (PNG copy)>] [98
- <./chapter_7_non-elasticmodelling/figures/cracktip.png (PNG copy)>] [99] [100]
-) [101]
+ [95 <./chapter_7_non-elasticmodelling/figures/yieldstress.png (PNG copy)>] [96
+ <./chapter_7_non-elasticmodelling/figures/cracktip.png (PNG copy)>] [97] [98])
+ [99]
 \openout2 = `conclusion/conclusion.aux'.
 
 
-(./conclusion/conclusion.tex [102
+(./conclusion/conclusion.tex [100
 
 
 
 ]
 Chapter 8.
-[103]) [104] (./dissertation.bbl
+[101]) [102] (./dissertation.bbl
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\color' on input line 9.
 
-[105
+[103
 
 
-] [106] [107] [108] [109] [110])
+] [104] [105] [106] [107] [108])
 \Changes@OutFile=\write6
 \openout6 = `dissertation.soc'.
 
- [111]
+ [109]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
  (./dissertation.aux
@@ -3487,7 +3454,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 53054B239FF4120A6CBF4B76C3139955;5210.
+(rerunfilecheck)             Checksum: B57216449EA9706FDF49DC1F36F85EBD;5262.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -3495,10 +3462,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
  ) 
 Here is how much of TeX's memory you used:
- 34275 strings out of 493029
- 671496 string characters out of 6136233
- 700221 words of memory out of 5000000
- 36540 multiletter control sequences out of 15000+600000
+ 34330 strings out of 493029
+ 672801 string characters out of 6136233
+ 700579 words of memory out of 5000000
+ 36588 multiletter control sequences out of 15000+600000
  197805 words of font info for 187 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,78p,10453b,1062s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3511,10 +3478,10 @@ rier-mlit.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier
 texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/a
 dobe/utopia/putri8a.pfb>
-Output written on dissertation.pdf (119 pages, 61474750 bytes).
+Output written on dissertation.pdf (117 pages, 61392358 bytes).
 PDF statistics:
- 2045 PDF objects out of 2073 (max. 8388607)
- 1662 compressed objects within 17 object streams
- 456 named destinations out of 1000 (max. 500000)
+ 2047 PDF objects out of 2073 (max. 8388607)
+ 1666 compressed objects within 17 object streams
+ 463 named destinations out of 1000 (max. 500000)
  1174 words of extra memory for PDF output out of 10000 (max. 10000000)
 
