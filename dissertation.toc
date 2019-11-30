@@ -67,41 +67,41 @@
 \contentsline {section}{\numberline {5.1}Introduction}{67}{section.5.1}
 \contentsline {section}{\numberline {5.2}Methods and procedures}{67}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}ISO 527}{68}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}ASTM D 3039}{68}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}ASTM D 3039}{69}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Ultimaker ABS Filament}{69}{subsection.5.2.3}
 \contentsline {section}{\numberline {5.3}Results}{69}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}ISO 527}{69}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}ASTM D 3039}{71}{subsection.5.3.2}
 \contentsline {subsubsection}{No wall layers }{71}{subsection.5.3.2}
-\contentsline {subsubsection}{Additional}{72}{figure.caption.106}
+\contentsline {subsubsection}{Additional}{72}{figure.caption.107}
 \contentsline {subsection}{\numberline {5.3.3}Ultimaker ABS Filament}{73}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Discussion}{75}{section.5.4}
-\contentsline {section}{\numberline {5.5}Conclusion}{77}{section.5.5}
-\contentsline {chapter}{\numberline {6}Elastic modelling}{79}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{79}{section.6.1}
-\contentsline {section}{\numberline {6.2}Methods and procedures}{79}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}RVE homogenization model}{79}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Mesh}{80}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Voigt model}{80}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Results}{81}{section.6.3}
-\contentsline {section}{\numberline {6.4}Discussion}{82}{section.6.4}
-\contentsline {section}{\numberline {6.5}Conclusion}{82}{section.6.5}
-\contentsline {chapter}{\numberline {7}Non-linear modelling}{83}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introduction}{83}{section.7.1}
-\contentsline {section}{\numberline {7.2}Methods and procedures}{83}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Finite Element Method}{83}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Convergence study}{86}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Stress Intensity approach}{87}{subsection.7.2.3}
-\contentsline {section}{\numberline {7.3}Results}{88}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Convergence study mesh}{88}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Convergence study RVEs}{89}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Simulations compared with empirical results }{89}{subsection.7.3.3}
-\contentsline {subsection}{\numberline {7.3.4}Simulations with altering aspect ratio}{90}{subsection.7.3.4}
-\contentsline {subsection}{\numberline {7.3.5}Contour plots of different aspect ratios }{92}{subsection.7.3.5}
-\contentsline {subsection}{\numberline {7.3.6}Comparison fracture stress}{92}{subsection.7.3.6}
-\contentsline {subsection}{\numberline {7.3.7}Cracktip plasticity}{95}{subsection.7.3.7}
-\contentsline {section}{\numberline {7.4}Discussion}{96}{section.7.4}
-\contentsline {section}{\numberline {7.5}Conclusion}{98}{section.7.5}
-\contentsline {chapter}{\numberline {8}Conclusion and recommendations}{101}{chapter.8}
-\contentsline {chapter}{\color {title}References}{103}{chapter*.133}
+\contentsline {section}{\numberline {5.4}Discussion}{74}{section.5.4}
+\contentsline {section}{\numberline {5.5}Conclusion}{76}{section.5.5}
+\contentsline {chapter}{\numberline {6}Elastic modelling}{77}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{77}{section.6.1}
+\contentsline {section}{\numberline {6.2}Methods and procedures}{77}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}RVE homogenization model}{77}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Mesh}{78}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Voigt model}{78}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Results}{79}{section.6.3}
+\contentsline {section}{\numberline {6.4}Discussion}{80}{section.6.4}
+\contentsline {section}{\numberline {6.5}Conclusion}{80}{section.6.5}
+\contentsline {chapter}{\numberline {7}Non-linear modelling}{81}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{81}{section.7.1}
+\contentsline {section}{\numberline {7.2}Methods and procedures}{81}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Finite Element Method}{81}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Convergence study}{84}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Stress Intensity approach}{85}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Results}{86}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Convergence study mesh}{86}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Convergence study RVEs}{87}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Simulations compared with empirical results }{87}{subsection.7.3.3}
+\contentsline {subsection}{\numberline {7.3.4}Simulations with altering aspect ratio}{88}{subsection.7.3.4}
+\contentsline {subsection}{\numberline {7.3.5}Contour plots of different aspect ratios }{90}{subsection.7.3.5}
+\contentsline {subsection}{\numberline {7.3.6}Comparison fracture stress}{90}{subsection.7.3.6}
+\contentsline {subsection}{\numberline {7.3.7}Cracktip plasticity}{93}{subsection.7.3.7}
+\contentsline {section}{\numberline {7.4}Discussion}{94}{section.7.4}
+\contentsline {section}{\numberline {7.5}Conclusion}{96}{section.7.5}
+\contentsline {chapter}{\numberline {8}Conclusion and recommendations}{99}{chapter.8}
+\contentsline {chapter}{\color {title}References}{101}{chapter*.135}
 \contentsfinish 
