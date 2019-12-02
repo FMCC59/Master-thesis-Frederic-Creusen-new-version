@@ -102,5 +102,21 @@
 \contentsline {section}{\numberline {7.3}Discussion}{95}{section.7.3}
 \contentsline {section}{\numberline {7.4}Conclusion}{97}{section.7.4}
 \contentsline {chapter}{\numberline {8}Conclusion and recommendations}{99}{chapter.8}
-\contentsline {chapter}{\color {title}References}{101}{chapter*.139}
+\contentsline {section}{\numberline {8.1}Conclusion}{99}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Identification of process parameters influencing the mechanical properties (research question 1)}{99}{subsection.8.1.1}
+\contentsline {subsubsection}{Porosity}{99}{subsection.8.1.1}
+\contentsline {subsubsection}{Healing}{99}{subsection.8.1.1}
+\contentsline {subsubsection}{Interroad strength}{99}{subsection.8.1.1}
+\contentsline {subsubsection}{Elasticity}{100}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Mesostructure (research question 2)}{100}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Experimental testing (research question 3)}{100}{subsection.8.1.3}
+\contentsline {subsubsection}{ASTM D 3039 and ISO 527 testing}{100}{subsection.8.1.3}
+\contentsline {subsubsection}{Filament testing}{100}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.4}Dominant phenomenon of the decrease in mechanical properties (research question 4)}{101}{subsection.8.1.4}
+\contentsline {subsubsection}{Drop in mechanical properties in the 3 principal directions}{101}{subsection.8.1.4}
+\contentsline {subsubsection}{Aspect ratio}{101}{subsection.8.1.4}
+\contentsline {subsection}{\numberline {8.1.5}Constitutive modelling of thermoplastic amorphous polymers (research question 5)}{101}{subsection.8.1.5}
+\contentsline {subsection}{\numberline {8.1.6}Additional theory for the prediction of mechanical behaviour of FFF parts (research question 6)}{102}{subsection.8.1.6}
+\contentsline {section}{\numberline {8.2}Recommendations}{102}{section.8.2}
+\contentsline {chapter}{\color {title}References}{103}{chapter*.136}
 \contentsfinish 
